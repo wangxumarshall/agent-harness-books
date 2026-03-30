@@ -1,4 +1,4 @@
-# ch03 — TypeScript类型系统作为契约层
+# 第二部分：语言层契约 — TypeScript类型系统作为契约层
 
 ## 本章Q
 

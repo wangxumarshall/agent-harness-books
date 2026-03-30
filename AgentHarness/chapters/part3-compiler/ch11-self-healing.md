@@ -1,4 +1,4 @@
-# ch11 — 自愈循环：CritiqueAgent与GeneratorAgent的对抗
+# 第三部分：编译器层 — 自愈循环：CritiqueAgent与GeneratorAgent的对抗
 
 ## 本章Q
 
