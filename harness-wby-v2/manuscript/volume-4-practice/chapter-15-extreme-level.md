@@ -85,25 +85,34 @@ Boot Sequence是Anthropic 16 Agent案例的核心机制：
 
 ```typescript
 // initializer-agent.ts
-import { z } from 'zod';
+import 'dotenv/config';
+import Anthropic from '@anthropic/sdk';
 
-const FeatureSchema = z.object({
-  id: z.string(),
-  description: z.string(),
-  priority: z.enum(['critical', 'high', 'medium', 'low']),
-  dependencies: z.array(z.string()).default([]),
-  estimatedComplexity: z.number().min(1).max(10),
-});
+interface Feature {
+  id: string;
+  description: string;
+  priority: 'critical' | 'high' | 'medium' | 'low';
+  dependencies: string[];
+  estimatedComplexity: number;
+}
 
-const FeatureListSchema = z.array(FeatureSchema);
-type Feature = z.infer<typeof FeatureSchema>;
+const anthropic = new Anthropic();
 
 async function initializeTask(taskDescription: string): Promise<Feature[]> {
-  // 使用LLM分析任务并生成Feature List
-  const prompt = `分析以下任务，生成JSON格式的Feature List：${taskDescription}`;
-  const response = await claude.complete(prompt);
-  const features = JSON.parse(response);
-  return FeatureListSchema.parse(features);
+  // 使用Anthropic SDK调用LLM分析任务并生成Feature List
+  const response = await anthropic.messages.create({
+    model: 'claude-3-5-sonnet-20241022',
+    max_tokens: 4096,
+    messages: [
+      {
+        role: 'user',
+        content: `分析以下任务，生成JSON格式的Feature List：${taskDescription}`,
+      },
+    ],
+  });
+  const content = response.content[0];
+  if (content.type !== 'text') throw new Error('Expected text response');
+  return JSON.parse(content.text) as Feature[];
 }
 ```
 
