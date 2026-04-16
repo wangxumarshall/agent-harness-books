@@ -1,4 +1,6 @@
-# Vector/Graph-like 与 Filesystem-like Agent Memory 研究，及 AgentMem 架构设计与技术方案
+Vector/Graph-like 与 Filesystem-like Agent Memory 研究，及 AgentMem 架构设计与技术方案
+
+#  Vector/Graph-like 研究洞察
 
 ## 一、典型的 vector/graph-like 项目概述与核心场景
 
