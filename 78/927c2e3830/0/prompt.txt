@@ -1,0 +1,5 @@
+深度理解agent_memory_system_insight_report.md和agent_memory_system_insight_report_v0.2.md，把 v0.2中的产业界和学术界研究方法、框架图等形式，移植和融合到 agent_memory_system_insight_report.md；但要保证技术、逻辑一致性。深度理解agent_memory_system_insight_report.md和agent_memory_system_insight_report_v0.2.md，把 v0.2中的“第3章：技术方案 — CortexMem” 和 “附录“，移植和融合到 agent_memory_system_insight_report.md；但要保证技术、逻辑一致性。
+
+---
+
+Implement the plan.
