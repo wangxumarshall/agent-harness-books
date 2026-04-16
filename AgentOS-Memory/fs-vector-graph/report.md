@@ -1,12 +1,8 @@
-# Vector/Graph-like 与 Filesystem-like Agent Memory 深度研究报告
+# Vector/Graph-like 与 Filesystem-like Agent Memory 研究
 
 > 目录：`AgentOS-Memory/fs-vector-graph/`
 >
 > 更新时间：2026-04-16
->
-> 融合来源：`report.md`、`report_v2.md`、`report_v3.md`、`report_v4.md`
->
-> 本次改写重点：按业界事实重排“技术演进路线”，将全文呈现顺序调整为 **`vector/graph-like -> filesystem-like`**
 
 ---
 
@@ -29,11 +25,9 @@
 
 为回答“业界 SOTA 是什么”，本轮仍保留截至 `2026-04-16` 的公开一手材料校正，例如 `Mem0`、`Honcho`、`Hindsight`、`Graphiti/Zep`、`Letta` 官方文档与 benchmark / research 页面。
 
-### 0.2 为什么按 `vector/graph-like -> filesystem-like` 理解技术演进
+### 0.2 `vector-like -> filesystem-like` 理解技术演进【 -> graph-like】
 
-这次改写的核心不是简单换标题顺序，而是把全文叙事改回更符合业界事实的演进路径。
-
-从公开材料看，**行业主流最先大规模讨论和产品化的，是 `vector/graph-like` 这一侧**。原因很直接：
+从公开材料看，**行业主流最先大规模讨论和产品化的，是 `vector-like`**。原因很直接：
 
 - 早期长期记忆问题首先被定义成 **“如何突破 context window 限制”**
 - 接着被定义成 **“如何把对话抽取成长期可检索的记忆”**
@@ -67,9 +61,9 @@
 - skill / SOP 沉淀
 - 版本治理
 
-因此，这篇报告现在按下面这条主线展开：
+因此，本报告现在按下面这条主线展开：
 
-> 业界先用 `vector/graph-like` 解决“记得住、找得到、能共享”，再用 `filesystem-like` 补上“看得懂、改得动、可治理、能沉淀技能”，最终收敛到混合架构。
+> 业界先用 `vector-like` 解决“记得住、找得到、能共享”，再用 `filesystem-like` 补上“看得懂、改得动、可治理、能沉淀技能”，最终收敛到混合架构。
 
 ### 0.2.1 对“最新版本”和“上一版本”的批判性校正
 
@@ -77,7 +71,6 @@
 
 - **上一版本的优势**：并列比较更稳，较少把两条路线写成单线替代史；对 `filesystem-like` 的“文件真相层、可治理、可读性”把握更扎实。
 - **最新版本的优势**：更接近公开材料里的主流时间线，能解释为什么 `MemGPT/Letta`、`mem0`、`Graphiti/Zep`、`Honcho` 这些系统更早占据“长期记忆”讨论中心。
-- **最新版本的风险**：如果把它写成严格线性历史，就会过度简化。因为 `filesystem / procedural` 并不是 2025-2026 才出现，而是从一开始就有并行支线。
 
 公开材料支持这个校正：
 
@@ -87,7 +80,7 @@
 
 因此，本报告最终采用的不是“严格线性替代史”，而是：
 
-> **`vector/graph-like` 先成为主流讨论与产品化主线；`filesystem-like / procedural` 早期并行存在，但在 coding-agent 与 context-engineering 工程阶段更晚被系统性凸显。**
+> **`vector-like` 先成为主流讨论与产品化主线；`filesystem-like / procedural` 早期并行存在，但在 coding-agent 与 context-engineering 工程阶段更晚被系统性凸显。**
 
 ### 0.3 分类规则与证据等级
 
@@ -95,7 +88,7 @@
 
 同一系统可能同时有文件层、向量层和图层。本报告按 **主导接口** 归类：
 
-- 主导接口是 `API / SDK / shared memory pool / vector retrieval / graph retrieval / managed service`：归为 `vector/graph-like`
+- 主导接口是 `API / SDK / shared memory pool / vector retrieval / graph retrieval / managed service`：归为 `vector-like`
 - 主导接口是 `Markdown / 文件树 / URI / skill file / 版本对象`：归为 `filesystem-like`
 
 #### 证据等级
@@ -126,9 +119,9 @@
 
 ### 0.5 七个高层结论
 
-1. **行业主流最先强化的是 `vector/graph-like`：先解决跨会话 recall、上下文压缩和共享语义平面。**
+1. **行业主流最先强化的是 `vector-like`：先解决跨会话 recall、上下文压缩和共享语义平面。**
 2. **`filesystem-like / procedural` 并非后发明路线，而是早期就并行存在；只是它在 coding-agent 与 workspace memory 中更晚成为显性主角。**
-3. **`vector/graph-like` 的核心价值，不是“多存 embedding”，而是构建共享语义平面、关系平面和服务平面。**
+3. **`vector-like` 的核心价值，不是“多存 embedding”，而是构建共享语义平面、关系平面和服务平面。**
 4. **`filesystem-like` 的核心价值，不是“回到纯文件”，而是把文件真相层、skill 文件和版本治理重新提升为主角。**
 5. **当前已经被证明能解决的问题，主要是跨会话 recall、按需压缩上下文成本、以及一定程度的多 agent 状态共享。**
 6. **当前还没有成为行业默认能力的问题，主要是程序性记忆治理、记忆回滚/审计、以及安全遗忘与知识更新。**
@@ -370,7 +363,7 @@
 | **Append-only + Layered Summary** | Filesystem-like | 原始 episode 不丢失，上层摘要可压缩可展开 | lossless-claw, OpenViking | 可追溯、可压缩、可恢复 | 主要解决上下文管理，不等于完整 memory 栈 |
 | **Branch / Rollback / Quarantine** | 治理层 | 把记忆 mutation 纳入版本和安全治理 | Memoria | 可审计、可修复、可实验 | 基础设施和流程成本更高 |
 
-### 2.2 Vector/Graph-like 范式：记忆首先是共享语义 / 关系平面
+### 2.2 Vector-like 范式：记忆首先是共享语义 / 关系平面
 
 #### 2.2.1 为什么它先成为行业主线
 
@@ -390,7 +383,7 @@
 
 #### 2.2.2 Consolidation：先把原始对话抽成更高浓度的记忆单位
 
-`vector/graph-like` 路线的主流做法，不是保存全部原话，而是保存**抽取后的记忆单位**。
+`vector-like` 路线的主流做法，不是保存全部原话，而是保存**抽取后的记忆单位**。
 
 典型流程是：
 
@@ -519,7 +512,7 @@
 - Milvus 是 shadow index
 - recall 链路是 `search -> expand -> transcript`
 
-#### 2.3.3 分层加载（L0-L2）：按需递归披露，而不是一次塞满
+#### 2.3.3 分层加载（L0-L2）：按需递归披露，而不是一次塞满【可落地到传统文件系统上层，也可落地到传统文件系统内部（改造文件系统，最大优势是业务无感，难点是如何透传语义）】
 
 `filesystem-like` 在上下文管理上的核心创新，不是“存成文件”，而是**层级披露**：
 
@@ -683,7 +676,7 @@
 | 场景 | 更适合的主导范式 | 原因 | 代表系统 |
 |------|------------------|------|---------|
 | **全天候个性化助手（Proactive Assistants）** | Vector/graph-like 优先 | 需要跨设备同步、后台更新偏好、围绕人和关系持续建模 | mem0, Honcho, Graphiti/Zep, memU |
-| **多 agent 协同系统（Planner / Executor / Reviewer）** | Vector/graph-like 优先 | 多个 agent 需要共享状态池、共享实体关系和中心化权限边界 | mem9, eion, ContextLoom, UltraContext |
+| **多agent协同系统（Planner / Executor / Reviewer）** | Vector/graph-like 优先 | 多个 agent 需要共享状态池、共享实体关系和中心化权限边界 | mem9, eion, ContextLoom, UltraContext |
 | **高复杂度编程（Coding Agents）** | Filesystem-like 优先，必要时加 shadow index | 代码库本身就是文件系统；需要记录架构决策、版本依赖、调试经验；必须支持人工审核和记忆修正 | memsearch, OpenViking, Acontext, Memoria |
 | **长程研究（Research Agents）** | Filesystem-like 优先 | 输出物本身是结构化文档；需要多轮整理、改写、引用和人工干预 | OpenViking, memsearch, lossless-claw |
 
@@ -744,7 +737,7 @@ L0 Append-only 原始事件与轨迹
 
 ### 4.2 六个优先建设方向
 
-#### 4.2.1 Shared Memory Plane：先把多 agent 的共享脑做对
+#### 4.2.1 Shared Memory Plane：先把多agent的共享脑做对
 
 如果 `CortexMem` 面向 planner / executor / reviewer 或跨终端助手，就必须先解决：
 
