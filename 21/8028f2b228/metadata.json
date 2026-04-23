@@ -145,6 +145,12 @@
       "transcript": "/21/8028f2b228/22/full.jsonl",
       "content_hash": "/21/8028f2b228/22/content_hash.txt",
       "prompt": ""
+    },
+    {
+      "metadata": "/21/8028f2b228/23/metadata.json",
+      "transcript": "/21/8028f2b228/23/full.jsonl",
+      "content_hash": "/21/8028f2b228/23/content_hash.txt",
+      "prompt": ""
     }
   ],
   "token_usage": {
