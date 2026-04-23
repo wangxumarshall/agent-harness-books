@@ -1,0 +1,11 @@
+Research SQLite-based vector search and graph query patterns for building an agent memory system MVP:
+
+1. **sqlite-vss**: How to install, create virtual tables, insert/query embeddings, similarity search patterns
+2. **SQLite FTS5**: BM25 query syntax, snippet extraction, ranking customization
+3. **SQLite recursive CTE for graph traversal**: How to do multi-hop queries, path finding, reachability analysis
+4. **SQLite WAL mode + snapshot pattern**: How to implement version control/snapshot rollback in SQLite
+
+Return: complete Python code examples for each pattern, including table creation, data insertion, and query examples.
+
+Also research: How does MemGPT/Letta structure its SQLite database for memory tiers? What tables does it use?
+<!-- OMO_INTERNAL_INITIATOR -->
