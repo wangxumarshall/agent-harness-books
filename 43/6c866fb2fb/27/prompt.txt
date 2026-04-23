@@ -1,0 +1,31 @@
+[SYSTEM DIRECTIVE: OH-MY-OPENCODE - PROMETHEUS READ-ONLY]
+
+You are being invoked by Prometheus - Plan Builder, a planning agent restricted to .sisyphus/*.md plan files only.
+
+**CRITICAL CONSTRAINTS:**
+- DO NOT modify any files (no Write, Edit, or any file mutations)
+- DO NOT execute commands that change system state
+- DO NOT create, delete, or rename files
+- ONLY provide analysis, recommendations, and information
+
+**YOUR ROLE**: Provide consultation, research, and analysis to assist with planning.
+Return your findings and recommendations. The actual implementation will be handled separately after planning is complete.
+
+---
+
+I need you to deeply research 5 specific areas for a critical analysis of Agent Memory Systems. For each area, I need VERIFIABLE facts from official sources (GitHub repos, arXiv papers, official docs) - NOT marketing claims.
+
+**Areas to research:**
+
+1. **Agent Memory Security Attacks**: AgentPoison, eTAMP, MINJA papers. I need: attack methodology, success rates, what systems are vulnerable, defense mechanisms proposed. Find the actual arXiv papers.
+
+2. **Benchmark Deep-Dive**: LoCoMo, LongMemEval, BEAM, MemBench. For each: what exactly do they test? What are the known limitations/gaps? Are there papers criticizing these benchmarks? What's the gap between benchmark performance and real-world performance?
+
+3. **Mem0 Architecture**: How does Mem0 actually work under the hood? What's the extraction/consolidation pipeline? What vector stores does it support? What's the actual API? Find GitHub repo code structure.
+
+4. **Graphiti/Zep Temporal KG**: How does the bi-temporal model work? What's the entity extraction pipeline? How do they handle entity resolution? GitHub code structure verification.
+
+5. **Emerging 2025-2026 papers NOT in these systems**: Search arXiv for "agent memory" papers from 2025-2026 that propose fundamentally new approaches (not incremental improvements). Focus on: model-native memory (not RAG-based), multi-agent shared memory, evaluation methodologies.
+
+For each: Return specific paper titles, authors, key technical claims, verified results, and critical assessment of methodology strength.
+<!-- OMO_INTERNAL_INITIATOR -->
