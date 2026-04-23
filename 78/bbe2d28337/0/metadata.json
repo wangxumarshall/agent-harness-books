@@ -1,0 +1,86 @@
+{
+  "cli_version": "v0.5.0-dev-5bc86155",
+  "checkpoint_id": "78bbe2d28337",
+  "session_id": "ses_246f31289ffeKoh7aBMbqX73TH",
+  "strategy": "manual-commit",
+  "created_at": "2026-04-23T07:29:47.681989Z",
+  "branch": "main",
+  "checkpoints_count": 3,
+  "files_touched": [
+    "AgentOS-Memory/fs-vector-graph/report.md"
+  ],
+  "agent": "OpenCode",
+  "model": "Qwen3.6-Plus",
+  "turn_id": "ad85276da9af",
+  "token_usage": {
+    "input_tokens": 2786463,
+    "cache_creation_tokens": 0,
+    "cache_read_tokens": 0,
+    "output_tokens": 19096,
+    "api_call_count": 22
+  },
+  "session_metrics": {
+    "turn_count": 3
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-04-23T07:29:47.669853Z",
+    "agent_lines": 56,
+    "agent_removed": 31,
+    "human_added": 0,
+    "human_modified": 0,
+    "human_removed": 11,
+    "total_committed": 56,
+    "total_lines_changed": 98,
+    "agent_percentage": 88.77551020408163,
+    "metric_version": 2
+  },
+  "prompt_attributions": [
+    {
+      "checkpoint_number": 1,
+      "user_lines_added": 1547,
+      "user_lines_removed": 11,
+      "agent_lines_added": 0,
+      "agent_lines_removed": 0,
+      "user_added_per_file": {
+        ".github/commands/gemini-invoke.toml": 97,
+        ".github/commands/gemini-plan-execute.toml": 103,
+        ".github/commands/gemini-review.toml": 172,
+        ".github/commands/gemini-scheduled-triage.toml": 116,
+        ".github/commands/gemini-triage.toml": 54,
+        ".github/workflows/gemini-dispatch.yml": 221,
+        ".github/workflows/gemini-invoke.yml": 118,
+        ".github/workflows/gemini-plan-execute.yml": 126,
+        ".github/workflows/gemini-review.yml": 109,
+        ".github/workflows/gemini-scheduled-triage.yml": 214,
+        ".github/workflows/gemini-triage.yml": 158,
+        ".gitignore": 3,
+        "AgentOS-Memory/fs-vector-graph/report.md": 10,
+        "GEMINI.md": 46
+      },
+      "user_removed_per_file": {
+        "AgentOS-Memory/fs-vector-graph/report.md": 11
+      }
+    },
+    {
+      "checkpoint_number": 2,
+      "user_lines_added": 0,
+      "user_lines_removed": 0,
+      "agent_lines_added": 1547,
+      "agent_lines_removed": 11
+    },
+    {
+      "checkpoint_number": 3,
+      "user_lines_added": 0,
+      "user_lines_removed": 0,
+      "agent_lines_added": 1547,
+      "agent_lines_removed": 11
+    },
+    {
+      "checkpoint_number": 4,
+      "user_lines_added": 0,
+      "user_lines_removed": 0,
+      "agent_lines_added": 1614,
+      "agent_lines_removed": 42
+    }
+  ]
+}
