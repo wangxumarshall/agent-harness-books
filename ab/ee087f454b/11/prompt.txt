@@ -1,0 +1,22 @@
+[CONTEXT]: I'm conducting a critical analysis of AgentMem, a proposed hybrid Agent Memory system combining filesystem-like and vector/graph-like paradigms. The current proposal lives in report.md at /Users/wangxu/1-project/claude-books/AgentOS-Memory/fs-vector-graph/report.md.
+
+[GOAL]: Identify fundamental architectural and engineering challenges that the current AgentMem proposal either underestimates or completely misses. Focus on REAL production engineering problems, not academic concerns.
+
+[DOWNSTREAM]: I need to produce a comprehensive risk assessment that goes beyond the existing critical-analysis.md to cover practical engineering pitfalls.
+
+[REQUEST]: Research and analyze these specific engineering challenges:
+
+1. **Multi-database orchestration complexity**: AgentMem proposes Markdown files + SQLite/Neo4j + Vector DB + BM25 index + re-ranker. How many production systems actually run 4+ storage backends? What are the operational costs (deployment, monitoring, backup, version upgrades)? Find examples from industry (not academia) of systems managing heterogeneous storage stacks.
+
+2. **Consistency between truth layers**: If the Markdown file says "User prefers Python" but the graph layer has a derived relation suggesting "User migrated to Rust" — how do production systems handle conflicting signals? Does any existing system solve this well?
+
+3. **Memory system bootstrapping cost**: How many LLM calls does it take to bootstrap a memory system from zero? Search for real-world data on "memory extraction cost", "initial memory population", "cold start memory system". What's the token cost of the first week of operation?
+
+4. **Scalability ceiling**: At what memory volume does the L2a→L2b→L2c progressive loading model break down? If there are 100,000 memory items, even scanning L2a metadata becomes expensive. How do production search systems handle this (e.g., Elasticsearch at scale)?
+
+5. **The "derived knowledge isolation" problem**: AgentMem proposes L2.5 as a separate layer for machine-derived knowledge that never writes back to Markdown. Is this sustainable? Will the derived layer eventually become the "real" truth that the Markdown layer lags behind?
+
+6. **KV Cache integration challenges**: The report mentions L0南向适配 with vLLM/SGLang KV Cache management. Research how vLLM's PagedAttention and SGLang's RadixAttention actually work. Is it feasible for an external memory system to influence KV cache eviction? What would the integration protocol look like?
+
+Return concrete findings with citations, not speculation.
+<!-- OMO_INTERNAL_INITIATOR -->
