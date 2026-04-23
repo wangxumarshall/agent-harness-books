@@ -143,6 +143,12 @@
       "transcript": "/e0/830e5b2bf6/16/full.jsonl",
       "content_hash": "/e0/830e5b2bf6/16/content_hash.txt",
       "prompt": ""
+    },
+    {
+      "metadata": "/e0/830e5b2bf6/17/metadata.json",
+      "transcript": "/e0/830e5b2bf6/17/full.jsonl",
+      "content_hash": "/e0/830e5b2bf6/17/content_hash.txt",
+      "prompt": ""
     }
   ],
   "token_usage": {
