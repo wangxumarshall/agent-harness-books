@@ -1,0 +1,75 @@
+{
+  "info": {
+    "id": "ses_246b7924effeExrrm9Nndf1kAn",
+    "slug": "swift-nebula",
+    "projectID": "3063918415171cbbf7918369301e10e9bd1b2b78",
+    "directory": "/Users/wangxu/1-project/claude-books/AgentOS-Memory/fs-vector-graph",
+    "parentID": "ses_246bd684affewDOe0Zsn0ZuDfM",
+    "title": "Deep agent memory paper analysis (@librarian subagent)",
+    "version": "1.4.6",
+    "permission": [
+      {
+        "permission": "task",
+        "action": "deny",
+        "pattern": "*"
+      },
+      {
+        "permission": "call_omo_agent",
+        "action": "deny",
+        "pattern": "*"
+      },
+      {
+        "permission": "question",
+        "action": "deny",
+        "pattern": "*"
+      },
+      {
+        "permission": "write",
+        "action": "deny",
+        "pattern": "*"
+      },
+      {
+        "permission": "edit",
+        "action": "deny",
+        "pattern": "*"
+      }
+    ],
+    "time": {
+      "created": 1776930024881,
+      "updated": 1776930024886
+    }
+  },
+  "messages": [
+    {
+      "info": {
+        "role": "user",
+        "time": {
+          "created": 1776930024883
+        },
+        "tools": {
+          "task": false,
+          "call_omo_agent": false,
+          "question": false,
+          "write": false,
+          "edit": false
+        },
+        "agent": "librarian",
+        "model": {
+          "providerID": "github-copilot",
+          "modelID": "minimax-m2.7"
+        },
+        "id": "msg_db9486db3001L0aUQvBqNbv0XH",
+        "sessionID": "ses_246b7924effeExrrm9Nndf1kAn"
+      },
+      "parts": [
+        {
+          "type": "text",
+          "text": "\n\n---\n\n[SYSTEM DIRECTIVE: OH-MY-OPENCODE - PROMETHEUS READ-ONLY]\n\nYou are being invoked by Prometheus - Plan Builder, a planning agent restricted to .sisyphus/*.md plan files only.\n\n**CRITICAL CONSTRAINTS:**\n- DO NOT modify any files (no Write, Edit, or any file mutations)\n- DO NOT execute commands that change system state\n- DO NOT create, delete, or rename files\n- ONLY provide analysis, recommendations, and information\n\n**YOUR ROLE**: Provide consultation, research, and analysis to assist with planning.\nReturn your findings and recommendations. The actual implementation will be handled separately after planning is complete.\n\n---\n\nI'm conducting a critical research study on Agent Memory Systems and need deep technical analysis of specific papers and projects. \n\nFor each of the following, provide: (1) Core technical approach, (2) Key innovations, (3) Quantitative results, (4) Critical limitations, (5) Position in vector/graph vs filesystem spectrum.\n\nFocus areas:\n1. MemGPT/Letta - Virtual context management architecture, external vs internal memory\n2. Mem0 - Universal memory layer, multi-level memory (user/session/agent), self-improving extraction\n3. Zep/Graphiti - Temporal knowledge graph, entity extraction, time-aware relationships\n4. AgentPoison, eTAMP, MINJA - Security vulnerabilities in agent memory systems (technical details of attacks)\n5. FadeMem - Biology-inspired forgetting mechanisms (arXiv:2601.18642)\n6. 2025-2026 arXiv papers on \"agent memory\" benchmarks (LoCoMo, LongMemEval, BEAM, MemBench) - what they measure, what they miss\n7. Cognee - Graph + vector knowledge extraction approach\n\nSearch arXiv, GitHub repositories (check stars), official docs. Focus on technical substance over marketing. I need critical analysis - what claims are verifiable vs self-reported?\n<!-- OMO_INTERNAL_INITIATOR -->",
+          "id": "prt_db9486db3002mTWqAb5Dangbay",
+          "sessionID": "ses_246b7924effeExrrm9Nndf1kAn",
+          "messageID": "msg_db9486db3001L0aUQvBqNbv0XH"
+        }
+      ]
+    }
+  ]
+}
