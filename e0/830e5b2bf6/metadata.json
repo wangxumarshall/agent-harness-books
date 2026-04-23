@@ -173,6 +173,12 @@
       "transcript": "/e0/830e5b2bf6/21/full.jsonl",
       "content_hash": "/e0/830e5b2bf6/21/content_hash.txt",
       "prompt": ""
+    },
+    {
+      "metadata": "/e0/830e5b2bf6/22/metadata.json",
+      "transcript": "/e0/830e5b2bf6/22/full.jsonl",
+      "content_hash": "/e0/830e5b2bf6/22/content_hash.txt",
+      "prompt": ""
     }
   ],
   "token_usage": {
