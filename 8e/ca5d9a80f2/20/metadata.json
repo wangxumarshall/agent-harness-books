@@ -1,0 +1,45 @@
+{
+  "cli_version": "v0.5.0-dev-5bc86155",
+  "checkpoint_id": "8eca5d9a80f2",
+  "session_id": "ses_246ac4181ffe5xuCn1zcKhpx2F",
+  "strategy": "manual-commit",
+  "created_at": "2026-04-23T12:59:44.971982Z",
+  "branch": "main",
+  "checkpoints_count": 0,
+  "files_touched": [
+    "AgentOS-Memory/AGENTS.md",
+    "AgentOS-Memory/AgentMem.md",
+    "AgentOS-Memory/AgentMem/AGENTS.md",
+    "AgentOS-Memory/AgentMem/AgentMem.md",
+    "AgentOS-Memory/AgentMem/CLAUDE.md",
+    "AgentOS-Memory/AgentMem/agent_memory_filesystem-vector-like-system_insight.md",
+    "AgentOS-Memory/AgentMem/agent_memory_system_global_insight.md",
+    "AgentOS-Memory/CLAUDE.md",
+    "AgentOS-Memory/agent_memory_filesystem-vector-like-system_insight.md",
+    "AgentOS-Memory/agent_memory_system_global_insight.md"
+  ],
+  "agent": "OpenCode",
+  "model": "",
+  "turn_id": "12f49b9e9572",
+  "checkpoint_transcript_start": 1,
+  "transcript_lines_at_start": 1,
+  "token_usage": {
+    "input_tokens": 0,
+    "cache_creation_tokens": 0,
+    "cache_read_tokens": 0,
+    "output_tokens": 0,
+    "api_call_count": 0
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-04-23T12:59:44.970428Z",
+    "agent_lines": 3201,
+    "agent_removed": 3201,
+    "human_added": 0,
+    "human_modified": 0,
+    "human_removed": 0,
+    "total_committed": 3201,
+    "total_lines_changed": 6402,
+    "agent_percentage": 100,
+    "metric_version": 2
+  }
+}
