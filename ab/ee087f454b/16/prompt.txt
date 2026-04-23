@@ -1,0 +1,20 @@
+[CONTEXT]: I'm conducting critical research on Agent Memory systems. The existing report.md and critical-analysis.md already cover mem0, OpenViking, Graphiti, Memoria, memsearch, TiMem, MAGMA, FadeMem, Omni-SimpleMem, MINJA, etc.
+
+[GOAL]: Find and verify the MISSING academic references that the current report cites but cannot locate. These are critical gaps undermining the entire report's academic credibility.
+
+[DOWNSTREAM]: If I find these papers, I can fill in missing data; if they don't exist, I need to flag them as invalid citations.
+
+[REQUEST]: Search arXiv, Google Scholar, and ACL/ICLR/NeurIPS proceedings for these specific papers:
+1. **AgentPoison** - The report mentions this as a memory poisoning attack with ASR >80%, but has no paper number. Find the exact arXiv ID, title, authors, and key results.
+2. **eTAMP** - Mentioned as "environmental instruction injection" attack. Find the exact paper reference.
+3. **MUSE framework** - The report cites "arXiv:2601.xxxxx" (a placeholder!). Find the REAL paper about "Plan-Execute-Reflect-Memorize" memory framework. Search for MUSE agent memory, or any paper with this acronym in AI agent context.
+4. **PlugMem** - Mentioned as UIUC/Tsinghua/Microsoft Research work on procedural memory as DAG. Find the actual paper.
+5. **AgentTrace** - Mentioned as "2026年2月 AAAI 2026 LaMAS Workshop" with arXiv:2602.10133. Verify if this paper exists and what it actually says.
+6. **LRAT** - "Learning Retrieval from Agent Trajectories" - find the paper.
+
+For each paper found (or confirmed not found), return:
+- Paper title, authors, venue, date
+- arXiv ID or DOI
+- Key quantitative results
+- Whether the report's description matches the actual paper content
+<!-- OMO_INTERNAL_INITIATOR -->
