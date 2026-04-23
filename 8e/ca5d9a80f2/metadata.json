@@ -178,6 +178,12 @@
       "transcript": "/8e/ca5d9a80f2/26/full.jsonl",
       "content_hash": "/8e/ca5d9a80f2/26/content_hash.txt",
       "prompt": ""
+    },
+    {
+      "metadata": "/8e/ca5d9a80f2/27/metadata.json",
+      "transcript": "/8e/ca5d9a80f2/27/full.jsonl",
+      "content_hash": "/8e/ca5d9a80f2/27/content_hash.txt",
+      "prompt": ""
     }
   ],
   "token_usage": {

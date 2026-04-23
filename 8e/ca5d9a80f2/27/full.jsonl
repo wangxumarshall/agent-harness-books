@@ -1,0 +1,75 @@
+{
+  "info": {
+    "id": "ses_246bb62ecffezse9uD3B4N7s45",
+    "slug": "hidden-meadow",
+    "projectID": "3063918415171cbbf7918369301e10e9bd1b2b78",
+    "directory": "/Users/wangxu/1-project/claude-books/AgentOS-Memory/fs-vector-graph",
+    "parentID": "ses_246bd684affewDOe0Zsn0ZuDfM",
+    "title": "Research agent memory security benchmarks (@librarian subagent)",
+    "version": "1.4.6",
+    "permission": [
+      {
+        "permission": "task",
+        "action": "deny",
+        "pattern": "*"
+      },
+      {
+        "permission": "call_omo_agent",
+        "action": "deny",
+        "pattern": "*"
+      },
+      {
+        "permission": "question",
+        "action": "deny",
+        "pattern": "*"
+      },
+      {
+        "permission": "write",
+        "action": "deny",
+        "pattern": "*"
+      },
+      {
+        "permission": "edit",
+        "action": "deny",
+        "pattern": "*"
+      }
+    ],
+    "time": {
+      "created": 1776929774867,
+      "updated": 1776929774871
+    }
+  },
+  "messages": [
+    {
+      "info": {
+        "role": "user",
+        "time": {
+          "created": 1776929774868
+        },
+        "tools": {
+          "task": false,
+          "call_omo_agent": false,
+          "question": false,
+          "write": false,
+          "edit": false
+        },
+        "agent": "librarian",
+        "model": {
+          "providerID": "github-copilot",
+          "modelID": "minimax-m2.7"
+        },
+        "id": "msg_db9449d14001X38uMYqhCWjKXT",
+        "sessionID": "ses_246bb62ecffezse9uD3B4N7s45"
+      },
+      "parts": [
+        {
+          "type": "text",
+          "text": "\n\n---\n\n[SYSTEM DIRECTIVE: OH-MY-OPENCODE - PROMETHEUS READ-ONLY]\n\nYou are being invoked by Prometheus - Plan Builder, a planning agent restricted to .sisyphus/*.md plan files only.\n\n**CRITICAL CONSTRAINTS:**\n- DO NOT modify any files (no Write, Edit, or any file mutations)\n- DO NOT execute commands that change system state\n- DO NOT create, delete, or rename files\n- ONLY provide analysis, recommendations, and information\n\n**YOUR ROLE**: Provide consultation, research, and analysis to assist with planning.\nReturn your findings and recommendations. The actual implementation will be handled separately after planning is complete.\n\n---\n\nI need you to deeply research 5 specific areas for a critical analysis of Agent Memory Systems. For each area, I need VERIFIABLE facts from official sources (GitHub repos, arXiv papers, official docs) - NOT marketing claims.\n\n**Areas to research:**\n\n1. **Agent Memory Security Attacks**: AgentPoison, eTAMP, MINJA papers. I need: attack methodology, success rates, what systems are vulnerable, defense mechanisms proposed. Find the actual arXiv papers.\n\n2. **Benchmark Deep-Dive**: LoCoMo, LongMemEval, BEAM, MemBench. For each: what exactly do they test? What are the known limitations/gaps? Are there papers criticizing these benchmarks? What's the gap between benchmark performance and real-world performance?\n\n3. **Mem0 Architecture**: How does Mem0 actually work under the hood? What's the extraction/consolidation pipeline? What vector stores does it support? What's the actual API? Find GitHub repo code structure.\n\n4. **Graphiti/Zep Temporal KG**: How does the bi-temporal model work? What's the entity extraction pipeline? How do they handle entity resolution? GitHub code structure verification.\n\n5. **Emerging 2025-2026 papers NOT in these systems**: Search arXiv for \"agent memory\" papers from 2025-2026 that propose fundamentally new approaches (not incremental improvements). Focus on: model-native memory (not RAG-based), multi-agent shared memory, evaluation methodologies.\n\nFor each: Return specific paper titles, authors, key technical claims, verified results, and critical assessment of methodology strength.\n<!-- OMO_INTERNAL_INITIATOR -->",
+          "id": "prt_db9449d14002FT380HS38LwHCs",
+          "sessionID": "ses_246bb62ecffezse9uD3B4N7s45",
+          "messageID": "msg_db9449d14001X38uMYqhCWjKXT"
+        }
+      ]
+    }
+  ]
+}
