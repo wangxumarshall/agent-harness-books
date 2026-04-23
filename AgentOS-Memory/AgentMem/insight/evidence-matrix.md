@@ -60,4 +60,69 @@
 1. `memsearch`、`Acontext`、`Memoria`、`lossless-claw` 共同说明 filesystem-like 路线不是“没有检索能力”，而是把检索放在真相层之下。
 2. `mem0`、`Honcho`、`Graphiti`、`eion`、`mem9`、`ContextLoom` 共同说明 northbound memory plane 已经从“向量库外挂”推进到“共享状态 / 实体表示 / 时序图 / 后台 consolidation”。
 3. `UltraContext` 很有价值，但更适合作为 context plane / context engineering 邻接基础设施，而不是直接作为成熟 memory 主线代表。
-4. `XiaoClaw` 仍应保留在生态包装层，不应被误读为独立 memory architecture。
+4. `XiaoClaw` 仍应保留在生态包装层，不应被误读为独立 memory architecture.
+
+---
+
+## 🆕 新增：report.md 薄弱声明清单（批判性研究，2026-04-23）
+
+> 来源：`critical-research/critical-analysis.md`
+> 标注规则：A（peer-reviewed + 独立复现）| B（arXiv 预印本）| C（官方自报）| D（推测/零实现）
+
+| 报告行号 | 声明内容 | 证据等级 | 缺失的证据类型 | 建议补救措施 |
+|----------|---------|---------|---------------|-------------|
+| 11 | Mem0 "26%准确率提升与91%延迟降低" | C | 独立复现数据 | 查找 mem0 最新研究论文或 benchmark 框架 |
+| 15-17 | OpenViking "83-91% token 节省, 43-49%完成率提升" | C | peer-reviewed 论文 | 补充论文引用或标注为"官方自报" |
+| 73 | "MemBrain LoCoMo 93.25%" | C | peer-reviewed 论文 + 独立复现 | 标注为"feeling.ai 自建基准自报数据" |
+| 170 | "MAGMA 超越现有 SOTA"（具体数值缺失） | B | 具体 benchmark 分数 | 查阅 MAGMA 全文 PDF 补充具体数值 |
+| 190 | AgentMem L2.5 机器推理衍生层 | D | 任何产业/学术先例 | 标注为"概念设计"，做 PoC 验证 |
+| 192 | L4 多 Agent 并发保护伞（MVCC+CoW） | D | 多 Agent 并发验证 | 标注为"推测性设计"，降为 Phase 2 功能 |
+| 200-201 | MUSE TAC 基准 51.78% 成功率 | ⚠️ 占位符 | 真实 arXiv 编号 | 补充正确论文编号（报告中为 "arXiv:2601.xxxxx"） |
+| 254 | 三层防御总延迟 <300ms | D | 工程验证 | 修正为 <500ms 或改用纯规则引擎 |
+| 269 | "净 Token 效率"公式的合理性 | D | 任何系统的实际报告 | 在 MVP 中实际测量并报告 |
+| 276-277 | AgentMem "task completion 提升 30-45%" | D | 实现与验证 | 标注为"预期目标"而非"可实现" |
+| 281 | AgentPoison + eTAMP 攻击拦截率 >80% | D | 准确论文编号 | 补充正确引用或标注为推测 |
+| 282 | MINJA 免疫力提升 30-50%（7+天后） | C | 实验数据 | 标注为"基于 MINJA 趋势推算" |
+
+### 更新后的证据使用原则
+
+**新增不能为强支撑的结论**：
+- 不将不同定义（如"召回冗余减少" vs "Token 节省"）的指标进行直接比较
+- 不将 arXiv 预印本数据等同于正式发表的 peer-reviewed 结果
+- 不假设 AgentMem 的任何未实现组件已达到报告中的性能指标
+- 不将 Omni-SimpleMem +411% 提升作为"性能领先"证据（绝对值 0.598 低于 TiMem 0.753 和 mem0 0.916）
+
+### 🆕 2026-04-23 更新（第二轮深度溯源后新增）
+
+#### 上轮修正记录（2026-04-23 深度验证后）
+
+| 修正项 | 原报告状态 | 修正后状态 | 来源 |
+|--------|----------|-----------|------|
+| Graphiti 论文编号 | 报告暗示 "2026年3月" | **arXiv:2501.13956**（2025年1月） | Graphiti GitHub README arXiv badge |
+| Graphiti 架构描述 | 报告混淆为"三层类人记忆架构" | 实际为**时序上下文图**（Entities/Facts/Episodes），非 EPISODES/ENTITIES/COMMUNITIES | Graphiti README "What is a Context Graph" |
+| OpenViking benchmark 数据 | 证据等级 C（官方站点） | **升级为 B**（README 数据表可验证，AGPL-3.0 已确认） | OpenViking GitHub README |
+| OpenViking AGPL-3.0 | 未验证（报告提到但未验证） | **已确认为 A**（LICENSE 文件） | OpenViking GitHub LICENSE |
+| mem0 graph-enhanced | 报告暗示完整 graph DB | ⚠️ 仅有 **entity linking**，无 Neo4j/graph DB 能力 | mem0 README |
+| memU LoCoMo 92.09% | 报告引用 | 已验证为**自报数据** | memU README Performance 段 |
+| 6 个 GitHub 项目一致性 | 仅 2 个验证（mem0+Memoria） | **全部 6 个已验证** | 本报告 |
+
+#### 本轮新确认的学术论文（4项）
+| 论文 | arXiv ID | 新增信息 |
+|------|---------|---------|
+| **MUSE** | arXiv:2510.08002 | 替换原占位符 "arXiv:2601.xxxxx"；确认 TAC 51.78% 数据来源 |
+| **PlugMem** | arXiv:2603.03296 | Task-Agnostic Plugin Memory Module；与 SKILL.md 规范高度一致 |
+| **Memp** | arXiv:2508.06433 | "Exploring Agent Procedural Memory" — 报告原遗漏的关键论文 |
+| **AgentPoison** | arXiv:2407.12784 | 2024年的记忆投毒攻击论文，应作为安全防御基线 |
+
+#### 本轮新确认的 AgentTrace 变体
+| 论文 | arXiv ID | 差异 |
+|------|---------|------|
+| AgentTrace (结构化日志) | arXiv:2602.10133 | 原报告引用，编号正确 ✅ |
+| AgentTrace (因果图 RCA) | arXiv:2603.14688 | 独立论文，聚焦根因分析，应补充到 L3 层参考 |
+
+#### 本轮仍无法确认的引用（3项）
+| 论文 | 报告中描述 | 搜索状态 |
+|------|----------|---------|
+| **eTAMP** | 环境指令注入 | arXiv全文搜索无结果 |
+| **DeepSeek Engram** | MoE条件记忆模块 | 未找到任何论文 |
+| **STEM (ICLR)** | FFN查表替换 | 未找到匹配论文 |
