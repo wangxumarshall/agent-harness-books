@@ -1,0 +1,11 @@
+Search for these exact papers on arXiv and academic databases. For each, return: paper title, all authors, publication year, arXiv ID, and abstract.
+
+1. "AgentPoison" - paper about poisoning agent memory with indirect prompt injection
+2. "eTAMP" - paper about environmental/targeted manipulation of agent prompts  
+3. "MUSE" agent memory paper with "Plan-Execute-Reflect-Memorize" pattern
+4. "PlugMem" - paper about procedural memory as DAG from UIUC/Tsinghua/Microsoft
+5. "AgentTrace" - paper about agent behavior logging/tracing, possibly from AAAI 2026
+6. "LRAT" - "Learning Retrieval from Agent Trajectories" paper
+
+Also search for: "memory poisoning attack agent LLM" on arXiv 2025-2026
+<!-- OMO_INTERNAL_INITIATOR -->
