@@ -114,3 +114,65 @@ NEVER stop at first result - be exhaustive.
 ---
 
 提交report.md
+
+---
+
+[search-mode]
+MAXIMIZE SEARCH EFFORT. Launch multiple background agents IN PARALLEL:
+- explore agents (codebase patterns, file structures, ast-grep)
+- librarian agents (remote repos, official docs, GitHub examples)
+Plus direct tools: Grep, ripgrep (rg), ast-grep (sg)
+NEVER stop at first result - be exhaustive.
+
+[analyze-mode]
+ANALYSIS MODE. Gather context before diving deep:
+CONTEXT GATHERING (parallel):
+- 1-2 explore agents (codebase patterns, implementations)
+- 1-2 librarian agents (if external library involved)
+- Direct tools: Grep, AST-grep, LSP for targeted searches
+
+IF COMPLEX - DO NOT STRUGGLE ALONE. Consult specialists:
+- **Oracle**: Conventional problems (architecture, debugging, complex logic)
+- **Artistry**: Non-conventional problems (different approach needed)
+
+SYNTHESIZE findings before proceeding.
+---
+MANDATORY delegate_task params: ALWAYS include load_skills=[] and run_in_background when calling delegate_task.
+Example: delegate_task(subagent_type="explore", prompt="...", run_in_background=true, load_skills=[])
+
+---
+
+atlassian:capture-tasks-from-meeting-notes                             
+/atlassian:generate-status-report                                       
+/atlassian:search-company-knowledge                                     
+/atlassian:spec-to-backlog                                              
+/atlassian:triage-issue                                                 
+把report.md中的AgentMem方案提取出来，放到独立文件比如AgentMem.md；然后对该方案进行深度研究，并设计详细的可用于开发的AgentMem方案，用于指导claudecode开发，输出到AgentMem.md
+
+---
+
+<system-reminder>
+[BACKGROUND TASK COMPLETED]
+**ID:** `bg_e81eab0b`
+**Description:** Research mem0/memsearch code patterns
+**Duration:** 0s
+
+**1 task still in progress.** You WILL be notified when ALL complete.
+Do NOT poll - continue productive work.
+
+Use `background_output(task_id="bg_e81eab0b")` to retrieve this result when ready.
+</system-reminder>
+<!-- OMO_INTERNAL_INITIATOR -->
+
+---
+
+<system-reminder>
+[ALL BACKGROUND TASKS COMPLETE]
+
+**Completed:**
+- `bg_e81eab0b`: Research mem0/memsearch code patterns
+- `bg_33748b9d`: Research SQLite vector/graph patterns
+
+Use `background_output(task_id="<id>")` to retrieve each result.
+</system-reminder>
+<!-- OMO_INTERNAL_INITIATOR -->
