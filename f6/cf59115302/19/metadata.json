@@ -1,0 +1,39 @@
+{
+  "cli_version": "v0.5.0-dev-5bc86155",
+  "checkpoint_id": "f6cf59115302",
+  "session_id": "ses_246ab2562ffe2sfc850xeHg73q",
+  "strategy": "manual-commit",
+  "created_at": "2026-04-23T11:22:28.105762Z",
+  "branch": "main",
+  "checkpoints_count": 0,
+  "files_touched": [
+    "AgentOS-Memory/AgentMem/AgentMem.md"
+  ],
+  "agent": "OpenCode",
+  "model": "",
+  "turn_id": "4d716bdd387f",
+  "checkpoint_transcript_start": 1,
+  "transcript_lines_at_start": 1,
+  "token_usage": {
+    "input_tokens": 0,
+    "cache_creation_tokens": 0,
+    "cache_read_tokens": 0,
+    "output_tokens": 0,
+    "api_call_count": 0
+  },
+  "session_metrics": {
+    "turn_count": 2
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-04-23T11:22:28.10417Z",
+    "agent_lines": 284,
+    "agent_removed": 226,
+    "human_added": 0,
+    "human_modified": 0,
+    "human_removed": 0,
+    "total_committed": 284,
+    "total_lines_changed": 510,
+    "agent_percentage": 100,
+    "metric_version": 2
+  }
+}
