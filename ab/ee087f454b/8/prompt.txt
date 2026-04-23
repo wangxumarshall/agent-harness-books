@@ -1,0 +1,13 @@
+Search arXiv and academic databases for these systems:
+
+1. "DeepSeek Engram" - conditional memory modules in MoE architecture, O(1) deterministic knowledge lookup
+2. "ICLR STEM" or "Scalable Token-efficient Memory" - replacing FFN up-projection with token-indexed embedding lookup, ICLR 2026
+3. "LiCoMemory" or "CogniGraph" - lightweight hierarchical cognitive graph, HKUST Huawei WeBank
+4. "MIRIX" - multi-intelligent memory system with 6 memory types and Active Retrieval
+5. "MemoryOS BUPT Tencent" - three-layer memory with heat-driven updates
+6. "MemBrain" or "MemBrain 1.0" feeling.ai - LLM-friendly memory architecture
+
+For each: find paper title, authors, arXiv ID, venue, key benchmark scores.
+
+Also search: "Mixture of Experts memory module LLM" on arXiv 2025-2026
+<!-- OMO_INTERNAL_INITIATOR -->
