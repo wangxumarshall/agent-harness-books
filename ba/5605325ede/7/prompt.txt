@@ -1,0 +1,32 @@
+TASK: Verify every numerical data claim in report.md by tracing to source.
+
+EXPECTED OUTCOME: A TSV file listing ≥30 data claims extracted from report.md, each with evidence level and verification status.
+
+REQUIRED TOOLS: Read (report.md, evidence-matrix.md, findings.md), webfetch (arXiv pages, GitHub repos, official docs), Bash (grep/awk for extraction), Write (output TSV).
+
+MUST DO:
+1. Read report.md and find EVERY line containing numbers claiming: benchmark scores (e.g. "75.30%", "93.25%"), token savings (e.g. "52%", "83-91%"), latency improvements, accuracy improvements, storage reductions, etc.
+2. For EACH claim, trace to the ORIGINAL source:
+   - If it cites an arXiv paper: visit the arXiv page and verify the claim appears in the abstract/paper
+   - If it cites a GitHub project: check README.md for the same number
+   - If it cites no source: mark as "无来源-推测"
+3. Classify evidence level for each:
+   - 强 (Strong): peer-reviewed paper + independent replication exists
+   - 中 (Medium): peer-reviewed paper only
+   - 弱 (Weak): official self-reported (blog, README, marketing page)
+   - 无 (None): speculative design, no verification
+4. Create TSV with columns: 行号\t声明内容\t数据来源\t证据等级\t独立验证状态\t备注
+5. Save to: .sisyphus/critical-research/outputs/report-data-claims.tsv
+
+MUST NOT DO:
+- Do NOT use blog posts or marketing pages as strong evidence
+- Do NOT assume AgentMem components have been verified (they have zero implementation)
+- Do NOT equate marketing page data with academic paper data
+- Do NOT skip claims that are hard to verify — mark them as "待验证" instead
+
+CONTEXT:
+- report.md is at: /Users/wangxu/1-project/claude-books/AgentOS-Memory/fs-vector-graph/report.md (304 lines)
+- Key papers to verify: TiMem arXiv:2601.02845, MAGMA arXiv:2601.03236, FadeMem arXiv:2601.18642, OmniMem arXiv:2604.01007, etc.
+- evidence-matrix.md already marks evidence levels for major systems
+- This is Task 1 of Wave 1 in the critical research plan
+<!-- OMO_INTERNAL_INITIATOR -->
