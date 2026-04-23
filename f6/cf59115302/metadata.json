@@ -193,6 +193,12 @@
       "transcript": "/f6/cf59115302/30/full.jsonl",
       "content_hash": "/f6/cf59115302/30/content_hash.txt",
       "prompt": ""
+    },
+    {
+      "metadata": "/f6/cf59115302/31/metadata.json",
+      "transcript": "/f6/cf59115302/31/full.jsonl",
+      "content_hash": "/f6/cf59115302/31/content_hash.txt",
+      "prompt": ""
     }
   ],
   "token_usage": {
