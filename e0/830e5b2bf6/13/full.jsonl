@@ -1,0 +1,64 @@
+{
+  "info": {
+    "id": "ses_24680805bffeqD8Y6tJJabulWj",
+    "slug": "misty-orchid",
+    "projectID": "3063918415171cbbf7918369301e10e9bd1b2b78",
+    "directory": "/Users/wangxu/1-project/claude-books/AgentOS-Memory/fs-vector-graph",
+    "parentID": "ses_246bd684affewDOe0Zsn0ZuDfM",
+    "title": "Verify 4 GitHub repos vs report claims (@Sisyphus-Junior subagent)",
+    "version": "1.4.6",
+    "permission": [
+      {
+        "permission": "task",
+        "action": "deny",
+        "pattern": "*"
+      },
+      {
+        "permission": "call_omo_agent",
+        "action": "allow",
+        "pattern": "*"
+      },
+      {
+        "permission": "question",
+        "action": "deny",
+        "pattern": "*"
+      }
+    ],
+    "time": {
+      "created": 1776933633956,
+      "updated": 1776933633961
+    }
+  },
+  "messages": [
+    {
+      "info": {
+        "role": "user",
+        "time": {
+          "created": 1776933633958
+        },
+        "tools": {
+          "task": false,
+          "call_omo_agent": true,
+          "question": false
+        },
+        "agent": "Sisyphus-Junior",
+        "model": {
+          "providerID": "opencode",
+          "modelID": "gemini-3.1-pro-preview",
+          "variant": "high"
+        },
+        "id": "msg_db97f7fa6001uiyKvprjHgUu2S",
+        "sessionID": "ses_24680805bffeqD8Y6tJJabulWj"
+      },
+      "parts": [
+        {
+          "type": "text",
+          "text": "TASK: Verify 4 GitHub repos referenced in the Agent Memory research report and compare actual code against report claims.\n\nEXPECTED OUTCOME: For each repo, return: (1) Star count, (2) Last commit date, (3) Directory structure, (4) Key features actually implemented vs reported, (5) Discrepancies found.\n\nREQUIRED TOOLS: webfetch (GitHub), Bash.\n\nMUST DO:\n1. For each repo:\n   a) **OpenViking** (volcengine/OpenViking) — verify: viking:// protocol exists? L0/L1/L2 loading? self-iteration mechanism? README benchmark claims match code?\n   b) **memsearch** (zilliztech/memsearch) — verify: Markdown-first? Milvus shadow index? search→expand→transcript? BM25 + dense + RRF implementation?\n   c) **Graphiti** (getzep/graphiti) — verify: bi-temporal model (valid_at/invalid_at fields)? entity extraction? temporal knowledge graph code?\n   d) **memU** (NevaMind-AI/memU) — verify: filesystem-style categories/items/resources? progressive disclosure?\n\n2. For each claim in report.md that references these repos, mark as: ✅ verified in code | ⚠️ partially verified | ❌ NOT found in code\n\n3. Count exact discrepancies between report description and actual code\n\n4. Save findings as a markdown table to stdout (don't write files)\n\nMUST NOT DO:\n- Do NOT review code quality\n- Do NOT require running projects\n- Be concise — focus on structural verification only\n\nCONTEXT:\n- report.md is at: /Users/wangxu/1-project/claude-books/AgentOS-Memory/fs-vector-graph/report.md\n- Key claims to verify: Line 9 (OpenViking L0/L1/L2, 83-91% token savings), Line 11 (Graphiti bi-temporal), Line 86 (memsearch shadow index), Line 93 (memsearch Markdown-first + Milvus)\n<!-- OMO_INTERNAL_INITIATOR -->",
+          "id": "prt_db97f7fa6002Y1vkqJ6dJepWm6",
+          "sessionID": "ses_24680805bffeqD8Y6tJJabulWj",
+          "messageID": "msg_db97f7fa6001uiyKvprjHgUu2S"
+        }
+      ]
+    }
+  ]
+}
