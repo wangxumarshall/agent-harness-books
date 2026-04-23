@@ -1,0 +1,64 @@
+{
+  "info": {
+    "id": "ses_246acce16ffefYq0xDDN6UQwj2",
+    "slug": "brave-comet",
+    "projectID": "3063918415171cbbf7918369301e10e9bd1b2b78",
+    "directory": "/Users/wangxu/1-project/claude-books/AgentOS-Memory/fs-vector-graph",
+    "parentID": "ses_246bd684affewDOe0Zsn0ZuDfM",
+    "title": "Verify all data claims in report.md (@Sisyphus-Junior subagent)",
+    "version": "1.4.6",
+    "permission": [
+      {
+        "permission": "task",
+        "action": "deny",
+        "pattern": "*"
+      },
+      {
+        "permission": "call_omo_agent",
+        "action": "allow",
+        "pattern": "*"
+      },
+      {
+        "permission": "question",
+        "action": "deny",
+        "pattern": "*"
+      }
+    ],
+    "time": {
+      "created": 1776930730473,
+      "updated": 1776930730492
+    }
+  },
+  "messages": [
+    {
+      "info": {
+        "role": "user",
+        "time": {
+          "created": 1776930730474
+        },
+        "tools": {
+          "task": false,
+          "call_omo_agent": true,
+          "question": false
+        },
+        "agent": "Sisyphus-Junior",
+        "model": {
+          "providerID": "opencode",
+          "modelID": "claude-opus-4-6",
+          "variant": "max"
+        },
+        "id": "msg_db95331ea001tnOxkQ70Ugf7ue",
+        "sessionID": "ses_246acce16ffefYq0xDDN6UQwj2"
+      },
+      "parts": [
+        {
+          "type": "text",
+          "text": "TASK: Verify every numerical data claim in report.md by tracing to source.\n\nEXPECTED OUTCOME: A TSV file listing ≥30 data claims extracted from report.md, each with evidence level and verification status.\n\nREQUIRED TOOLS: Read (report.md, evidence-matrix.md, findings.md), webfetch (arXiv pages, GitHub repos, official docs), Bash (grep/awk for extraction), Write (output TSV).\n\nMUST DO:\n1. Read report.md and find EVERY line containing numbers claiming: benchmark scores (e.g. \"75.30%\", \"93.25%\"), token savings (e.g. \"52%\", \"83-91%\"), latency improvements, accuracy improvements, storage reductions, etc.\n2. For EACH claim, trace to the ORIGINAL source:\n   - If it cites an arXiv paper: visit the arXiv page and verify the claim appears in the abstract/paper\n   - If it cites a GitHub project: check README.md for the same number\n   - If it cites no source: mark as \"无来源-推测\"\n3. Classify evidence level for each:\n   - 强 (Strong): peer-reviewed paper + independent replication exists\n   - 中 (Medium): peer-reviewed paper only\n   - 弱 (Weak): official self-reported (blog, README, marketing page)\n   - 无 (None): speculative design, no verification\n4. Create TSV with columns: 行号\\t声明内容\\t数据来源\\t证据等级\\t独立验证状态\\t备注\n5. Save to: .sisyphus/critical-research/outputs/report-data-claims.tsv\n\nMUST NOT DO:\n- Do NOT use blog posts or marketing pages as strong evidence\n- Do NOT assume AgentMem components have been verified (they have zero implementation)\n- Do NOT equate marketing page data with academic paper data\n- Do NOT skip claims that are hard to verify — mark them as \"待验证\" instead\n\nCONTEXT:\n- report.md is at: /Users/wangxu/1-project/claude-books/AgentOS-Memory/fs-vector-graph/report.md (304 lines)\n- Key papers to verify: TiMem arXiv:2601.02845, MAGMA arXiv:2601.03236, FadeMem arXiv:2601.18642, OmniMem arXiv:2604.01007, etc.\n- evidence-matrix.md already marks evidence levels for major systems\n- This is Task 1 of Wave 1 in the critical research plan\n<!-- OMO_INTERNAL_INITIATOR -->",
+          "id": "prt_db95331ea002C7QdXpJ53HZR3C",
+          "sessionID": "ses_246acce16ffefYq0xDDN6UQwj2",
+          "messageID": "msg_db95331ea001tnOxkQ70Ugf7ue"
+        }
+      ]
+    }
+  ]
+}
