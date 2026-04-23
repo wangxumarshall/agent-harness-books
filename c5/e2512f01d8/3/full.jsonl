@@ -1,0 +1,75 @@
+{
+  "info": {
+    "id": "ses_2463e17c3ffe6YEcGgVlLpWh2X",
+    "slug": "silent-eagle",
+    "projectID": "3063918415171cbbf7918369301e10e9bd1b2b78",
+    "directory": "/Users/wangxu/1-project/claude-books/AgentOS-Memory/fs-vector-graph",
+    "parentID": "ses_2463f9ea4ffewiBtsr73bjC27p",
+    "title": "Find AgentPoison eTAMP MUSE papers (@librarian subagent)",
+    "version": "1.4.6",
+    "permission": [
+      {
+        "permission": "task",
+        "action": "deny",
+        "pattern": "*"
+      },
+      {
+        "permission": "call_omo_agent",
+        "action": "deny",
+        "pattern": "*"
+      },
+      {
+        "permission": "question",
+        "action": "deny",
+        "pattern": "*"
+      },
+      {
+        "permission": "write",
+        "action": "deny",
+        "pattern": "*"
+      },
+      {
+        "permission": "edit",
+        "action": "deny",
+        "pattern": "*"
+      }
+    ],
+    "time": {
+      "created": 1776937986108,
+      "updated": 1776937986113
+    }
+  },
+  "messages": [
+    {
+      "info": {
+        "role": "user",
+        "time": {
+          "created": 1776937986110
+        },
+        "tools": {
+          "task": false,
+          "call_omo_agent": false,
+          "question": false,
+          "write": false,
+          "edit": false
+        },
+        "agent": "librarian",
+        "model": {
+          "providerID": "github-copilot",
+          "modelID": "minimax-m2.7"
+        },
+        "id": "msg_db9c1e83e001vpV0d6iaRRM1K5",
+        "sessionID": "ses_2463e17c3ffe6YEcGgVlLpWh2X"
+      },
+      "parts": [
+        {
+          "type": "text",
+          "text": "Search for these exact papers on arXiv and academic databases. For each, return: paper title, all authors, publication year, arXiv ID, and abstract.\n\n1. \"AgentPoison\" - paper about poisoning agent memory with indirect prompt injection\n2. \"eTAMP\" - paper about environmental/targeted manipulation of agent prompts  \n3. \"MUSE\" agent memory paper with \"Plan-Execute-Reflect-Memorize\" pattern\n4. \"PlugMem\" - paper about procedural memory as DAG from UIUC/Tsinghua/Microsoft\n5. \"AgentTrace\" - paper about agent behavior logging/tracing, possibly from AAAI 2026\n6. \"LRAT\" - \"Learning Retrieval from Agent Trajectories\" paper\n\nAlso search for: \"memory poisoning attack agent LLM\" on arXiv 2025-2026\n<!-- OMO_INTERNAL_INITIATOR -->",
+          "id": "prt_db9c1e83e0025zz5cQ6zoQYVEl",
+          "sessionID": "ses_2463e17c3ffe6YEcGgVlLpWh2X",
+          "messageID": "msg_db9c1e83e001vpV0d6iaRRM1K5"
+        }
+      ]
+    }
+  ]
+}
