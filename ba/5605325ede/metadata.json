@@ -3,7 +3,7 @@
   "checkpoint_id": "ba5605325ede",
   "strategy": "manual-commit",
   "branch": "main",
-  "checkpoints_count": 1,
+  "checkpoints_count": 2,
   "files_touched": null,
   "sessions": [
     {
@@ -11,6 +11,12 @@
       "transcript": "/ba/5605325ede/0/full.jsonl",
       "content_hash": "/ba/5605325ede/0/content_hash.txt",
       "prompt": "/ba/5605325ede/0/prompt.txt"
+    },
+    {
+      "metadata": "/ba/5605325ede/1/metadata.json",
+      "transcript": "/ba/5605325ede/1/full.jsonl",
+      "content_hash": "/ba/5605325ede/1/content_hash.txt",
+      "prompt": "/ba/5605325ede/1/prompt.txt"
     }
   ],
   "token_usage": {
