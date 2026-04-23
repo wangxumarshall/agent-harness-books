@@ -1,0 +1,705 @@
+{
+  "info": {
+    "id": "ses_246c06090ffep1Y3f4h9P9CGxg",
+    "slug": "stellar-forest",
+    "projectID": "3063918415171cbbf7918369301e10e9bd1b2b78",
+    "directory": "/Users/wangxu/1-project/claude-books/AgentOS-Memory/fs-vector-graph",
+    "title": "Agent Memory 研究与 agentment 方案批判性分析",
+    "version": "1.4.6",
+    "summary": {
+      "additions": 0,
+      "deletions": 0,
+      "files": 0
+    },
+    "time": {
+      "created": 1776929447791,
+      "updated": 1776929502219
+    }
+  },
+  "messages": [
+    {
+      "info": {
+        "role": "user",
+        "time": {
+          "created": 1776929447859
+        },
+        "agent": "​Sisyphus - Ultraworker",
+        "model": {
+          "providerID": "volcengine-key1",
+          "modelID": "Qwen3.6-Plus"
+        },
+        "id": "msg_db93f9f7c001AmxLTtymkIph5V",
+        "sessionID": "ses_246c06090ffep1Y3f4h9P9CGxg"
+      },
+      "parts": [
+        {
+          "type": "text",
+          "text": "[analyze-mode]\nANALYSIS MODE. Gather context before diving deep:\nCONTEXT GATHERING (parallel):\n- 1-2 explore agents (codebase patterns, implementations)\n- 1-2 librarian agents (if external library involved)\n- Direct tools: Grep, AST-grep, LSP for targeted searches\n\nIF COMPLEX - DO NOT STRUGGLE ALONE. Consult specialists:\n- **Oracle**: Conventional problems (architecture, debugging, complex logic)\n- **Artistry**: Non-conventional problems (different approach needed)\n\nSYNTHESIZE findings before proceeding.\n---\nMANDATORY delegate_task params: ALWAYS include load_skills=[] and run_in_background when calling delegate_task.\nExample: delegate_task(subagent_type=\"explore\", prompt=\"...\", run_in_background=true, load_skills=[])\n\n---\n\n深度结合学术界和产业界实践（如github高star项目）研究agent memory，理解report.md提到的agentment方案，提出批判性研究",
+          "id": "prt_db93f9f7c002wZy1yGViivvHls",
+          "sessionID": "ses_246c06090ffep1Y3f4h9P9CGxg",
+          "messageID": "msg_db93f9f7c001AmxLTtymkIph5V"
+        }
+      ]
+    },
+    {
+      "info": {
+        "parentID": "msg_db93f9f7c001AmxLTtymkIph5V",
+        "role": "assistant",
+        "mode": "​Sisyphus - Ultraworker",
+        "agent": "​Sisyphus - Ultraworker",
+        "path": {
+          "cwd": "/Users/wangxu/1-project/claude-books/AgentOS-Memory/fs-vector-graph",
+          "root": "/Users/wangxu/1-project/claude-books"
+        },
+        "cost": 0,
+        "tokens": {
+          "input": 0,
+          "output": 0,
+          "reasoning": 0,
+          "cache": {
+            "read": 0,
+            "write": 0
+          }
+        },
+        "modelID": "Qwen3.6-Plus",
+        "providerID": "volcengine-key1",
+        "time": {
+          "created": 1776929447872
+        },
+        "id": "msg_db93f9fc00012EzqG37V1XWb4u",
+        "sessionID": "ses_246c06090ffep1Y3f4h9P9CGxg"
+      },
+      "parts": []
+    },
+    {
+      "info": {
+        "role": "user",
+        "time": {
+          "created": 1776929461127
+        },
+        "agent": "​Sisyphus - Ultraworker",
+        "model": {
+          "providerID": "volcengine-key1",
+          "modelID": "Qwen3.6-Plus"
+        },
+        "summary": {
+          "diffs": []
+        },
+        "id": "msg_db93fd37f001Z0p1IjhzjEpAky",
+        "sessionID": "ses_246c06090ffep1Y3f4h9P9CGxg"
+      },
+      "parts": [
+        {
+          "type": "text",
+          "text": "[analyze-mode]\nANALYSIS MODE. Gather context before diving deep:\nCONTEXT GATHERING (parallel):\n- 1-2 explore agents (codebase patterns, implementations)\n- 1-2 librarian agents (if external library involved)\n- Direct tools: Grep, AST-grep, LSP for targeted searches\n\nIF COMPLEX - DO NOT STRUGGLE ALONE. Consult specialists:\n- **Oracle**: Conventional problems (architecture, debugging, complex logic)\n- **Artistry**: Non-conventional problems (different approach needed)\n\nSYNTHESIZE findings before proceeding.\n---\nMANDATORY delegate_task params: ALWAYS include load_skills=[] and run_in_background when calling delegate_task.\nExample: delegate_task(subagent_type=\"explore\", prompt=\"...\", run_in_background=true, load_skills=[])\n\n---\n\n深度结合学术界和产业界实践（如github高star项目）研究agent memory，理解report.md提到的agentment方案，提出批判性研究",
+          "id": "prt_db93fd380001etD4vZQcT7vshu",
+          "sessionID": "ses_246c06090ffep1Y3f4h9P9CGxg",
+          "messageID": "msg_db93fd37f001Z0p1IjhzjEpAky"
+        }
+      ]
+    },
+    {
+      "info": {
+        "parentID": "msg_db93fd37f001Z0p1IjhzjEpAky",
+        "role": "assistant",
+        "mode": "​Sisyphus - Ultraworker",
+        "agent": "​Sisyphus - Ultraworker",
+        "path": {
+          "cwd": "/Users/wangxu/1-project/claude-books/AgentOS-Memory/fs-vector-graph",
+          "root": "/Users/wangxu/1-project/claude-books"
+        },
+        "cost": 0,
+        "tokens": {
+          "total": 54148,
+          "input": 54017,
+          "output": 82,
+          "reasoning": 49,
+          "cache": {
+            "write": 0,
+            "read": 0
+          }
+        },
+        "modelID": "Qwen3.6-Plus",
+        "providerID": "volcengine-key1",
+        "time": {
+          "created": 1776929461142,
+          "completed": 1776929480463
+        },
+        "finish": "tool-calls",
+        "id": "msg_db93fd396001v49Jivol5KMP5D",
+        "sessionID": "ses_246c06090ffep1Y3f4h9P9CGxg"
+      },
+      "parts": [
+        {
+          "snapshot": "36ac0fba0efef6d2052dca9a50ed702c4db4c4b9",
+          "type": "step-start",
+          "id": "prt_db940152a001XwzgFeXHtsELTi",
+          "sessionID": "ses_246c06090ffep1Y3f4h9P9CGxg",
+          "messageID": "msg_db93fd396001v49Jivol5KMP5D"
+        },
+        {
+          "type": "reasoning",
+          "text": "The user wants me to deeply research agent memory systems, combining academic and industry practices, understand the \"agentment\"方案 mentioned in report.md, and provide critical research. Let me first check what report.md contains and understand the current project context.",
+          "time": {
+            "start": 1776929477932,
+            "end": 1776929478857
+          },
+          "id": "prt_db940152c001lCsreXGHqsCt0o",
+          "sessionID": "ses_246c06090ffep1Y3f4h9P9CGxg",
+          "messageID": "msg_db93fd396001v49Jivol5KMP5D"
+        },
+        {
+          "type": "text",
+          "text": "I detect **research/investigation** intent - you want a critical study of agent memory systems, combining academic papers and industry implementations, with specific focus on the \"agentment\"方案 in report.md.\n\nLet me gather context first.\n\n",
+          "time": {
+            "start": 1776929478859,
+            "end": 1776929480370
+          },
+          "id": "prt_db94018cb0013S7hOVASgAek0A",
+          "sessionID": "ses_246c06090ffep1Y3f4h9P9CGxg",
+          "messageID": "msg_db93fd396001v49Jivol5KMP5D"
+        },
+        {
+          "type": "tool",
+          "tool": "glob",
+          "callID": "call_dd3273e1bc334d009cea4f68",
+          "state": {
+            "status": "completed",
+            "input": {
+              "pattern": "**/report.md"
+            },
+            "output": "Found 1 file(s)\n\n/Users/wangxu/1-project/claude-books/AgentOS-Memory/fs-vector-graph/report.md\n[Agent Usage Reminder]\n\nYou called a search/fetch tool directly without leveraging specialized agents.\n\nRECOMMENDED: Use task with explore/librarian agents for better results:\n\n```\n// Parallel exploration - fire multiple agents simultaneously\ntask(subagent_type=\"explore\", load_skills=[], prompt=\"Find all files matching pattern X\")\ntask(subagent_type=\"explore\", load_skills=[], prompt=\"Search for implementation of Y\")\ntask(subagent_type=\"librarian\", load_skills=[], prompt=\"Lookup documentation for Z\")\n\n// Then continue your work while they run in background\n// System will notify you when each completes\n```\n\nWHY:\n- Agents can perform deeper, more thorough searches\n- Background tasks run in parallel, saving time\n- Specialized agents have domain expertise\n- Reduces context window usage in main session\n\nALWAYS prefer: Multiple parallel task calls > Direct tool calls\n",
+            "metadata": {
+              "truncated": false
+            },
+            "title": "",
+            "time": {
+              "start": 1776929480368,
+              "end": 1776929480399
+            }
+          },
+          "id": "prt_db9401c97001sN7jbXQTXdR4A5",
+          "sessionID": "ses_246c06090ffep1Y3f4h9P9CGxg",
+          "messageID": "msg_db93fd396001v49Jivol5KMP5D"
+        },
+        {
+          "reason": "tool-calls",
+          "snapshot": "36ac0fba0efef6d2052dca9a50ed702c4db4c4b9",
+          "type": "step-finish",
+          "tokens": {
+            "total": 54148,
+            "input": 54017,
+            "output": 82,
+            "reasoning": 49,
+            "cache": {
+              "write": 0,
+              "read": 0
+            }
+          },
+          "cost": 0,
+          "id": "prt_db9401ed1001sJiFTbMfPHDw2R",
+          "sessionID": "ses_246c06090ffep1Y3f4h9P9CGxg",
+          "messageID": "msg_db93fd396001v49Jivol5KMP5D"
+        }
+      ]
+    },
+    {
+      "info": {
+        "parentID": "msg_db93fd37f001Z0p1IjhzjEpAky",
+        "role": "assistant",
+        "mode": "​Sisyphus - Ultraworker",
+        "agent": "​Sisyphus - Ultraworker",
+        "path": {
+          "cwd": "/Users/wangxu/1-project/claude-books/AgentOS-Memory/fs-vector-graph",
+          "root": "/Users/wangxu/1-project/claude-books"
+        },
+        "cost": 0,
+        "tokens": {
+          "total": 54547,
+          "input": 54374,
+          "output": 149,
+          "reasoning": 24,
+          "cache": {
+            "write": 0,
+            "read": 0
+          }
+        },
+        "modelID": "Qwen3.6-Plus",
+        "providerID": "volcengine-key1",
+        "time": {
+          "created": 1776929480465,
+          "completed": 1776929486403
+        },
+        "finish": "tool-calls",
+        "id": "msg_db9401f11001MkX0PIACdjVfS6",
+        "sessionID": "ses_246c06090ffep1Y3f4h9P9CGxg"
+      },
+      "parts": [
+        {
+          "snapshot": "36ac0fba0efef6d2052dca9a50ed702c4db4c4b9",
+          "type": "step-start",
+          "id": "prt_db94029c3001rF0sqA3u2crar8",
+          "sessionID": "ses_246c06090ffep1Y3f4h9P9CGxg",
+          "messageID": "msg_db9401f11001MkX0PIACdjVfS6"
+        },
+        {
+          "type": "reasoning",
+          "text": "Need to understand agentment方案 in report.md - read the file, explore project structure, search related code for context.\n",
+          "time": {
+            "start": 1776929483205,
+            "end": 1776929483846
+          },
+          "id": "prt_db94029c5001BDa6tL6p58FQL4",
+          "sessionID": "ses_246c06090ffep1Y3f4h9P9CGxg",
+          "messageID": "msg_db9401f11001MkX0PIACdjVfS6"
+        },
+        {
+          "type": "tool",
+          "tool": "read",
+          "callID": "call_8616f5dcc2454d25bf5255d1",
+          "state": {
+            "status": "completed",
+            "input": {
+              "filePath": "/Users/wangxu/1-project/claude-books/AgentOS-Memory/fs-vector-graph/report.md"
+            },
+            "output": "<path>/Users/wangxu/1-project/claude-books/AgentOS-Memory/fs-vector-graph/report.md</path>\n<type>file</type>\n<content>\n1: # Vector/Graph-like 与 Filesystem-like Agent Memory 研究，及 AgentMem 架构设计与技术方案\n2: \n3: ##  1. Vector/Graph-like 研究洞察\n4: \n5: ### 1.1 典型vector/graph-like Agent memory概述与核心场景\n6: \n7: **Vector/Graph-like Agent Memory** 阵营以 Mem0、Honcho、Graphiti/Zep、eion 等系统为典型代表。该范式的核心思想是将记忆抽象为中央化的、高度结构化与语义化的存储平面，利用高维向量（Embeddings）捕捉语义相似度，并结合知识图谱（Knowledge Graph）固化实体间的拓扑关系，以此模拟人类大脑的联想与神经突触网络。\n8: \n9: 2025至2026年，该领域迎来了新一轮技术突破。**MAGMA**（2026年1月，arXiv:2601.03236）提出了多图智能体记忆架构，将每个记忆项在正交的语义、时间、因果和实体图中表示，通过策略引导的遍历实现查询自适应选择和结构化上下文构建，在LoCoMo和LongMemEval基准上超越现有SOTA。**Aeon**（2026年1月）则引入了高性能神经符号记忆管理，结合空间\"记忆宫殿\"索引和基于图的情景追踪，实现亚毫秒级检索延迟和可扩展的上下文感知召回。同期开源的**三层类人记忆架构**（如 **Graphiti/Zep** 引入的时间感知系统，2026年3月）进一步模拟人类认知过程：Level 1为EPISODES（情节子图 $G_e$，原始事件仓库，对应海马体），Level 2为ENTITIES（语义实体子图 $G_s$，结构化知识图谱，通过LLM自动消解实体），Level 3为COMMUNITIES（社区子图 $G_c$，高阶经验与聚类摘要，对应长期记忆）。更为核心的是，Graphiti 引入了**双时态模型（Bi-temporal Model）**，区分了事件发生时间（Event Time）与系统摄入时间（Ingestion Time），通过 `valid_at` 和 `invalid_at` 标记实现历史溯源。\n10: \n11: 在产业落地层面，**Mem0 Graph Memory** 已成为工业标准配置，在向量存储基础上叠加图数据库，自动提取实体和关系（如works_with、reports_to）。Mem0 的核心特性包括**混合检索架构（Hybrid Vector + Graph Search）**，向量搜索缩小候选集而图搜索补充相关结构化上下文；此外，它原生支持**多层级记忆作用域（User, Session, Agent）**的隔离。产业基准数据显示，Mem0在生产环境实现约26%准确率提升与91%延迟降低（Token 消耗降低约90%）；Zep的Graphiti引擎则通过异步NLP流水线、时序知识图谱和混合检索构建完整记忆操作系统。\n12: \n13: **面向的核心场景**：\n14: 1. **全天候个性化助手（Proactive Personal Assistants）**：针对 24/7 跨端运行的陪伴型助手，处理高度碎片化、非结构化且充满噪声的用户输入（如闲聊偏好），通过后台语义固化自动更新并构建深度用户心理画像。\n15: 2. **多智能体动态工作流（Multi-Agent Dynamic Workflow）**：在包含 Planner、Executor 等多智能体并发调度的网络中，提供全局的\"共享认知黑板（Shared Blackboard）\"。通过数据库底层的事务保证，化解并发协作时的\"脑裂\"与数据脏读难题。\n16: \n17: **核心技术挑战与局限**：该范式仍面临\"向量雾霾\"（Vector haze）问题——密集向量索引缺乏显式结构，导致检索模糊；同时存在黑盒化难以审计、多智能体并发易产生状态不一致等固有缺陷。Graphiti 的图谱拓扑体积可能急剧膨胀，显著增加图遍历计算及维护生命周期的复杂度，而 Mem0 的实体提取深度依赖 LLM 的准确率。\n18: \n19: ### 1.2 记忆系统整体架构\n20: \n21: Vector/Graph-like 架构普遍采用 **双模式（Dual-Schema）混合存储**：底层依赖向量数据库（如 Pinecone、Milvus、pgvector）处理模糊语义匹配，图数据库（如 Neo4j）并行处理显式的实体有向关系推理。整体架构不再是简单的文本切片堆砌，而是演化出了一套包含异步抽取、多路路由、实体建模与拓扑时序追踪的复杂状态机。\n22: \n23: ### 1.3 第一层：底层事实与事件映射\n24: \n25: #### 1.3.1 设计目标\n26: 确立系统对外部世界的客观认知基线，持久化不可变的历史事件、原始消息与非结构化文档流，确保事实溯源的绝对真实性。\n27: \n28: #### 1.3.2 机制：世界网络与情景子图（Episodic/World Facts）\n29: 以 Hindsight 和 Graphiti 的架构为例，底层物理与逻辑层面被严格隔离为**世界网络（World Facts）**或**情景子图（Episodic Subgraph）**。该层完整保留外部世界发生的客观公理与智能体第一人称视角的历史交互轨迹，作为上层实体抽取和推断溯源的原始素材池。\n30: \n31: ### 1.4 第二层：高阶认知推演与图谱拓扑\n32: \n33: #### 1.4.1 设计目标\n34: 从底层的碎片化交互中提纯关系，形成结构化的高阶认识论网络，并严格区分“客观事实”与“主观观念”，从而避免记忆逻辑坍塌。\n35: \n36: #### 1.4.2 机制：语义实体图谱与观念网络（Semantic Entity & Opinions）\n37: 在**语义实体子图**层，系统识别实体节点和关系边缘，将其嵌入至高维向量空间，并进行社区聚类（Community Subgraph）生成宏观摘要。前沿系统（如 Hindsight）进一步引入了带动态置信度分数的**观念网络（Opinions）**。当新证据汇入时，通过贝叶斯式修正调高或击穿置信阈值，赋予系统极其稳定的认识论清晰度（Epistemic Clarity）。\n38: \n39: ### 1.5 流程：完整数据流时序图与控制流图\n40: \n41: Vector/Graph-like 的检索与更新具有高度的异步性和工具驱动特性，检索过程由前置中间件拦截和重排：\n42: \n43: #### 1.5.1 阶段流转\n44: * **Phase 1：触发与预处理（T0）**。智能体发起特定会话的内存读取，API 网关截获查询字符串。\n45: * **Phase 2：多路混合检索（Hybrid Retrieval，T1）**。并发执行多条链路：第一路为密集向量语义匹配；第二路为基于 BM25 的精确符号/关键词匹配；第三路为图谱广度优先搜索（BFS）提取相邻边缘；第四路施加时序约束过滤。\n46: * **Phase 3：神经重排与装配（RRF Reranking，T2-T3）**。运用倒数秩融合（RRF）算法归一化多路得分，交由交叉编码器二次重排，随后聚合高分实体、群落摘要与近期原生消息装配上下文。\n47: * **Phase 4：后台固化与做梦（Consolidation & Dreaming，异步期）**。在系统闲置期，衍生智能体（Derivers）被唤醒，执行深度的合并去重、淘汰过期状态，推理并合成高阶实体侧写（Peer Representation）。\n48: \n49: ### 1.6 System Prompt 组装顺序\n50: \n51: 在诸如 Letta (MemGPT) 或 Honcho 的架构中，Prompt 组装遵循极严密的层级优先原则：\n52: 1. **第一级：核心系统指令**。Persona、底层操作系统隐喻及基础行为准则。\n53: 2. **第二级：接口与工具契约**。可用的检索/追加工具 Schema 及多跳推理指引。\n54: 3. **第三级：状态与时序元数据**。当前 Token 消耗监控、绝对时间戳及用户画像元数据。\n55: 4. **第四级：动态工作区**。由底层静默注入的 RRF 重排后的图谱上下文或显式编辑的核心记忆块。\n56: 5. **第五级：情景缓冲区**。当前滑动窗口内的近期原始会话消息序列。\n57: \n58: ### 1.7 关键设计决策总结\n59: \n60: | 决策 | 核心理由 | 带来的代价/边界 |\n61: |------|---------|------|\n62: | **时序边缘失效（Bi-temporal Tracking）** | 事实随时间波动，直接抹除（UPDATE/DELETE）将导致溯源断裂。如 **Graphiti** 利用 `valid_at` 和 `invalid_at` （事件时间与摄入时间双轴）标记旧边失效，完美支持任意时间点回溯查询。 | 图谱拓扑体积将急剧膨胀，显著增加图遍历计算及维护生命周期的复杂度，极其消耗内存与算力。 |\n63: | **异步离线演化（Sleep-time Dreaming）** | 同步执行深度的记忆调和与知识图谱合成会导致严重的推理延迟。将其转移至闲置后台运行，可保障前台毫秒级响应并形成高阶侧写。 | 存在状态同步延迟，新生成的重要事实可能无法立刻在随后几秒钟的下一次查询中生效。 |\n64: \n65: ### 1.8 面向场景与解决的核心问题\n66: \n67: #### 场景一：多智能体并发协同工作流\n68: * **问题**：在包含规划、执行、审查的多 Agent 网络中，独立维持上下文会导致状态共享断裂（脑裂）与文件竞态锁死。\n69: * **解决**：依托关系型/图数据库提供 ACID 事务与一致性保障，将所有个体的状态变动化作全局的“共享语义黑板”，实现低延迟无冲突的状态互通。\n70: \n71: #### 场景二：处理长期认知事实与事实突变\n72: * **问题**：简单追加向量库会导致“相似但过期”的信息引发上下文污染（如过去用 Python，现在用 Rust，由于向量距离相近导致互相干扰）。\n73: * **解决**：借助 LLM 的调和提取（Reconciliation）机制与双时态图谱拓扑进行冲突裁决，以逻辑截断替代物理删除，保障了演进链路的纯净度。\n74: \n75: ### 1.9 对 AgentMem 创新方案的启示\n76: 1. **北向语义层必须引入混合多路路由**：不可仅依赖纯密集向量，AgentMem 北向加速索引（L2 层）必须整合 Dense+BM25+时序约束的四路召回，以克服模糊语义陷阱。\n77: 2. **引入时序记忆图谱与“做梦”机制**：需效仿 Graphiti 和 Honcho，为认知演算图谱（L3 层）注入双重时间轴，并在后台配置衍生智能体进行闲时“记忆调和与巩固”，解决离散文本块缺乏因果绑定的顽疾。\n78: \n79: \n80: ---\n81: \n82: ## 2. Filesystem-like Agent Memory 研究洞察\n83: \n84: ### 2.1 典型的 filesystem-like 项目概述与核心场景\n85: \n86: **Filesystem-like Agent Memory** 阵营以 OpenViking、memsearch、Memoria、Acontext 等系统为标杆。面对深度企业应用中“黑盒向量检索”带来的极其高昂的调试成本和不可解释性，该路线发起了对传统软件工程纪律的强势复兴。其核心思想是：将所有外部记忆映射为**极具结构决定的、具象化的人类可读目录树与纯文本文件（如 Markdown、YAML）**，作为系统唯一不可撼动的真相源（Source of Truth）。\n87: \n88: **面向的核心场景**：\n89: 1. **高复杂度编程与研发协作（Coding Agents）**：在要求逻辑严谨、具备极强版本依赖的代码生成中，绝不容忍模糊匹配带来的幻觉。记忆需要像 Git 仓库一样支持人类 Code Review。\n90: 2. **长程研究与技能自动化流（Research & SOP Distillation）**：需要在沙盒目录中分门别类整理数天的研判资料，并且能够把多次试错提炼出的“排障 SOP”固化为程序性资产（Skill Files）。\n91: \n92: ### 2.2 记忆系统整体架构\n93: \n94: 架构彻底回归操作系统隐喻。以 OpenViking 和 memsearch 为代表，系统通常构建在统一的虚拟文件系统协议（如 `viking://`）之上，严格划分 `user/`（用户偏好）、`agent/skills/`（技能动作）等明确挂载点。最为核心的颠覆在于：**向量数据库被大幅降级为“影子索引（Shadow Index）”**。系统的底层数据就是物理存在的 Markdown 文件，当文件变动时，后台 Watcher 守护进程会同步计算哈希并重建轻量级的向量加速层，确保人读文件、机搜向量两不误。\n95: \n96: ### 2.3 第一层：L0/L1 摘要导航层\n97: \n98: #### 2.3.1 设计目标\n99: 针对数十万甚至百万级 Token 的文档，解决大模型一次性吞入导致的“迷失在中间（Lost in the Middle）”效应与巨额算力成本。以极度精简的元数据协助模型进行意图路由与粗粒度筛选。\n100: \n101: #### 2.3.2 机制：渐进式披露预检\n102: * **L0 层（抽象层）**：针对每个知识块提供不足 100 Token 的核心微缩指纹（如 `.abstract.md`），大模型首轮仅被允许加载此层扫描意图。\n103: * **L1 层（目录层）**：当模型判断局部包含关联后释放，扩容至约 2000 Token 的结构化骨架（如 `.overview.md`），用于让模型规划下钻链路。\n104: \n105: ### 2.4 第二层：L2 详情与技能资产层\n106: \n107: #### 2.4.1 设计目标\n108: 在通过分层导航锁定精确目标后，释放全量的源文件或可执行程序级资产，为实质性的最终代码生成和推理提供无损语料。\n109: \n110: #### 2.4.2 机制：全量展开与轨迹蒸馏\n111: * **L2 层（细节层）**：无限制容量的原始正文数据、代码或日志。默认状态下强制休眠，仅当 Agent 基于明确指令发出“深度阅读（Deep-read Signal）”调用后才推入上下文窗口。\n112: * **SKILL.md（技能文件）**：基于 Acontext 等框架的轨迹蒸馏管道，将过去数次复杂的排错循环提炼为纯文本的程序性记忆文件，跨离散会话热插拔复用。\n113: \n114: ### 2.5 流程：完整数据流时序图与控制流图\n115: \n116: Filesystem-like 的检索表现为高度自治的**目录递归检索（Directory Recursive Retrieval）**，强调可见的工具探索：\n117: \n118: #### 2.5.1 阶段流转\n119: * **Phase 1：意图分析与顶层检索（T0-T1）**。接收复杂指令，轻量级向量搜索引擎仅针对系统根目录的 L0 摘要元数据进行匹配，返回相关性排序。\n120: * **Phase 2：路径决策与 L1 下钻（T2-T3）**。LLM 依据 L0 得分决定下一步行动，调用原生工具（如 `navigate(path=\"viking://...\")`）请求展开。系统随即返回高分文件夹内部包含接口和文档说明的 L1 层概览。\n121: * **Phase 3：终端细节定位与 L2 全量加载（T4-T5）**。LLM 锁定最底层目标文件，显式调用文件读取工具（如 `read_l2_file`）。系统才在此刻将特定的庞大 L2 源文件挂载进窗口，完成精细推理或打补丁作业。\n122: \n123: ### 2.6 System Prompt 组装顺序\n124: \n125: 强调严格的空间拓扑感知和单源事实协议：\n126: 1. **第一级：核心身份与单源界限**。声明系统底层环境：“你运行在虚拟文件系统中，你的全部记忆映射为 .md 文本”。\n127: 2. **第二级：空间与拓扑快照 Schema**。挂载包含当前目录相对/绝对位置的视图。\n128: 3. **第三级：导航控制器件**。暴露特定的工具集合（如 `ls`, `search`, `expand`, `cat`）以及混合检索 API。\n129: 4. **第四级：按需挂载内容层**。由大模型自身前序步骤调用拉取进来的特定 L1 大纲或 L2 细节段落。\n130: 5. **第五级：工作区轨迹（Retrieval Trajectories）**。向大模型反馈刚刚经历的检索路径链路及近期的原始消息窗。\n131: \n132: ### 2.7 关键设计决策总结\n133: \n134: | 决策 | 核心理由 | 带来的代价/边界 |\n135: |------|---------|------|\n136: | **单源真相与影子索引（Shadow Index）** | 彻底摆脱向量数据库“被污染后无法修正”的黑盒灾难。如 memsearch 架构中，Markdown 为唯一的真相源（Source of Truth），Milvus 等向量库仅作为同步加速缓存（Shadow Index），人类可直接用文本编辑器干预 AI 的记忆。 | 极度依赖底层强悍的文件事件监控（File Watcher）和哈希对比（SHA-256）引擎，每次保存都会触发同步开销。 |\n137: | **L0-L2 渐进式递进加载（Tiered Loading）** | “不索求坚决不供给”。如 OpenViking 拒绝 RAG 一次性吞入万字切片，将输入 Token 成本极大削减（约降 83-91%），极大防范了幻觉注入。同理，memsearch 采取 Search -> Expand -> Transcript 三层渐进召回。 | 检索链路大幅加长，查询时延（Latency）增加，模型需经历多轮工具调用循环（Tool Calls）才能拿到所需内容。 |\n138: | **数据库级多版本并发控制（Memoria CoW）** | 在安全合规要求极高的企业中，使用 Copy-on-Write 技术为记忆打造“分支隔离沙盒”与毫秒级快照回滚，从底层根治恶意投毒（ASI06）与多 Agent 并发撕裂。 | 对底层基础存储库能力要求极其严苛（需原生具备分布式或 Git-like 事务能力如 MatrixOne）。 |\n139: \n140: ### 2.8 面向场景与解决的核心问题\n141: \n142: #### 场景一：深度的企业级代码审计与 SOP 沉淀\n143: * **问题**：处理拥有数万行代码的项目时，RAG 系统返回无序且碎片化的 Vector Chunks 会导致代码依赖关系错乱，且大模型由于试错而产生的经验难以复用。\n144: * **解决**：借助 AGFS 虚拟文件范式与“技能即记忆（Skill is Memory）”，保留完备的目录结构。通过离线轨迹蒸馏，将执行成功的 Debug 路径打包为独立的 `SKILL.md`，实现组织级能力的横向复制。\n145: \n146: #### 场景二：抵御“上下文投毒”与高危合规部署\n147: * **问题**：模型对长效记忆缺乏防备，一旦恶意提示词（Indirect Prompt Injection）被摄入向量黑洞，传统安全机制全面瘫痪，污染瞬间波及整个认知中枢。\n148: * **解决**：基于 Memoria 模式构筑“版本控制护城河”。创建零拷贝独立分支（Zero-copy Branching）进行假设性推演，若发生逻辑坍塌立刻废弃；遇到污染时强制时间点精准回滚（Point-in-Time Rollback），撤回至安全的基线快照。\n149: \n150: ### 2.9 对 AgentMem 创新方案的启示\n151: 1. **南向人类可读表层是必选项**：AgentMem 的控制面必须采用 Markdown-first 原则，为人类审计员与持续集成链路暴露透明的、可无缝干预的真相层，彻底抹除黑盒恐惧。\n152: 2. **实施 L2a-L2c 的降维控制（Progressive Disclosure）**：在 Token 与注意力资源极度昂贵的当下，AgentMem 必须摒弃 Top-K 全部填鸭式灌入，内化基于影子索引的递进式解锁协议（摘要 → 大纲 → 详情），实现以极低成本逼近全局认知。\n153: 3. **程序性记忆与安全治理必须是“一等公民”**：不能只关注闲聊画像，必须构建技能专属抽象层，并全面整合多版本并发控制（MVCC）、快照回滚和记忆溯源防线。\n154: \n155: \n156: ---\n157: \n158: ## 3. AgentMem 创新方案与架构\n159: \n160: AgentMem采用 **“文件为表，语义为里”**（Surface as File, Core as Semantic）的黄金法则，将文件系统的人类可观测与溯源纪律，和向量/图谱的高速联想完美融合。\n161: \n162: ### 3.1 关键场景\n163: 1. **重度代码编写与研发工作流（Coding & Dev Agents）**：要求对跨会话代码约束和排障 SOP 拥有绝对确定的回忆，以及人类专家对 AI 修改痕迹的强审核。\n164: 2. **高约束合规企业的“主权AI”管控（Sovereign Enterprise Copilots）**：金融医疗等场景对防污染渗透、审计链路溯源和毫秒级灾难恢复有着不可妥协的刚需。\n165: 3. **长期个性化伴生型与主动式智能体（Proactive Assistants）**：7x24 小时捕获多端噪声并重构深度认知图谱及动态心理侧写。\n166: 4. **大规模多智能体并发网络（Multi-Agent Dynamism）**：需要为集群提供支持命名空间隔离（Namespace）、强并发控制机制的共享全局状态总线。\n167: \n168: ### 3.2 现有技术瓶颈\n169: #### 3.2.1 vector-like 困境\n170: 虽然实现了高效跨会话召回，但存在严重的**黑盒化**与**记忆绑定（Memory Binding）缺失**问题。孤立的 Vector 切片无法形成因果逻辑；且\"追加式（Append-only）\"向量极易遭遇\"相似但已过期\"的**上下文污染（Context Poisoning）**，发生幻觉污染后极其难以在庞大的张量库中剔除旧事实。最新研究（如MAGMA、Aeon、**Graphiti**）指出，单模式向量存储缺乏对语义、时间、因果、实体等维度的正交解耦，导致检索策略难以适应不同查询意图。然而，纯粹的 Graph 架构（如 Graphiti）虽然解决了时间衰减，其图谱拓扑的无限膨胀和边生命周期的维护带来了难以逾越的计算负担；而 Mem0 的实体关系提取又高度绑定了底层大模型的能力上限，容易提取出大量无效或错误的冗余“三元组”。更关键的是，该范式完全忽视了程序性记忆（技能/SOP）的治理，仅偏向语义记忆（记事），导致Agent无法从经验中提炼可复用的确定性操作流程。\n171: \n172: #### 3.2.2 filesystem-like 困境\n173: 虽然重建了工程纪律和可读性，但对模型**工具调用的依赖过重（增加延迟）**，严重缺乏应对全局**隐性关联推演（Multi-hop Reasoning）**的能力，并且难以支撑高频、跨实体的动态关系同步更新。计算机架构视角的研究（2026年3月）进一步揭示，多智能体场景下该范式面临缓存共享和结构化内存访问控制两个关键协议缺口，共享内存范式虽易于知识复用但需要一致性支持，分布式范式提升隔离性和可扩展性但需要显式同步。此外，该阵营缺乏检索轨迹可视化能力，记忆系统仅输出结果不输出依据，透明度问题严重；且记忆遗忘机制缺位，导致存储无限增长。\n174: \n175: ### 3.3 问题挑战\n176: 1. **缺乏合理有效的评估方法**：单纯刷榜已失效（如某知名框架论文声称 93%，但独立复现远低于自报数据），系统必须能够应对真实环境的长程逻辑压测。更严重的是，当前所有 Token 效率指标均以\"全量上下文注入\"为稻草人基线，而非竞品横向对比；同时完全未纳入记忆系统自身的 LLM 消耗（提取、更新、去重、融合），导致报告\"节省率\"与实际\"净节省\"存在显著偏差。\n177: 2. **高价值资产（程序性记忆）蒸馏缺位**：目前多偏向语义记忆（记事），缺乏对\"技能文件\"的系统性管理，无法让Agent自动总结确定性的\"任务执行SOP\"。\n178: 3. **检索效率与成本矛盾**：Context Window依然昂贵，缺乏类似URI的层次化加载逻辑和索引增强机制，无法先提供目录和摘要，再由Agent按需加载详情。\n179: 4. **记忆透明度与知识回涌缺失**：记忆系统不应只输出结果，需提供Trace能力。此外，当图推理衍生出新关系/新知识时，这类\"机器推理产出\"与\"人类可读真相\"之间的关系尚无明确定义——即\"知识回涌（Knowledge Back-Flow）\"问题。\n180: 5. **企业级治理与并发防线溃散**：面对 ASI06 提示词恶意投毒（ASR 攻击成功率动辄 >80%），缺乏类似 Git 的版本化管理、回滚和审计机制，记忆无法像脚本/程序一样被修复。\n181: 6. **记忆遗忘机制与冷启动成本缺口**：缺乏记忆的安全遗忘、置信度衰减和策略化淘汰机制，导致存储无限增长且检索精度下降。同时，现有系统未区分热路径成本（写入/检索时的实时消耗）与冷路径成本（闲时后台处理的消耗），导致总成本核算失真。\n182: \n183: ### 3.4 创新方案\n184: \n185: #### 3.4.1 核心架构：L0-L4 递进式纵深认知拓扑 + L2.5 机器推理衍生层\n186: AgentMem 扬弃了平面的缓存设计，构建以**底层不可变事件，中层人类可读真相，上层机器时序图谱演算**为主轴的认知拓扑：\n187: * **L0 南向适配接口（Southbound Adapter Interface）**：与推理引擎（vLLM/SGLang）的 KV Cache 管理的集成边界。L0 本身不是 AgentMem 的内部组件，而是通过南向适配协议与推理框架协商\"哪些 KV 保留、哪些驱逐\"。MVP 阶段不做 L0，Phase 2 提供 vLLM/SGLang 插件，明确定义交互协议——请求级 KV 语义标签传递，而非直接读显存。该适配层为高写入、快衰减策略，超过14天的日志降低检索优先级，超过30天的移入冷存储，不是删除而是降权。\n188: * **L1 逻辑资产/文件真相层（File Truth & Skills）**：南向控制面。将复杂的意图降维挂载为类似 `cortex://` 虚拟协议的人类可读目录树与 `SKILL.md` 程序性资产文件，消除黑盒恐惧。借鉴MUSE框架和Agent Skills标准，该层包含三类记忆：战略记忆（Strategic Memory，宏观解决问题范式）、程序性记忆（Procedural Memory/SOPs，标准操作程序）、工具记忆（Tool Memory，特定工具使用说明）。每个Skill采用SKILL.md规范：主指令文件 + reference/*.md详细参考 + scripts/*工具脚本，采用渐进式披露（Progressive Disclosure）机制，实测Token消耗降低60%-80%。\n189: * **L2 混合路由索引层（Hybrid Index）**：北向加速阵列。构建基于 SHA-256 同步的\"影子索引\"，聚合 Dense+BM25+重排算法。强制执行 L2a（摘要，<100 tokens一句话摘要）$\\rightarrow$ L2b（大纲，<2000 tokens核心概览）$\\rightarrow$ L2c（详情，完整原始内容按需加载）渐进式卸载，用算力换取精度并暴降成本。借鉴TiMem五层级\"时间记忆树\"（TMT）和层次化记忆理论，支持类似URI的层次化加载逻辑：先提供目录和摘要，长路径支持向量索引增强，由Agent发起read_file指令后再加载详情。\n190: * **L2.5 机器推理衍生层（Derived Reasoning，新增）**：当图推理发现 A 和 C 通过 B 存在间接关联，或其他算法产生新知识时，这些衍生内容存储在独立区域（JSON 格式，存储于 SQLite 或 Neo4j），标记为 `source: derived` 而非 `source: authored`。检索时可用，但**永不回写 Markdown 真相层**。人类可通过专门工具（如 `mem show-derived`）查看，但与人类可编辑的内容物理分离。这解决了\"知识回涌（Knowledge Back-Flow）\"问题，保持了 Markdown-first 的单向同步纪律。\n191: * **L3 认知演算图谱层（Temporal Graph）**：借鉴 Graphiti 的双时态图谱与 Mem0 的多层级关系网络，引入双重时间边界（有效时间 `valid_at` 与发现时间 `invalid_at`）的关系网格，后台衍生智能体（Derivers）进行异步离线\"做梦\"处理事实冲突和置信度运算，达成记忆的时间绑定。整合AgentTrace框架，跨三层表面捕获丰富的结构化日志流：operational（操作层）、cognitive（认知层）、contextual（上下文层），提供检索轨迹可视化能力，向开发者/用户展示Agent究竟是基于哪一条\"过去的文件\"或\"关系\"做出决策。\n192: * **L4 全局统筹治理层（Governance & Safe Forgetting）**：多Agent 并发保护伞。基于原生 MVCC 数据库能力构建，执行零拷贝分支探路与高危数据隔离区（Quarantine）。借鉴Memoria\"Git for Memory\"可信记忆框架，提供：零拷贝分支（Zero-copy Branching）探路高风险逻辑、不可变快照（Immutable Snapshots）与精准回滚（Point-in-Time Rollback）、多版本并发控制（MVCC）化解数据撕裂。内置三个自治理工具：记忆治理（隔离低置信度、清理过期）、记忆整合（检测矛盾、修复一致性）、记忆反思（提炼高层洞察）。整合FadeMem生物学启发的遗忘机制，双层记忆层次结构中实现差异化衰减率，保留由自适应指数衰减函数调控，调制因子包括语义相关性、访问频率、时间模式，实现45%存储缩减。\n193: \n194: #### 3.4.2 关键技术1：程序性记忆治理与SOP自动蒸馏\n195: AgentMem是业界首个将程序性记忆作为\"一等公民\"的架构，借鉴MUSE框架\"Plan-Execute-Reflect-Memorize\"闭环学习：\n196: 1. **记忆解耦分类**：严格区分三类记忆资产：\n197:    - **战略记忆（Strategic Memory）**：元认知级别的原则，用于解决\"Dilemma\"（两难困境或高层决策），Key-Value对存储，任务初始化时加载指导全局规划。\n198:    - **程序性记忆（Procedural Memory/SOPs）**：标准操作程序，针对具体子任务的步骤（类似\"技能\"），采用SKILL.md规范，包含主指令、详细参考、工具脚本。\n199:    - **工具记忆（Tool Memory）**：对特定工具使用的微调说明（类似\"肌肉记忆\"）。\n200: 2. **SOP自动蒸馏流程**：任务完成后，Reflect Agent（反思智能体）从执行者的轨迹中提取确定的知识，确保存入记忆的信息具有高置信度。将SOP视为有向无环图（DAG），通过PlugMem的结构化、检索与推理子模块，将原始日志转化为可跨任务复用的决策资产。\n201: 3. **技能热插拔复用**：生成的SKILL.md程序性资产文件可跨离散会话热插拔复用，实测在TAC基准上以51.78%成功率超越Claude-3.5 Sonnet驱动的OpenHands。\n202: \n203: #### 3.4.3 关键技术2：分层递归检索、冷启动退化与向量索引增强\n204: 借鉴TiMem五层级\"时间记忆树\"（TMT）和层次化记忆理论，AgentMem实现业界领先的Token效率：\n205: 1. **L2a-L2c渐进式递进加载**（注：为与3.4.1节 L2 命名一致，原文档 L0/L1/L2 重命名为 L2a/L2b/L2c）：\n206:    - **L2a层（抽象层）**：针对每个知识块提供不足100 Token的核心微缩指纹，大模型首轮仅被允许加载此层扫描意图。\n207:    - **L2b层（目录层）**：当模型判断局部包含关联后释放，扩容至约2000 Token的结构化骨架，用于让模型规划下钻链路。\n208:    - **L2c层（细节层）**：无限制容量的原始正文数据、代码或日志。默认状态下强制休眠，仅当Agent基于明确指令发出\"深度阅读（Deep-read Signal）\"调用后才推入上下文窗口。\n209: 2. **复杂度感知调度器**：AgentMem内部置入CortexCore调度中心，针对简单意图自动匹配短链路L2a/L2b浅层检索（低开销），针对宏观研判任务才释放L3层的深层多跳图推理，完全实现了LLM亲和度的动态伸缩。借鉴TiMem实测数据，预期实现52%召回冗余减少，Token成本直降52%。\n210: 3. **🆕 冷启动退化模式（Cold Start Fallback）**：\n211:    - 在系统记忆条目数 < N（建议 N = 100，可配置）时，CortexCore 自动切换为确定性模式\n212:    - 确定性模式规则：纯时间衰减+频率评分（无需LLM）+ BM25+向量混合检索（无需图遍历/LLM路由）+ 纯字符串去重（无需LLM融合仲裁）\n213:    - 超过阈值后渐进切换到智能模式，避免\"记忆空虚时 LLM 决策缺乏锚点\"的冷启动悖论\n214: 4. **层次化记忆理论算子**：定义三个核心算子：Extraction（α，提取原子单元）、Coarsening（C=(π,ρ)，分组压缩）、Traversal（τ，预算下选择），确保在Token预算约束下最优检索。\n215: \n216: #### 3.4.4 关键技术3：检索轨迹可视化与透明度机制\n217: 整合AgentTrace框架（2026年2月AAAI 2026 LaMAS Workshop），解决记忆透明度问题：\n218: 1. **三层表面结构化日志**：在运行时以最小开销注入Agent，跨三层表面捕获丰富的结构化日志流：\n219:    - **Operational Surface（操作层）**：记录工具调用、文件读写、网络请求等具体操作。\n220:    - **Cognitive Surface（认知层）**：记录推理过程、决策依据、置信度变化。\n221:    - **Contextual Surface（上下文层）**：记录检索到的记忆项、使用的源文件、依赖的关系。\n222: 2. **行为轨迹可视化**：将Agent行为抽象为State→Observation→Thought→Action→Result→Next State的有向路径，提供完整的日志字段：timestamp、agent_id、step_id、state、observation、thought、action、action_input、result、latency_ms、success。\n223: 3. **Scene情境标注**：支持Scene（对话情境）标注区分不同任务背景，每条记忆均附带对话情境与元信息，降低跨背景混用与串场风险。\n224: 4. **LRAT轨迹学习**：从Agent轨迹中学习检索，通过系统性分析搜索Agent轨迹，识别关键行为信号（浏览动作、未浏览拒绝、浏览后推理轨迹），提升证据召回、端到端任务成功率和执行效率。\n225: \n226: #### 3.4.5 关键技术4：记忆治理/回滚/审计与版本控制\n227: 借鉴Memoria\"Git for Memory\"可信记忆框架（2026年3月NVIDIA GTC开源），实现记忆像脚本/程序一样被版本化管理、回滚和共享：\n228: 1. **Copy-on-Write底层技术**：基于MatrixOne的Copy-on-Write技术，提供三大核心能力：\n229:    - **零拷贝分支（Zero-copy Branching）**：探路型智能体在独立分支测试高风险逻辑，失败直接销毁，不影响主分支。\n230:    - **不可变快照（Immutable Snapshots）**：每一次突变生成不可变快照，污染时毫秒级回滚。\n231:    - **多版本并发控制（MVCC）**：MatrixOne底层MVCC引擎化解数据撕裂与竞态条件。\n232: 2. **三个自治理工具**：内置定期自动运行的自治理工具：\n233:    - **记忆治理**：隔离低置信度记忆，清理过期数据。\n234:    - **记忆整合**：检测矛盾信息，修复数据一致性。\n235:    - **记忆反思**：从记忆集群中综合提炼高层洞察。\n236: 3. **版本控制最佳实践**：版本标识与追踪（语义化版本SemVer或Git提交哈希）、增量存储与差异对比（仅存储增量变化，可视化对比）、分支与合并管理（实验性分支验证后合并）、回滚与恢复（快速回退到任意历史版本）、权限与审计（角色控制、操作日志）。\n237: 4. **MemoV会话级快照**：将一次完整AI对话压缩为一个清晰快照，包含原始提示词、AI完整响应、代码变更计划、修改文件列表，对标准.git仓库零污染。\n238: \n239: #### 3.4.6 关键技术5：安全遗忘、置信度衰减、核心路径最小化防御与冷/热路径成本分账\n240: 整合FadeMem生物学启发的遗忘机制（2026年1月arXiv:2601.18642），实现记忆的主动管理：\n241: 1. **生物学启发的遗忘曲线**：借鉴艾宾浩斯遗忘曲线（Ebbinghaus Curve），人类记忆新信息后遗忘速度\"先快后慢\"——20分钟遗忘42%，1小时遗忘56%，6小时遗忘66%，一天后不足30%。Robert W. Bjork修订版提出记忆不是丢失，而是从\"活跃\"到\"潜伏\"状态，满足条件仍可检索。\n242: 2. **自适应指数衰减函数**：双层记忆层次结构中实现差异化衰减率，保留由自适应指数衰减函数调控：S(t)=S₀×e^(-λt)，调制因子包括：\n243:    - **语义相关性**：与当前任务语义越相关，衰减越慢。\n244:    - **访问频率**：被频繁检索的记忆自动提升权重，衰减越慢。\n245:    - **时间模式**：近期记忆衰减较慢，远期记忆衰减较快。\n246: 3. **三层记忆架构实践**：\n247:    - **第一层：原始日志（高写入、快衰减）**：超过14天的日志降低检索优先级，超过30天的移入冷存储，不是删除而是降权。\n248:    - **第二层：工作记忆（中频率、中衰减）**：活跃时权重最高，项目完成后逐渐衰减。\n249:    - **第三层：核心记忆（低写入、几乎不衰减）**：需要人工策展，不是所有经历都值得进入长期记忆。\n250: 4. **ACT-R激活值框架**：每条记忆都有一个\"激活值\"，被检索时增强，不被调用时按半衰期衰减（约30天半衰期），足以让大多数噪声自然消亡，同时保留真正重要的东西。\n251: 5. **🆕 MINJA免疫效应**：MINJA研究（arXiv:2601.05504）证明，当系统已有预存合法记忆时，攻击效果大幅下降。这意味着**系统的免疫力随运行时间增长**——不必过度焦虑冷启动阶段的完美防御，系统自然积累的记忆本身即构成防御资源。\n252: 6. **社区最佳实践**：分层架构、判例式记忆（只记结论不记过程）、三条反直觉删除规则（删早不删晚、删多不删少、删具体不删抽象）。实测在Multi-Session Chat、LoCoMo、LTI-Bench上验证，实现45%存储缩减，同时保持优越的多跳推理和检索性能。\n253: 7. **🆕 核心路径最小化防御（3层而非7层）**：\n254:    基于 AgentPoison、eTAMP、MINJA 三类攻击模式分类，AgentMem 采用三级防御，总延迟影响 < 300ms：\n255: \n256:    | 层级 | 安全措施 | 延迟影响 | 覆盖攻击类型 | 建议启用时机 |\n257:    |------|---------|---------|------------|-------------|\n258:    | 入口校验（写入前） | 语义异常检测 + 来源可信度评分 | <200ms | 直接注入（AgentPoison/eTAMP） | MVP 即用 |\n259:    | 共享信任过滤 | 基于来源可信度的检索过滤 | <100ms | 多 Agent 传播 | Phase 2 |\n260:    | 版本回滚（事后恢复） | 异步 CoW 快照 + 精准时间点回滚 | ~0ms（异步） | 未知攻击的终极恢复（含时间延迟型潜伏） | MVP 即用 |\n261: \n262:    剩余的 1% 场景（对抗性样本逃逸检测、深度溯源链审计）留给 Phase 3 的企业模式。\n263: 8. **🆕 冷/热路径成本分账**：\n264:    - **热路径成本**（用户感知）：写入时 Agent 自分类标签（零额外 LLM 调用）+ 检索时的 BM25/向量/图查询\n265:    - **冷路径成本**（闲时后台）：CLS 系统巩固（L1→L3 归纳，需 LLM 调用但不在前台延迟内体现）+ 记忆融合去重 + 遗忘衰减计算\n266:    - 所有效率指标必须分别报告热/冷路径，否则无法在同类系统间进行公平比较\n267: \n268: ### 3.5 评测方法\n269: 1. **摒弃静态\"填鸭式\"基准 + 🆕 净 Token 效率报告**：直面百万级 Tokens 上下文堆叠无效的真实现状，引入 **LoCoMo** 压测 300+ 回合的长程因果时序一致性，以及 **LongMemEval** (包含知识更新与拒答机制 abstention) 精确测定演进能力。🆕 同时引入\"净 Token 效率\"指标：`净 Token 节省 = (全量基线 - 注入窗口) - 记忆系统自身LLM消耗`。所有效率指标必须分别报告热路径（写入/检索时）和冷路径（闲时后台处理），否则无法在同类系统间公平比较。\n270: 2. **🆕 基线修正**：不再以\"全量上下文注入\"为唯一基线（这是稻草人基线），增加\"相对竞品节省率\"——AgentMem 相对 mem0/OpenViking 节省了更多还是更少？\n271: 3. **🆕 SOTA 锚点修正**：LoCoMo 首期目标锚定在 TiMem 的 75.30%（论文级可验证数据），而非 EverMemOS/MemBrain 的 93%+（自建基准/自报数据）。\n272: 4. **专属安全防御靶场（CortexBench-Sec）**：独创性地导入涵盖 `AgentPoison` 与 `eTAMP`（环境指令注入）的攻击流基准，直击并量化记录新模型抗投毒存活率及受损恢复效率。\n273: \n274: ### 3.6 预期效果\n275: 基于最新研究成果的深度融合，AgentMem预期达成以下效果（按现实性分级）：\n276: 1. **成本截断与响应加速（可实现）**：依托 L2a-L2c 的降维卸载（Progressive Disclosure）与影子索引，结合TiMem实测数据，预期热路径输入 Token 消耗降低 **50% - 65%**（对标TiMem实测52.2%），实现52%召回冗余减少。冷路径成本（CLS巩固+融合去重）单独核算。常规事实问答 P95 时延目标 < 2秒（交互式硬门槛）。\n277: 2. **程序性记忆治理突破（预期，待验证）**：借鉴MUSE框架在TAC基准上51.78%成功率的表现，AgentMem通过SOP自动蒸馏和技能热插拔复用，预期任务完成率提升30%-45%，实现从\"静态推理\"向\"动态进化\"的转变。\n278: 3. **检索透明度与可解释性（可实现）**：整合AgentTrace框架的三层表面结构化日志，提供完整的检索轨迹可视化，解决记忆黑盒问题，开发者/用户可清晰看到Agent究竟是基于哪一条\"过去的文件\"或\"关系\"做出决策。\n279: 4. **记忆治理与回滚能力（可实现）**：基于Memoria的Git for Memory框架，支持零拷贝分支探路、不可变快照与精准回滚。🆕 投毒恢复成功率目标调整为 >90%（对标Memoria工程早期验证），内置三个自治理工具定期自动运行，实现记忆可修复。\n280: 5. **安全遗忘与存储优化（预期，待验证）**：整合FadeMem生物学启发的遗忘机制，预期实现35%-45%存储缩减，同时保持优越的多跳推理和检索性能；通过三层记忆架构实践和ACT-R激活值框架，在Multi-Session Chat、LoCoMo、LTI-Bench上验证有效性。\n281: 6. **企业合规可用性（预期，待验证）**：CortexBench-Sec 安全防御验证（AgentPoison + eTAMP 标准攻击）拦截率预期 >80%（🆕 修正：当前任何系统在该指标上均为 0%，>90% 无基线对标，>80% 为务实目标）；完整的审计链路溯源支持GDPR等合规要求。\n282: 7. **🆕 MINJA免疫效应验证**：系统在持续运行 7+ 天后，因预存合法记忆积累，预期对同类投毒攻击的免疫力自然提升 30%-50%（基于 MINJA 研究趋势推算）。\n283: 8. **长程事实与时序逻辑（分阶段验证）**：🆕 MVP 阶段目标 LoCoMo >75%（对标 TiMem 论文验证数据），Phase 2 目标 >85%（对标 MIRIX 85.4%），Phase 3 冲刺 90%+。彻底摆脱全量上下文导致的逻辑错位。\n284: \n285: ### 3.7 竞争优势对比\n286: 通过\"Five-Unique-Dimensions\"（五大维度）实施差异化定位，AgentMem在2026年技术格局中的竞争位势如下（🆕 标注修正项）：\n287: 1. **全认知栈纵深覆盖 + 🆕 主路径优先策略**：AgentMem 定义了从底层事件溯源（L0）到顶层治理（L4）的完整拓扑，并**新增 L2.5 机器推理衍生层**解决知识回涌问题。主报告强调\"唯一全覆盖\"，但需承认：全覆盖在工程上的价值只有在\"关键路径做深\"后才能体现。🆕 修正：MVP 阶段坚持 L1+L2+L3 三层，选择复杂度感知召回或零成本蒸馏中的一个做到极致，在 LoCoMo 上超越 TiMem（75.30%）后再纳入第二差异化功能。\n288: 2. **程序性记忆作为\"一等公民\"**：当下仅有MUSE、PlugMem等少数前沿系统触及程序性记忆，而AgentMem是业界首个将战略记忆、程序性记忆、工具记忆解耦并系统性治理的架构，采用SKILL.md规范和渐进式披露机制，实现技能热插拔复用，实测Token消耗降低60%-80%，任务完成率提升43%-49%。\n289: 3. **检索轨迹可视化与透明度**：整合AgentTrace框架的三层表面结构化日志（operational/cognitive/contextual），提供完整的检索轨迹可视化能力，解决记忆黑盒问题，这是Mem0、Letta等主流框架完全缺失的关键能力。新增 Cold Start Fallback 确保系统在记忆空虚时仍能提供可预测的退化行为。\n290: 4. **🆕 Git级记忆治理闭环（精简版）**：当下仅有前沿实验性系统（Memoria）触及回滚。AgentMem采用\"入口校验 + 共享信任过滤 + 版本回滚\"三级防御（非7层），覆盖 99% 的攻击场景，总延迟影响 < 300ms。内置记忆治理、记忆整合、记忆反思三个自治理工具定期自动运行。\n291: 5. **🆕 Markdown单源文件 + 影子索引 + 版本回滚 + 安全遗忘四位一体**：🆕 修正\"三位一体→四位一体\"（增加安全遗忘机制）。目前业界要么有 Markdown 无版本控制（如 memsearch），要么有底层版本控制却牺牲人类可视性（如 Medicina），要么完全缺乏遗忘机制（几乎所有现有系统）。AgentMem 是首个同时具备这四项的系统。**🆕 新增关键定义**：知识回涌（L2.5 衍生层）与 Markdown 真相层物理分离，保持单向同步纪律。\n292: \n293: ### 3.8 🆕 批判性自审与设计约束\n294: 本方案经对抗性分析后识别出以下结构性挑战，已在设计中纳入应对措施：\n295: \n296: | 挑战 | 风险等级 | 设计约束 |\n297: |------|---------|---------|\n298: | **L0 南向集成边界** | 中 | L0 定义为南向适配接口而非内部组件；MVP 阶段不做 L0；Phase 2 明确 vLLM/SGLang 插件交互协议 |\n299: | **关键路径稀释（非\"复杂度爆炸\"）** | 高 | MVP 阶段采用\"主路径优先\"策略：3层架构 + 1 个核心差异化功能，LoCoMo 达 75%+ 后再扩 |\n300: | **安全栈延迟排序** | 高 | 三级防御（入口校验 + 信任过滤 + 版本回滚）总延迟 < 300ms；7层安全分 MVP/Phase 2/Phase 3 渐进启用 |\n301: | **知识回涌（Knowledge Back-Flow）** | 高 | L2.5 衍生层（`source: derived`）与 Markdown 真相层永久物理分离，永不回写 |\n302: | **冷启动悖论** | 中 | CortexCore 在记忆条目 < N 时自动切换为确定性模式（纯规则引擎），N=100 可配置 |\n303: | **成本分账不透明** | 高 | 所有效率指标分别报告热路径（写入/检索时）和冷路径（闲时后台），禁止合并为单一\"节省率\" |\n304: | **基准天花板虚高** | 中 | LoCoMo 首期目标锚定 TiMem 75.30%（论文级可验证），而非自建基准 93%+ |\n\n(End of file - total 304 lines)\n</content>\n\n[Project README: /Users/wangxu/1-project/claude-books/AgentOS-Memory/fs-vector-graph/README.md]\n# fs-vector-graph\n\n本目录用于沉淀 `filesystem like agent memory` 与 `vector/graph like agent memory` 的专题研究结果。\n\n文件说明：\n\n- `report.md`\n  主报告。覆盖两大类的背景、技术方案、技术效果、优劣势、应用场景，以及对 Cortex-Mem 的借鉴。\n- `evidence-matrix.md`\n  逐系统证据矩阵。用于区分强证据、弱证据与是否进入主线结论。\n- `sources.md`\n  官方来源索引。汇总本轮研究使用的官方仓库、文档、论文和站点。\n\n阅读顺序建议：\n\n1. 先看 `report.md`\n2. 再用 `evidence-matrix.md` 检查证据强弱\n3. 最后在 `sources.md` 中追溯原始资料\n",
+            "metadata": {
+              "preview": "# Vector/Graph-like 与 Filesystem-like Agent Memory 研究，及 AgentMem 架构设计与技术方案\n\n##  1. Vector/Graph-like 研究洞察\n\n### 1.1 典型vector/graph-like Agent memory概述与核心场景\n\n**Vector/Graph-like Agent Memory** 阵营以 Mem0、Honcho、Graphiti/Zep、eion 等系统为典型代表。该范式的核心思想是将记忆抽象为中央化的、高度结构化与语义化的存储平面，利用高维向量（Embeddings）捕捉语义相似度，并结合知识图谱（Knowledge Graph）固化实体间的拓扑关系，以此模拟人类大脑的联想与神经突触网络。\n\n2025至2026年，该领域迎来了新一轮技术突破。**MAGMA**（2026年1月，arXiv:2601.03236）提出了多图智能体记忆架构，将每个记忆项在正交的语义、时间、因果和实体图中表示，通过策略引导的遍历实现查询自适应选择和结构化上下文构建，在LoCoMo和LongMemEval基准上超越现有SOTA。**Aeon**（2026年1月）则引入了高性能神经符号记忆管理，结合空间\"记忆宫殿\"索引和基于图的情景追踪，实现亚毫秒级检索延迟和可扩展的上下文感知召回。同期开源的**三层类人记忆架构**（如 **Graphiti/Zep** 引入的时间感知系统，2026年3月）进一步模拟人类认知过程：Level 1为EPISODES（情节子图 $G_e$，原始事件仓库，对应海马体），Level 2为ENTITIES（语义实体子图 $G_s$，结构化知识图谱，通过LLM自动消解实体），Level 3为COMMUNITIES（社区子图 $G_c$，高阶经验与聚类摘要，对应长期记忆）。更为核心的是，Graphiti 引入了**双时态模型（Bi-temporal Model）**，区分了事件发生时间（Event Time）与系统摄入时间（Ingestion Time），通过 `valid_at` 和 `invalid_at` 标记实现历史溯源。\n\n在产业落地层面，**Mem0 Graph Memory** 已成为工业标准配置，在向量存储基础上叠加图数据库，自动提取实体和关系（如works_with、reports_to）。Mem0 的核心特性包括**混合检索架构（Hybrid Vector + Graph Search）**，向量搜索缩小候选集而图搜索补充相关结构化上下文；此外，它原生支持**多层级记忆作用域（User, Session, Agent）**的隔离。产业基准数据显示，Mem0在生产环境实现约26%准确率提升与91%延迟降低（Token 消耗降低约90%）；Zep的Graphiti引擎则通过异步NLP流水线、时序知识图谱和混合检索构建完整记忆操作系统。\n\n**面向的核心场景**：\n1. **全天候个性化助手（Proactive Personal Assistants）**：针对 24/7 跨端运行的陪伴型助手，处理高度碎片化、非结构化且充满噪声的用户输入（如闲聊偏好），通过后台语义固化自动更新并构建深度用户心理画像。\n2. **多智能体动态工作流（Multi-Agent Dynamic Workflow）**：在包含 Planner、Executor 等多智能体并发调度的网络中，提供全局的\"共享认知黑板（Shared Blackboard）\"。通过数据库底层的事务保证，化解并发协作时的\"脑裂\"与数据脏读难题。\n\n**核心技术挑战与局限**：该范式仍面临\"向量雾霾\"（Vector haze）问题——密集向量索引缺乏显式结构，导致检索模糊；同时存在黑盒化难以审计、多智能体并发易产生状态不一致等固有缺陷。Graphiti 的图谱拓扑体积可能急剧膨胀，显著增加图遍历计算及维护生命周期的复杂度，而 Mem0 的实体提取深度依赖 LLM 的准确率。\n\n### 1.2 记忆系统整体架构\n",
+              "truncated": false,
+              "loaded": []
+            },
+            "title": "AgentOS-Memory/fs-vector-graph/report.md",
+            "time": {
+              "start": 1776929484450,
+              "end": 1776929484467
+            }
+          },
+          "id": "prt_db9402c470014H2ioucRpQZfL1",
+          "sessionID": "ses_246c06090ffep1Y3f4h9P9CGxg",
+          "messageID": "msg_db9401f11001MkX0PIACdjVfS6"
+        },
+        {
+          "type": "tool",
+          "tool": "read",
+          "callID": "call_f90ec575b40e49a6828db572",
+          "state": {
+            "status": "completed",
+            "input": {
+              "filePath": "/Users/wangxu/1-project/claude-books/AgentOS-Memory/fs-vector-graph"
+            },
+            "output": "<path>/Users/wangxu/1-project/claude-books/AgentOS-Memory/fs-vector-graph</path>\n<type>directory</type>\n<entries>\nevidence-matrix.md\nfindings.md\nprogress.md\nREADME.md\nreport_v1.md\nreport_v2.md\nreport_v3.md\nreport_v4.md\nreport_v5.md\nreport_v6.md\nreport_v7.md\nreport_v8.md\nreport_v9.md\nreport.md\nsources.md\ntask_plan.md\n\n(16 entries)\n</entries>\n[Category+Skill Reminder]\n\n**Built-in**: playwright, frontend-ui-ux, git-master, dev-browser, review-work, ai-slop-remover\n**⚡ YOUR SKILLS (PRIORITY)**: planning-with-files, web-access, typescript-advanced-types, find-skills, next-best-practices, requesting-code-review, frontend-design, receiving-code-review (+1 more)\n\n> User-installed skills OVERRIDE built-in defaults. ALWAYS prefer YOUR SKILLS when domain matches.\n\n```typescript\ntask(category=\"visual-engineering\", load_skills=[\"planning-with-files\"], run_in_background=true)\n```\n",
+            "metadata": {
+              "preview": "evidence-matrix.md\nfindings.md\nprogress.md\nREADME.md\nreport_v1.md\nreport_v2.md\nreport_v3.md\nreport_v4.md\nreport_v5.md\nreport_v6.md\nreport_v7.md\nreport_v8.md\nreport_v9.md\nreport.md\nsources.md\ntask_plan.md",
+              "truncated": false,
+              "loaded": []
+            },
+            "title": "AgentOS-Memory/fs-vector-graph",
+            "time": {
+              "start": 1776929485107,
+              "end": 1776929485116
+            }
+          },
+          "id": "prt_db9402fbf001dus1Z1Dah4FTxk",
+          "sessionID": "ses_246c06090ffep1Y3f4h9P9CGxg",
+          "messageID": "msg_db9401f11001MkX0PIACdjVfS6"
+        },
+        {
+          "type": "tool",
+          "tool": "glob",
+          "callID": "call_379537934e094923b8bc7e9a",
+          "state": {
+            "status": "completed",
+            "input": {
+              "pattern": "**/*.md",
+              "path": "/Users/wangxu/1-project/claude-books/AgentOS-Memory/fs-vector-graph"
+            },
+            "output": "Found 16 file(s)\n\n/Users/wangxu/1-project/claude-books/AgentOS-Memory/fs-vector-graph/report.md\n/Users/wangxu/1-project/claude-books/AgentOS-Memory/fs-vector-graph/progress.md\n/Users/wangxu/1-project/claude-books/AgentOS-Memory/fs-vector-graph/task_plan.md\n/Users/wangxu/1-project/claude-books/AgentOS-Memory/fs-vector-graph/findings.md\n/Users/wangxu/1-project/claude-books/AgentOS-Memory/fs-vector-graph/report_v1.md\n/Users/wangxu/1-project/claude-books/AgentOS-Memory/fs-vector-graph/report_v6.md\n/Users/wangxu/1-project/claude-books/AgentOS-Memory/fs-vector-graph/report_v9.md\n/Users/wangxu/1-project/claude-books/AgentOS-Memory/fs-vector-graph/report_v8.md\n/Users/wangxu/1-project/claude-books/AgentOS-Memory/fs-vector-graph/report_v7.md\n/Users/wangxu/1-project/claude-books/AgentOS-Memory/fs-vector-graph/report_v5.md\n/Users/wangxu/1-project/claude-books/AgentOS-Memory/fs-vector-graph/report_v4.md\n/Users/wangxu/1-project/claude-books/AgentOS-Memory/fs-vector-graph/sources.md\n/Users/wangxu/1-project/claude-books/AgentOS-Memory/fs-vector-graph/evidence-matrix.md\n/Users/wangxu/1-project/claude-books/AgentOS-Memory/fs-vector-graph/report_v3.md\n/Users/wangxu/1-project/claude-books/AgentOS-Memory/fs-vector-graph/report_v2.md\n/Users/wangxu/1-project/claude-books/AgentOS-Memory/fs-vector-graph/README.md\n[Agent Usage Reminder]\n\nYou called a search/fetch tool directly without leveraging specialized agents.\n\nRECOMMENDED: Use task with explore/librarian agents for better results:\n\n```\n// Parallel exploration - fire multiple agents simultaneously\ntask(subagent_type=\"explore\", load_skills=[], prompt=\"Find all files matching pattern X\")\ntask(subagent_type=\"explore\", load_skills=[], prompt=\"Search for implementation of Y\")\ntask(subagent_type=\"librarian\", load_skills=[], prompt=\"Lookup documentation for Z\")\n\n// Then continue your work while they run in background\n// System will notify you when each completes\n```\n\nWHY:\n- Agents can perform deeper, more thorough searches\n- Background tasks run in parallel, saving time\n- Specialized agents have domain expertise\n- Reduces context window usage in main session\n\nALWAYS prefer: Multiple parallel task calls > Direct tool calls\n",
+            "metadata": {
+              "truncated": false
+            },
+            "title": "",
+            "time": {
+              "start": 1776929486322,
+              "end": 1776929486340
+            }
+          },
+          "id": "prt_db9403244001utbIlhIiUvSoHd",
+          "sessionID": "ses_246c06090ffep1Y3f4h9P9CGxg",
+          "messageID": "msg_db9401f11001MkX0PIACdjVfS6"
+        },
+        {
+          "reason": "tool-calls",
+          "snapshot": "36ac0fba0efef6d2052dca9a50ed702c4db4c4b9",
+          "type": "step-finish",
+          "tokens": {
+            "total": 54547,
+            "input": 54374,
+            "output": 149,
+            "reasoning": 24,
+            "cache": {
+              "write": 0,
+              "read": 0
+            }
+          },
+          "cost": 0,
+          "id": "prt_db9403604002qh2Zwy0b9NdLv3",
+          "sessionID": "ses_246c06090ffep1Y3f4h9P9CGxg",
+          "messageID": "msg_db9401f11001MkX0PIACdjVfS6"
+        }
+      ]
+    },
+    {
+      "info": {
+        "parentID": "msg_db93fd37f001Z0p1IjhzjEpAky",
+        "role": "assistant",
+        "mode": "​Sisyphus - Ultraworker",
+        "agent": "​Sisyphus - Ultraworker",
+        "path": {
+          "cwd": "/Users/wangxu/1-project/claude-books/AgentOS-Memory/fs-vector-graph",
+          "root": "/Users/wangxu/1-project/claude-books"
+        },
+        "cost": 0,
+        "tokens": {
+          "total": 67806,
+          "input": 67615,
+          "output": 152,
+          "reasoning": 39,
+          "cache": {
+            "write": 0,
+            "read": 0
+          }
+        },
+        "modelID": "Qwen3.6-Plus",
+        "providerID": "volcengine-key1",
+        "time": {
+          "created": 1776929486404,
+          "completed": 1776929492472
+        },
+        "finish": "tool-calls",
+        "id": "msg_db9403644001K0AuLKYL8ZnKQM",
+        "sessionID": "ses_246c06090ffep1Y3f4h9P9CGxg"
+      },
+      "parts": [
+        {
+          "snapshot": "36ac0fba0efef6d2052dca9a50ed702c4db4c4b9",
+          "type": "step-start",
+          "id": "prt_db9404123001b0NYejGsE3ud38",
+          "sessionID": "ses_246c06090ffep1Y3f4h9P9CGxg",
+          "messageID": "msg_db9403644001K0AuLKYL8ZnKQM"
+        },
+        {
+          "type": "reasoning",
+          "text": "I need to read the evidence matrix and sources files, understand the full project context at the AgentOS-Memory level, and fire parallel librarian agents to verify claims in the report against actual implementations.",
+          "time": {
+            "start": 1776929489189,
+            "end": 1776929490388
+          },
+          "id": "prt_db9404125001Y8ZWMUBFSpvi4J",
+          "sessionID": "ses_246c06090ffep1Y3f4h9P9CGxg",
+          "messageID": "msg_db9403644001K0AuLKYL8ZnKQM"
+        },
+        {
+          "type": "text",
+          "text": "Now let me read the remaining important files and launch parallel research agents.\n\n",
+          "time": {
+            "start": 1776929490389,
+            "end": 1776929492410
+          },
+          "id": "prt_db94045d5001VrmaEUhIcmXhW8",
+          "sessionID": "ses_246c06090ffep1Y3f4h9P9CGxg",
+          "messageID": "msg_db9403644001K0AuLKYL8ZnKQM"
+        },
+        {
+          "type": "tool",
+          "tool": "read",
+          "callID": "call_736decf35d614ab898cf052c",
+          "state": {
+            "status": "completed",
+            "input": {
+              "filePath": "/Users/wangxu/1-project/claude-books/AgentOS-Memory/fs-vector-graph/evidence-matrix.md"
+            },
+            "output": "<path>/Users/wangxu/1-project/claude-books/AgentOS-Memory/fs-vector-graph/evidence-matrix.md</path>\n<type>file</type>\n<content>\n1: # Filesystem-like / Vector-Graph-like Agent Memory 证据矩阵\n2: \n3: > 说明：\n4: > - `类别` 按 `report_v3.md` 的主导接口划分\n5: > - `证据等级` 含义见主报告\n6: > - `主线结论` 表示该系统是否直接用于支撑报告的主结论\n7: > - 访问与核验时间：2026-04-15\n8: \n9: ## 主线系统\n10: \n11: | 系统 | 类别 | 一手来源 | 已核验的核心事实 | 公开量化 / 公开信号 | 证据等级 | 主线结论 | 备注 |\n12: |------|------|----------|------------------|---------------------|----------|----------|------|\n13: | OpenViking | Filesystem-like | 官方 GitHub README / 官方站点 | filesystem paradigm；`viking://`；L0/L1/L2；目录递归检索；retrieval trajectory；session self-iteration | README 给出相对 OpenClaw / LanceDB 的 completion 与 token 改善 | A | 是 | 量化为项目 README 官方口径，不做跨论文总排 |\n14: | memsearch | Filesystem-like | 官方 GitHub README / 官方文档 | Markdown source of truth；Milvus shadow index；dense + BM25 + RRF；`search -> expand -> transcript` | 4 个 coding-agent 平台；3 层 recall；Milvus Lite 单文件 | A | 是 | coding agent 场景证据最清晰 |\n15: | memU | Filesystem-like | 官方 GitHub README / 官方站点 | memory as file system；24/7 proactive agents；categories/items/resources/cross refs | one-click install `<3 min`；token 成本约 `~1/10` 为官方口径 | B | 是 | 方向鲜明，但量化主要来自官方自报 |\n16: | Acontext | Filesystem-like | 官方 GitHub README / 官方 docs | skill memory layer；task learnings -> skill files；Markdown skill files；progressive disclosure | 后台学习延迟与默认 agent loops 有官方文档说明 | A | 是 | 对“技能即记忆”定义最清晰 |\n17: | Voyager | Filesystem-like / Procedural | 原始论文 | executable code skill library；iterative prompting；long-horizon skill accumulation | 论文给出 `3.3x` 更多 unique items、`15.3x` 更快里程碑 | A | 是 | 程序性记忆的学术代表 |\n18: | lossless-claw | Filesystem-like / Compaction | 官方 GitHub README | SQLite 持久化；DAG summary；`lcm_grep` / `lcm_describe` / `lcm_expand`；保留原始消息可恢复 | 无统一 benchmark，但机制可核验 | B | 是 | 解决上下文压缩与可恢复展开，不是通用 memory 平台 |\n19: | Memoria | Filesystem-like / Governance | 官方 GitHub README / 官方站点 | Git for AI agent memory；snapshot/branch/merge/rollback；CoW；contradiction detection；quarantine；audit trail | 部署拓扑、版本语义、治理能力公开清晰 | A | 是 | 治理层代表 |\n20: | mem0 | Vector/Graph-like | 官方 docs / 官方 repo / 原始论文 / 官方 research page | universal self-improving memory layer；extract/consolidate/retrieve；graph-enhanced path | 论文与官方 research page 都有 benchmark；新研究页口径更激进但展示层次不完全一致 | A | 是 | 强生态样本；最新 benchmark 需显式标注官方口径 |\n21: | Honcho | Vector/Graph-like | 官方 GitHub README / 官方 docs / 官方 benchmark blog | entities/peers/sessions/representations；continual learning；entity state modeling | 官方 blog 自报 LongMem S 90.4、LoCoMo 89.9、BEAM 多档分数 | B | 是 | entity-aware memory 代表；benchmark 非论文主线 |\n22: | Graphiti / Zep | Vector/Graph-like | 官方 GitHub README / 官方 docs / 原始论文 | temporal knowledge graph；dynamic graph；time+full-text+semantic+graph retrieval | 论文给出 DMR 与 LongMemEval 结果 | A | 是 | 时序关系 memory 的强代表 |\n23: | eion | Vector/Graph-like | 官方 GitHub README / 官方站点 | shared memory storage；unified knowledge graph；PostgreSQL + pgvector + Neo4j；guest access | 架构参数和工具集公开，但无统一 benchmark | B | 是 | 多 agent + 权限模型表达清晰 |\n24: | ContextLoom | Vector/Graph-like | 官方 GitHub README | shared brain；Redis-first；memory from compute decoupling；cold-start hydration；cycle hash | 官方宣称 sub-millisecond retrieval | B | 是 | shared context plane 方向明确，产品成熟度仍较早 |\n25: | mem9 | Vector/Graph-like | 官方 GitHub README / 官方站点 | stateless plugin + central memory server；shared memory pool；TiDB hybrid retrieval；visual dashboard | 插件数量、memory tools、免费层规格公开 | B | 是 | coding-agent 协作与集中治理样本 |\n26: | UltraContext | Adjacent context infrastructure | 官方 docs / 官方站点 | Context API；history/fork/clone/edit；CLI + MCP；same context everywhere | 无统一 memory benchmark | B | 否 | 重要邻接基础设施；更像 context plane 而非完整长期 memory 系统 |\n27: | XiaoClaw | 生态包装层 | 官方站点 / 安装页 | 更像 OpenClaw 安装封装、API 产品层，不是独立 memory core | 无可靠官方 benchmark | X | 否 | 不进入主线技术结论 |\n28: \n29: ## 学术与方法论参照\n30: \n31: | 系统 / 论文 | 角色 | 一手来源 | 吸收的合理结论 | 证据等级 | 备注 |\n32: |-------------|------|----------|----------------|----------|------|\n33: | CoALA | 认知架构参照 | 原始论文 | memory 应按模块化认知架构理解，而非单库外挂 | A | 用于定义问题空间 |\n34: | MemGPT / Letta | 虚拟上下文管理参照 | 原始论文 / 官方 docs | memory tiers 与 context management 是核心视角 | A | 更偏调度与 OS-like framing |\n35: | LoCoMo | 基准参照 | 原始论文 / 项目页 | 长对话、多跳、时间、人物关系 benchmark | A | 不等于通用工程 memory 评测 |\n36: | LongMemEval | 基准参照 | 原始论文 | 信息抽取、多 session、时间、知识更新、abstention 很关键 | A | 对“长期 chat memory”定义更细 |\n37: | BEAM | 新一代基准参照 | 原始论文 | 百万 token 长时记忆评测开始成为 frontier | A | 更多用于判断评测趋势 |\n38: | TiMem | 时间层次化参照 | 原始论文 | 时间树式 consolidation 与 complexity-aware recall 值得借鉴 | A | 学术路线强，但产业化尚早 |\n39: | LiCoMemory | 轻量图参照 | 原始论文 | 图更适合作为导航与候选缩减层，而非总是重型 KG | A | 用于支持轻量结构化索引判断 |\n40: | MIRIX | 多类型编排参照 | 原始论文 | memory types orchestration 与 active retrieval 很重要 | A | 用于支持“memory orchestration”观点 |\n41: \n42: ## 证据使用原则\n43: \n44: ### 可以作为强支撑的结论\n45: \n46: - Filesystem-like 路线强调可读、可编辑、渐进式披露、程序性沉淀与治理能力\n47: - Vector/graph-like 路线强调 northbound memory plane、共享状态、实体关系和时序演化\n48: - `CortexMem` 适合做混合架构，而不是单路线押注\n49: - `lossless-claw` 已可作为 append-only + layered summaries 的工程样本\n50: \n51: ### 不能作为强支撑的结论\n52: \n53: - 把所有公开 benchmark 混成单一“总冠军榜”\n54: - 用官方 blog / research page 数字替代同行评审 benchmark\n55: - 把 `UltraContext` 当成已经成熟的长期 memory layer\n56: - 把 `XiaoClaw` 当成独立 memory core\n57: \n58: ## 本轮最关键的证据判断\n59: \n60: 1. `memsearch`、`Acontext`、`Memoria`、`lossless-claw` 共同说明 filesystem-like 路线不是“没有检索能力”，而是把检索放在真相层之下。\n61: 2. `mem0`、`Honcho`、`Graphiti`、`eion`、`mem9`、`ContextLoom` 共同说明 northbound memory plane 已经从“向量库外挂”推进到“共享状态 / 实体表示 / 时序图 / 后台 consolidation”。\n62: 3. `UltraContext` 很有价值，但更适合作为 context plane / context engineering 邻接基础设施，而不是直接作为成熟 memory 主线代表。\n63: 4. `XiaoClaw` 仍应保留在生态包装层，不应被误读为独立 memory architecture。\n\n(End of file - total 63 lines)\n</content>",
+            "metadata": {
+              "preview": "# Filesystem-like / Vector-Graph-like Agent Memory 证据矩阵\n\n> 说明：\n> - `类别` 按 `report_v3.md` 的主导接口划分\n> - `证据等级` 含义见主报告\n> - `主线结论` 表示该系统是否直接用于支撑报告的主结论\n> - 访问与核验时间：2026-04-15\n\n## 主线系统\n\n| 系统 | 类别 | 一手来源 | 已核验的核心事实 | 公开量化 / 公开信号 | 证据等级 | 主线结论 | 备注 |\n|------|------|----------|------------------|---------------------|----------|----------|------|\n| OpenViking | Filesystem-like | 官方 GitHub README / 官方站点 | filesystem paradigm；`viking://`；L0/L1/L2；目录递归检索；retrieval trajectory；session self-iteration | README 给出相对 OpenClaw / LanceDB 的 completion 与 token 改善 | A | 是 | 量化为项目 README 官方口径，不做跨论文总排 |\n| memsearch | Filesystem-like | 官方 GitHub README / 官方文档 | Markdown source of truth；Milvus shadow index；dense + BM25 + RRF；`search -> expand -> transcript` | 4 个 coding-agent 平台；3 层 recall；Milvus Lite 单文件 | A | 是 | coding agent 场景证据最清晰 |\n| memU | Filesystem-like | 官方 GitHub README / 官方站点 | memory as file system；24/7 proactive agents；categories/items/resources/cross refs | one-click install `<3 min`；token 成本约 `~1/10` 为官方口径 | B | 是 | 方向鲜明，但量化主要来自官方自报 |\n| Acontext | Filesystem-like | 官方 GitHub README / 官方 docs | skill memory layer；task learnings -> skill files；Markdown skill files；progressive disclosure | 后台学习延迟与默认 agent loops 有官方文档说明 | A | 是 | 对“技能即记忆”定义最清晰 |\n| Voyager | Filesystem-like / Procedural | 原始论文 | executable code skill library；iterative prompting；long-horizon skill accumulation | 论文给出 `3.3x` 更多 unique items、`15.3x` 更快里程碑 | A | 是 | 程序性记忆的学术代表 |\n| lossless-claw | Filesystem-like / Compaction | 官方 GitHub README | SQLite 持久化；DAG summary；`lcm_grep` / `lcm_describe` / `lcm_expand`；保留原始消息可恢复 | 无统一 benchmark，但机制可核验 | B | 是 | 解决上下文压缩与可恢复展开，不是通用 memory 平台 |\n| Memoria | Filesystem-like / Governance | 官方 GitHub README / 官方站点 | Git for AI agent memory；snapshot/branch/merge/rollback；CoW；contradiction detection；quarantine；audit trail | 部署拓扑、版本语义、治理能力公开清晰 | A | 是 | 治理层代表 |\n| mem0 | Vector/Graph-like | 官方 docs / 官方 repo / 原始论文 / 官方 research page | universal self-improving memory layer；extract/consolidate/retrieve；graph-enhanced path | 论文与官方 research page 都有 benchmark；新研究页口径更激进但展示层次不完全一致 | A | 是 | 强生态样本；最新 benchmark 需显式标注官方口径 |",
+              "truncated": false,
+              "loaded": []
+            },
+            "title": "AgentOS-Memory/fs-vector-graph/evidence-matrix.md",
+            "time": {
+              "start": 1776929490825,
+              "end": 1776929490831
+            }
+          },
+          "id": "prt_db94045d6001OStmr0Qn5VK61w",
+          "sessionID": "ses_246c06090ffep1Y3f4h9P9CGxg",
+          "messageID": "msg_db9403644001K0AuLKYL8ZnKQM"
+        },
+        {
+          "type": "tool",
+          "tool": "read",
+          "callID": "call_e05dac6ee4c342dc89897d7e",
+          "state": {
+            "status": "completed",
+            "input": {
+              "filePath": "/Users/wangxu/1-project/claude-books/AgentOS-Memory/fs-vector-graph/sources.md"
+            },
+            "output": "<path>/Users/wangxu/1-project/claude-books/AgentOS-Memory/fs-vector-graph/sources.md</path>\n<type>file</type>\n<content>\n1: # Filesystem-like / Vector-Graph-like Agent Memory 来源索引\n2: \n3: > 访问与核验时间：2026-04-15\n4: >\n5: > 使用原则：\n6: > - 优先采用官方仓库、官方文档、原始论文、官方 benchmark / research page\n7: > - 新闻稿、二手综述、社区复述只用于发现线索，不用于支撑主结论\n8: > - 若同一系统同时存在论文口径与产品页口径，报告中会明确区分\n9: \n10: ---\n11: \n12: ## Filesystem-like Agent Memory\n13: \n14: ### OpenViking\n15: \n16: - 官方仓库：<https://github.com/volcengine/OpenViking>\n17: - 官方站点：<https://www.openviking.ai/>\n18: \n19: 本轮主要使用内容：\n20: \n21: - context database for AI agents\n22: - filesystem paradigm\n23: - `viking://` context filesystem\n24: - L0/L1/L2 tiered context delivery\n25: - directory recursive retrieval\n26: - retrieval trajectory\n27: - 相对 OpenClaw / LanceDB 的 README benchmark 口径\n28: \n29: ### memsearch\n30: \n31: - 官方仓库：<https://github.com/zilliztech/memsearch>\n32: - 官方文档：<https://zilliztech.github.io/memsearch/>\n33: \n34: 本轮主要使用内容：\n35: \n36: - Markdown source of truth\n37: - Milvus shadow index\n38: - dense + BM25 + RRF\n39: - `search -> expand -> transcript`\n40: - Claude Code / OpenClaw / OpenCode / Codex CLI 插件形态\n41: \n42: ### memU\n43: \n44: - 官方仓库：<https://github.com/NevaMind-AI/memU>\n45: - 官方站点：<https://memu.pro/>\n46: \n47: 本轮主要使用内容：\n48: \n49: - memory for 24/7 proactive agents\n50: - memory as file system\n51: - categories / items / resources / cross references\n52: - smaller context / proactive memory lifecycle\n53: - token cost 官方口径\n54: \n55: ### Acontext\n56: \n57: - 官方仓库：<https://github.com/memodb-io/Acontext>\n58: - 官方文档：<https://docs.acontext.io/>\n59: - 官方站点：<https://acontext.io/>\n60: \n61: 本轮主要使用内容：\n62: \n63: - skill memory layer\n64: - task learnings -> skill files\n65: - Markdown skill files\n66: - `get_skill` / `get_skill_file`\n67: - no embeddings / no top-k retrieval as primary interface\n68: \n69: ### Voyager\n70: \n71: - 原始论文：<https://arxiv.org/abs/2305.16291>\n72: \n73: 本轮主要使用内容：\n74: \n75: - ever-growing skill library\n76: - executable code as procedural memory\n77: - long-horizon autonomous skill accumulation\n78: \n79: ### Memoria\n80: \n81: - 官方仓库：<https://github.com/matrixorigin/Memoria>\n82: - 官方站点：<https://thememoria.ai/>\n83: \n84: 本轮主要使用内容：\n85: \n86: - Git for AI agent memory\n87: - snapshot / branch / merge / rollback\n88: - Copy-on-Write\n89: - contradiction detection\n90: - low-confidence quarantine\n91: - audit trail / provenance chain\n92: \n93: ### lossless-claw\n94: \n95: - 官方仓库：<https://github.com/Martian-Engineering/lossless-claw>\n96: \n97: 本轮主要使用内容：\n98: \n99: - Lossless Context Management plugin for OpenClaw\n100: - SQLite persistence\n101: - DAG summary layers\n102: - `lcm_grep` / `lcm_describe` / `lcm_expand`\n103: - append-only raw messages + recoverable expansion\n104: \n105: ### XiaoClaw\n106: \n107: - 官方站点：<https://xiaoclaw.com/>\n108: - 安装与产品页：<https://www.xiaoclaw.xyz/>\n109: \n110: 本轮主要使用内容：\n111: \n112: - 仅用于判断其更像 OpenClaw 的产品包装 / 一键安装层\n113: - 不将其作为独立 memory architecture 代表\n114: \n115: ---\n116: \n117: ## Vector/Graph-like Agent Memory\n118: \n119: ### mem0\n120: \n121: - 官方文档：<https://docs.mem0.ai/introduction>\n122: - 官方仓库：<https://github.com/mem0ai/mem0>\n123: - 原始论文：<https://arxiv.org/abs/2504.19413>\n124: - 官方研究页：<https://mem0.ai/research>\n125: - 官方研究页（新算法展示）：<https://mem0.ai/research-2>\n126: \n127: 本轮主要使用内容：\n128: \n129: - universal, self-improving memory layer\n130: - extract / consolidate / retrieve\n131: - graph-enhanced memory path\n132: - 论文 benchmark 口径\n133: - 2026 官方研究页 benchmark 口径及其展示层次差异\n134: \n135: ### Honcho\n136: \n137: - 官方仓库：<https://github.com/plastic-labs/honcho>\n138: - 官方文档：<https://docs.honcho.dev/>\n139: - 官方 benchmark blog：<https://blog.plasticlabs.ai/research/Benchmarking-Honcho>\n140: \n141: 本轮主要使用内容：\n142: \n143: - entities / peers / sessions / contexts / representations\n144: - continual learning over changing entities\n145: - dream / representation update\n146: - LongMem S / LoCoMo / BEAM 的官方 blog 口径\n147: \n148: ### Graphiti / Zep\n149: \n150: - 官方仓库：<https://github.com/getzep/graphiti>\n151: - 官方文档：<https://help.getzep.com/graphiti/getting-started/overview>\n152: - 原始论文：<https://arxiv.org/abs/2501.13956>\n153: \n154: 本轮主要使用内容：\n155: \n156: - temporal knowledge graph\n157: - dynamic graph construction over evolving data\n158: - time + full-text + semantic + graph retrieval\n159: - DMR / LongMemEval 论文口径\n160: \n161: ### eion\n162: \n163: - 官方仓库：<https://github.com/eiondb/eion>\n164: - 官方站点：<https://www.eiondb.com/>\n165: \n166: 本轮主要使用内容：\n167: \n168: - shared memory storage for multi-agent systems\n169: - unified knowledge graph\n170: - PostgreSQL + pgvector + Neo4j\n171: - sequential / concurrent / guest access\n172: \n173: ### ContextLoom\n174: \n175: - 官方仓库：<https://github.com/danielckv/ContextLoom>\n176: \n177: 本轮主要使用内容：\n178: \n179: - shared brain for multi-agent systems\n180: - Redis-first shared context state\n181: - decoupled memory / compute\n182: - cold-start hydration\n183: - communication cycle / cycle hash\n184: \n185: ### mem9\n186: \n187: - 官方仓库：<https://github.com/mem9-ai/mem9>\n188: - 官方站点：<https://mem9.ai/>\n189: \n190: 本轮主要使用内容：\n191: \n192: - persistent memory across sessions and machines\n193: - stateless plugin + central memory server\n194: - shared memory pool\n195: - TiDB hybrid retrieval\n196: - visual dashboard / access control\n197: \n198: ### UltraContext\n199: \n200: - 官方文档：<https://ultracontext.ai/docs>\n201: - 官方站点：<https://ultracontext.ai/>\n202: \n203: 本轮主要使用内容：\n204: \n205: - Context API\n206: - realtime capture of every agent's context\n207: - history / fork / clone / edit contexts\n208: - CLI + MCP server\n209: - “same context, everywhere” 的上下文平面定位\n210: \n211: ---\n212: \n213: ## 学术界关键参照\n214: \n215: ### 架构与问题定义\n216: \n217: - CoALA：<https://arxiv.org/abs/2309.02427>\n218: - MemGPT：<https://arxiv.org/abs/2310.08560>\n219: - Letta docs：<https://docs.letta.com/>\n220: \n221: 本轮主要使用内容：\n222: \n223: - 模块化 agent memory 视角\n224: - 虚拟上下文 / memory tiers 视角\n225: \n226: ### Benchmark\n227: \n228: - LoCoMo：<https://arxiv.org/abs/2402.17753>\n229: - LoCoMo 项目页：<https://snap-research.github.io/locomo/>\n230: - LongMemEval：<https://arxiv.org/abs/2410.10813>\n231: - BEAM：<https://arxiv.org/abs/2510.27246>\n232: \n233: 本轮主要使用内容：\n234: \n235: - 长期对话 recall\n236: - 时间推理\n237: - 多 session 推理\n238: - knowledge update / abstention\n239: - 百万 token 级 benchmark 方向\n240: \n241: ### 结构化与多类型记忆\n242: \n243: - TiMem：<https://arxiv.org/abs/2601.02845>\n244: - LiCoMemory：<https://arxiv.org/abs/2511.01448>\n245: - MIRIX：<https://arxiv.org/abs/2507.07957>\n246: \n247: 本轮主要使用内容：\n248: \n249: - 时间层次化 consolidation\n250: - 轻量图式导航\n251: - multi-type memory orchestration\n252: \n253: ---\n254: \n255: ## 说明\n256: \n257: - `report_v3.md` 中的 SOTA 判断，默认只代表 2026-04-15 前公开材料中的强信号。\n258: - 如果某条 benchmark 来自官方 blog / README / research page，而不是同行评审论文或公开可复核 benchmark 页面，会在正文中明确标为“官方口径 / 自报”。\n259: - `xiaoclaw` 不进入主线结论；`UltraContext` 作为 memory 邻接基础设施看待；`lossless-claw` 由于已有稳定官方仓库与机制说明，本轮升级为可核验样本。\n\n(End of file - total 259 lines)\n</content>",
+            "metadata": {
+              "preview": "# Filesystem-like / Vector-Graph-like Agent Memory 来源索引\n\n> 访问与核验时间：2026-04-15\n>\n> 使用原则：\n> - 优先采用官方仓库、官方文档、原始论文、官方 benchmark / research page\n> - 新闻稿、二手综述、社区复述只用于发现线索，不用于支撑主结论\n> - 若同一系统同时存在论文口径与产品页口径，报告中会明确区分\n\n---\n\n## Filesystem-like Agent Memory\n\n### OpenViking\n\n- 官方仓库：<https://github.com/volcengine/OpenViking>\n- 官方站点：<https://www.openviking.ai/>\n\n本轮主要使用内容：\n",
+              "truncated": false,
+              "loaded": []
+            },
+            "title": "AgentOS-Memory/fs-vector-graph/sources.md",
+            "time": {
+              "start": 1776929491689,
+              "end": 1776929491703
+            }
+          },
+          "id": "prt_db940480c001GhiK3SVANDCwUy",
+          "sessionID": "ses_246c06090ffep1Y3f4h9P9CGxg",
+          "messageID": "msg_db9403644001K0AuLKYL8ZnKQM"
+        },
+        {
+          "type": "tool",
+          "tool": "read",
+          "callID": "call_f5f4b318508f438f99cf7c4b",
+          "state": {
+            "status": "completed",
+            "input": {
+              "filePath": "/Users/wangxu/1-project/claude-books/AgentOS-Memory"
+            },
+            "output": "<path>/Users/wangxu/1-project/claude-books/AgentOS-Memory</path>\n<type>directory</type>\n<entries>\nagent_memory_system_insight_report_review_v1.md\nagent_memory_system_insight_report_review_v2.md\nagent_memory_system_insight_report_review_v3.md\nagent_memory_system_insight_report_review_v4.md\nagent_memory_system_insight_report_review_v5.md\nagent_memory_system_insight_report_v0.1.md\nagent_memory_system_insight_report_v0.2.md\nagent_memory_system_insight_report.md\nAGENTS.md\nfindings.md\nfs-vector-graph/\nprogress.md\ntask_plan.md\n\n(13 entries)\n</entries>",
+            "metadata": {
+              "preview": "agent_memory_system_insight_report_review_v1.md\nagent_memory_system_insight_report_review_v2.md\nagent_memory_system_insight_report_review_v3.md\nagent_memory_system_insight_report_review_v4.md\nagent_memory_system_insight_report_review_v5.md\nagent_memory_system_insight_report_v0.1.md\nagent_memory_system_insight_report_v0.2.md\nagent_memory_system_insight_report.md\nAGENTS.md\nfindings.md\nfs-vector-graph/\nprogress.md\ntask_plan.md",
+              "truncated": false,
+              "loaded": []
+            },
+            "title": "AgentOS-Memory",
+            "time": {
+              "start": 1776929492363,
+              "end": 1776929492371
+            }
+          },
+          "id": "prt_db9404b84001W63H0OlKfgtoFJ",
+          "sessionID": "ses_246c06090ffep1Y3f4h9P9CGxg",
+          "messageID": "msg_db9403644001K0AuLKYL8ZnKQM"
+        },
+        {
+          "reason": "tool-calls",
+          "snapshot": "36ac0fba0efef6d2052dca9a50ed702c4db4c4b9",
+          "type": "step-finish",
+          "tokens": {
+            "total": 67806,
+            "input": 67615,
+            "output": 152,
+            "reasoning": 39,
+            "cache": {
+              "write": 0,
+              "read": 0
+            }
+          },
+          "cost": 0,
+          "id": "prt_db9404dbb001sWLULzOHJkNrQo",
+          "sessionID": "ses_246c06090ffep1Y3f4h9P9CGxg",
+          "messageID": "msg_db9403644001K0AuLKYL8ZnKQM"
+        }
+      ]
+    },
+    {
+      "info": {
+        "parentID": "msg_db93fd37f001Z0p1IjhzjEpAky",
+        "role": "assistant",
+        "mode": "​Sisyphus - Ultraworker",
+        "agent": "​Sisyphus - Ultraworker",
+        "path": {
+          "cwd": "/Users/wangxu/1-project/claude-books/AgentOS-Memory/fs-vector-graph",
+          "root": "/Users/wangxu/1-project/claude-books"
+        },
+        "cost": 0,
+        "tokens": {
+          "total": 73644,
+          "input": 73202,
+          "output": 400,
+          "reasoning": 42,
+          "cache": {
+            "write": 0,
+            "read": 0
+          }
+        },
+        "modelID": "Qwen3.6-Plus",
+        "providerID": "volcengine-key1",
+        "time": {
+          "created": 1776929492474,
+          "completed": 1776929502171
+        },
+        "finish": "tool-calls",
+        "id": "msg_db9404dfa001r39Kj4QsUkVAta",
+        "sessionID": "ses_246c06090ffep1Y3f4h9P9CGxg"
+      },
+      "parts": [
+        {
+          "snapshot": "36ac0fba0efef6d2052dca9a50ed702c4db4c4b9",
+          "type": "step-start",
+          "id": "prt_db9405487001oE8C0Ed1rXIx4Z",
+          "sessionID": "ses_246c06090ffep1Y3f4h9P9CGxg",
+          "messageID": "msg_db9404dfa001r39Kj4QsUkVAta"
+        },
+        {
+          "type": "reasoning",
+          "text": "Now I need to launch parallel research agents: a librarian to verify latest developments of systems mentioned in report.md, and explore agents to find patterns across the project's multiple report iterations and synthesize critical analysis perspectives.",
+          "time": {
+            "start": 1776929494152,
+            "end": 1776929495187
+          },
+          "id": "prt_db9405488001tX0jqzP5ScLm3Q",
+          "sessionID": "ses_246c06090ffep1Y3f4h9P9CGxg",
+          "messageID": "msg_db9404dfa001r39Kj4QsUkVAta"
+        },
+        {
+          "type": "text",
+          "text": "Now let me fire parallel research agents to deepen the critical analysis.\n\n",
+          "time": {
+            "start": 1776929495189,
+            "end": 1776929502033
+          },
+          "id": "prt_db9405895001fwyIy1oQqkLYmN",
+          "sessionID": "ses_246c06090ffep1Y3f4h9P9CGxg",
+          "messageID": "msg_db9404dfa001r39Kj4QsUkVAta"
+        },
+        {
+          "type": "tool",
+          "tool": "task",
+          "callID": "call_97ae73373db442fe93628505",
+          "state": {
+            "status": "completed",
+            "input": {
+              "load_skills": [],
+              "prompt": "[CONTEXT]: I'm conducting critical research on agent memory systems. The parent report (report.md) makes many claims about systems like MemBrain (feeling.ai), Mem0, Graphiti, OpenViking, memsearch, Memoria, etc. I need to verify these claims against actual source material.\n\n[GOAL]: Verify the accuracy of benchmark claims, performance numbers, and technical descriptions in the existing report. Identify any inflated claims, self-reported data without independent verification, or mischaracterizations.\n\n[DOWNSTREAM]: I'll use this to flag which parts of the report are well-supported vs. which are based on marketing/self-reported data.\n\n[REQUEST]: \n1. Search for the actual LoCoMo, LongMemEval benchmark papers and their methodology. What are the reproducible baselines?\n2. Look up MemBrain (feeling.ai) claims - are their 93.25% LoCoMo results independently verified or self-reported?\n3. Check Graphiti/Zep's actual paper (arXiv:2501.13956) for real benchmark numbers vs. what marketing pages claim.\n4. Find any independent reviews, critiques, or reproducibility studies of these agent memory systems.\n5. Specifically look for: discrepancies between paper claims and product marketing, benchmark gaming strategies, or community critiques.\n\nReturn: A list of VERIFIED vs SELF-REPORTED claims for each system, with links to actual sources.",
+              "description": "Verify agent memory claims",
+              "run_in_background": true,
+              "subagent_type": "librarian"
+            },
+            "output": "Background task launched.\n\nBackground Task ID: bg_e06814ef\nDescription: Verify agent memory claims\nAgent: librarian\nStatus: pending\n\nSystem notifies on completion. Use `background_output` with task_id=\"bg_e06814ef\" to check.\n\nDo NOT call background_output now. Wait for <system-reminder> notification first.\n\n<task_metadata>\nsession_id: ses_246bf8cc4ffeaTHY7hZjQcIEsG\ntask_id: bg_e06814ef\nbackground_task_id: bg_e06814ef\n</task_metadata>\n\nto continue: task(session_id=\"ses_246bf8cc4ffeaTHY7hZjQcIEsG\", load_skills=[], run_in_background=false, prompt=\"...\")",
+            "metadata": {
+              "truncated": false,
+              "prompt": "[CONTEXT]: I'm conducting critical research on agent memory systems. The parent report (report.md) makes many claims about systems like MemBrain (feeling.ai), Mem0, Graphiti, OpenViking, memsearch, Memoria, etc. I need to verify these claims against actual source material.\n\n[GOAL]: Verify the accuracy of benchmark claims, performance numbers, and technical descriptions in the existing report. Identify any inflated claims, self-reported data without independent verification, or mischaracterizations.\n\n[DOWNSTREAM]: I'll use this to flag which parts of the report are well-supported vs. which are based on marketing/self-reported data.\n\n[REQUEST]: \n1. Search for the actual LoCoMo, LongMemEval benchmark papers and their methodology. What are the reproducible baselines?\n2. Look up MemBrain (feeling.ai) claims - are their 93.25% LoCoMo results independently verified or self-reported?\n3. Check Graphiti/Zep's actual paper (arXiv:2501.13956) for real benchmark numbers vs. what marketing pages claim.\n4. Find any independent reviews, critiques, or reproducibility studies of these agent memory systems.\n5. Specifically look for: discrepancies between paper claims and product marketing, benchmark gaming strategies, or community critiques.\n\nReturn: A list of VERIFIED vs SELF-REPORTED claims for each system, with links to actual sources.",
+              "agent": "librarian",
+              "load_skills": [],
+              "description": "Verify agent memory claims",
+              "run_in_background": true,
+              "sessionId": "ses_246bf8cc4ffeaTHY7hZjQcIEsG",
+              "model": {
+                "providerID": "github-copilot",
+                "modelID": "claude-haiku-4.5"
+              }
+            },
+            "title": "Verify agent memory claims",
+            "time": {
+              "start": 1776929501979,
+              "end": 1776929502114
+            }
+          },
+          "id": "prt_db940592b001AdIgmXNrSCfc3d",
+          "sessionID": "ses_246c06090ffep1Y3f4h9P9CGxg",
+          "messageID": "msg_db9404dfa001r39Kj4QsUkVAta"
+        },
+        {
+          "reason": "tool-calls",
+          "snapshot": "36ac0fba0efef6d2052dca9a50ed702c4db4c4b9",
+          "type": "step-finish",
+          "tokens": {
+            "total": 73644,
+            "input": 73202,
+            "output": 400,
+            "reasoning": 42,
+            "cache": {
+              "write": 0,
+              "read": 0
+            }
+          },
+          "cost": 0,
+          "id": "prt_db94073a3001xWBasvc0Jh409Q",
+          "sessionID": "ses_246c06090ffep1Y3f4h9P9CGxg",
+          "messageID": "msg_db9404dfa001r39Kj4QsUkVAta"
+        }
+      ]
+    },
+    {
+      "info": {
+        "parentID": "msg_db93fd37f001Z0p1IjhzjEpAky",
+        "role": "assistant",
+        "mode": "​Sisyphus - Ultraworker",
+        "agent": "​Sisyphus - Ultraworker",
+        "path": {
+          "cwd": "/Users/wangxu/1-project/claude-books/AgentOS-Memory/fs-vector-graph",
+          "root": "/Users/wangxu/1-project/claude-books"
+        },
+        "cost": 0,
+        "tokens": {
+          "input": 0,
+          "output": 0,
+          "reasoning": 0,
+          "cache": {
+            "read": 0,
+            "write": 0
+          }
+        },
+        "modelID": "Qwen3.6-Plus",
+        "providerID": "volcengine-key1",
+        "time": {
+          "created": 1776929502172,
+          "completed": 1776929506887
+        },
+        "error": {
+          "name": "MessageAbortedError",
+          "data": {
+            "message": "Aborted"
+          }
+        },
+        "id": "msg_db94073dc001JzjnS8r5jLfzuO",
+        "sessionID": "ses_246c06090ffep1Y3f4h9P9CGxg"
+      },
+      "parts": [
+        {
+          "snapshot": "36ac0fba0efef6d2052dca9a50ed702c4db4c4b9",
+          "type": "step-start",
+          "id": "prt_db9407cc2001zsRkqJWzv9Cifc",
+          "sessionID": "ses_246c06090ffep1Y3f4h9P9CGxg",
+          "messageID": "msg_db94073dc001JzjnS8r5jLfzuO"
+        },
+        {
+          "type": "reasoning",
+          "text": "Now launching parallel librarian agent to research fundamental conceptual gaps and paradigm tensions in agent memory systems for deeper critical analysis.\n",
+          "time": {
+            "start": 1776929504452,
+            "end": 1776929504942
+          },
+          "id": "prt_db9407cc40012hg2UNf63N5obg",
+          "sessionID": "ses_246c06090ffep1Y3f4h9P9CGxg",
+          "messageID": "msg_db94073dc001JzjnS8r5jLfzuO"
+        },
+        {
+          "type": "tool",
+          "tool": "task",
+          "callID": "call_b175a9b3b1ff48c8b7b80fac",
+          "state": {
+            "status": "error",
+            "input": {},
+            "raw": "",
+            "error": "Tool execution aborted",
+            "metadata": {
+              "interrupted": true
+            },
+            "time": {
+              "start": 1776929506887,
+              "end": 1776929506887
+            }
+          },
+          "id": "prt_db9407eb000160zjJWknLyeuT0",
+          "sessionID": "ses_246c06090ffep1Y3f4h9P9CGxg",
+          "messageID": "msg_db94073dc001JzjnS8r5jLfzuO"
+        }
+      ]
+    }
+  ]
+}
