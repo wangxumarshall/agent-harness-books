@@ -1,0 +1,171 @@
+深度结合学术界和产业界实践（如github高star项目）研究agent memory，理解report.md提到的agentment方案，提出批判性研究
+
+---
+
+<system-reminder>
+[BACKGROUND TASK COMPLETED]
+**ID:** `bg_bdb18106`
+**Description:** Explore project structure context
+**Duration:** 0s
+
+**2 tasks still in progress.** You WILL be notified when ALL complete.
+Do NOT poll - continue productive work.
+
+Use `background_output(task_id="bg_bdb18106")` to retrieve this result when ready.
+</system-reminder>
+<!-- OMO_INTERNAL_INITIATOR -->
+
+---
+
+<system-reminder>
+[BACKGROUND TASK COMPLETED]
+**ID:** `bg_ab042f65`
+**Description:** Deep agent memory paper analysis
+**Duration:** 0s
+
+**1 task still in progress.** You WILL be notified when ALL complete.
+Do NOT poll - continue productive work.
+
+Use `background_output(task_id="bg_ab042f65")` to retrieve this result when ready.
+</system-reminder>
+<!-- OMO_INTERNAL_INITIATOR -->
+
+---
+
+查看该计划
+
+---
+
+[analyze-mode]
+ANALYSIS MODE. Gather context before diving deep:
+CONTEXT GATHERING (parallel):
+- 1-2 explore agents (codebase patterns, implementations)
+- 1-2 librarian agents (if external library involved)
+- Direct tools: Grep, AST-grep, LSP for targeted searches
+
+IF COMPLEX - DO NOT STRUGGLE ALONE. Consult specialists:
+- **Oracle**: Conventional problems (architecture, debugging, complex logic)
+- **Artistry**: Non-conventional problems (different approach needed)
+
+SYNTHESIZE findings before proceeding.
+---
+MANDATORY delegate_task params: ALWAYS include load_skills=[] and run_in_background when calling delegate_task.
+Example: delegate_task(subagent_type="explore", prompt="...", run_in_background=true, load_skills=[])
+
+---
+
+critical-agent-memory-research.md 完整路径
+
+---
+
+开始执行
+
+---
+
+<system-reminder>
+[ALL BACKGROUND TASKS COMPLETE]
+
+**Completed:**
+- `bg_bdb18106`: Explore project structure context
+- `bg_ab042f65`: Deep agent memory paper analysis
+- `bg_89d237a3`: Verify all data claims in report.md
+
+Use `background_output(task_id="<id>")` to retrieve each result.
+</system-reminder>
+<!-- OMO_INTERNAL_INITIATOR -->
+
+---
+
+<system-reminder>
+[ALL BACKGROUND TASKS COMPLETE]
+
+**Completed:**
+- `bg_615994ce`: Review code consistency with report
+
+Use `background_output(task_id="<id>")` to retrieve each result.
+</system-reminder>
+<!-- OMO_INTERNAL_INITIATOR -->
+
+---
+
+<system-reminder>
+[ALL BACKGROUND TASKS COMPLETE]
+
+**Completed:**
+- `bg_2fb27ecd`: Evaluate paper methodology quality
+
+Use `background_output(task_id="<id>")` to retrieve each result.
+</system-reminder>
+<!-- OMO_INTERNAL_INITIATOR -->
+
+---
+
+<system-reminder>
+[ALL BACKGROUND TASKS COMPLETE]
+
+**Completed:**
+- `bg_96c95163`: Research agent memory security attacks
+
+Use `background_output(task_id="<id>")` to retrieve each result.
+</system-reminder>
+<!-- OMO_INTERNAL_INITIATOR -->
+
+---
+
+[analyze-mode]
+ANALYSIS MODE. Gather context before diving deep:
+CONTEXT GATHERING (parallel):
+- 1-2 explore agents (codebase patterns, implementations)
+- 1-2 librarian agents (if external library involved)
+- Direct tools: Grep, AST-grep, LSP for targeted searches
+
+IF COMPLEX - DO NOT STRUGGLE ALONE. Consult specialists:
+- **Oracle**: Conventional problems (architecture, debugging, complex logic)
+- **Artistry**: Non-conventional problems (different approach needed)
+
+SYNTHESIZE findings before proceeding.
+---
+MANDATORY delegate_task params: ALWAYS include load_skills=[] and run_in_background when calling delegate_task.
+Example: delegate_task(subagent_type="explore", prompt="...", run_in_background=true, load_skills=[])
+
+---
+
+深度结合学术界和产业界实践（如github高star项目）研究agent memory，理解report.md提到的agentmen方案，进行批判性研究
+
+---
+
+<system-reminder>
+[ALL BACKGROUND TASKS COMPLETE]
+
+**Completed:**
+- `bg_1cd7e07c`: Verify 4 GitHub repos vs report claims
+
+Use `background_output(task_id="<id>")` to retrieve each result.
+</system-reminder>
+<!-- OMO_INTERNAL_INITIATOR -->
+
+---
+
+[analyze-mode]
+ANALYSIS MODE. Gather context before diving deep:
+CONTEXT GATHERING (parallel):
+- 1-2 explore agents (codebase patterns, implementations)
+- 1-2 librarian agents (if external library involved)
+- Direct tools: Grep, AST-grep, LSP for targeted searches
+
+IF COMPLEX - DO NOT STRUGGLE ALONE. Consult specialists:
+- **Oracle**: Conventional problems (architecture, debugging, complex logic)
+- **Artistry**: Non-conventional problems (different approach needed)
+
+SYNTHESIZE findings before proceeding.
+---
+MANDATORY delegate_task params: ALWAYS include load_skills=[] and run_in_background when calling delegate_task.
+Example: delegate_task(subagent_type="explore", prompt="...", run_in_background=true, load_skills=[])
+
+---
+
+根据批判性研究报告，修改report.md中的agentmemory方案
+
+---
+
+移除report.md 中 agentmemory 方案设计章节中所有标注和修正说明，是一个端到端的方案设计
