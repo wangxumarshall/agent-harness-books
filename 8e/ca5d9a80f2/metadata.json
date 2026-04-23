@@ -1,0 +1,34 @@
+{
+  "cli_version": "v0.5.0-dev-5bc86155",
+  "checkpoint_id": "8eca5d9a80f2",
+  "strategy": "manual-commit",
+  "branch": "main",
+  "checkpoints_count": 0,
+  "files_touched": [
+    "AgentOS-Memory/AGENTS.md",
+    "AgentOS-Memory/AgentMem.md",
+    "AgentOS-Memory/AgentMem/AGENTS.md",
+    "AgentOS-Memory/AgentMem/AgentMem.md",
+    "AgentOS-Memory/AgentMem/CLAUDE.md",
+    "AgentOS-Memory/AgentMem/agent_memory_filesystem-vector-like-system_insight.md",
+    "AgentOS-Memory/AgentMem/agent_memory_system_global_insight.md",
+    "AgentOS-Memory/CLAUDE.md",
+    "AgentOS-Memory/agent_memory_filesystem-vector-like-system_insight.md",
+    "AgentOS-Memory/agent_memory_system_global_insight.md"
+  ],
+  "sessions": [
+    {
+      "metadata": "/8e/ca5d9a80f2/0/metadata.json",
+      "transcript": "/8e/ca5d9a80f2/0/full.jsonl",
+      "content_hash": "/8e/ca5d9a80f2/0/content_hash.txt",
+      "prompt": ""
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 0,
+    "cache_creation_tokens": 0,
+    "cache_read_tokens": 0,
+    "output_tokens": 0,
+    "api_call_count": 0
+  }
+}
