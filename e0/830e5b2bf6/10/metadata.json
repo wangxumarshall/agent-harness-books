@@ -1,7 +1,9 @@
 {
   "cli_version": "v0.5.0-dev-5bc86155",
   "checkpoint_id": "e0830e5b2bf6",
+  "session_id": "ses_2463ebedbffeu0BFCuwjBzNq3g",
   "strategy": "manual-commit",
+  "created_at": "2026-04-23T12:49:31.882296Z",
   "branch": "main",
   "checkpoints_count": 0,
   "files_touched": [
@@ -41,79 +43,31 @@
     "AgentOS-Memory/agent_memory_filesystem-vector-like-system_insight.md",
     "AgentOS-Memory/agent_memory_system_global_insight.md"
   ],
-  "sessions": [
-    {
-      "metadata": "/e0/830e5b2bf6/0/metadata.json",
-      "transcript": "/e0/830e5b2bf6/0/full.jsonl",
-      "content_hash": "/e0/830e5b2bf6/0/content_hash.txt",
-      "prompt": ""
-    },
-    {
-      "metadata": "/e0/830e5b2bf6/1/metadata.json",
-      "transcript": "/e0/830e5b2bf6/1/full.jsonl",
-      "content_hash": "/e0/830e5b2bf6/1/content_hash.txt",
-      "prompt": ""
-    },
-    {
-      "metadata": "/e0/830e5b2bf6/2/metadata.json",
-      "transcript": "/e0/830e5b2bf6/2/full.jsonl",
-      "content_hash": "/e0/830e5b2bf6/2/content_hash.txt",
-      "prompt": ""
-    },
-    {
-      "metadata": "/e0/830e5b2bf6/3/metadata.json",
-      "transcript": "/e0/830e5b2bf6/3/full.jsonl",
-      "content_hash": "/e0/830e5b2bf6/3/content_hash.txt",
-      "prompt": ""
-    },
-    {
-      "metadata": "/e0/830e5b2bf6/4/metadata.json",
-      "transcript": "/e0/830e5b2bf6/4/full.jsonl",
-      "content_hash": "/e0/830e5b2bf6/4/content_hash.txt",
-      "prompt": ""
-    },
-    {
-      "metadata": "/e0/830e5b2bf6/5/metadata.json",
-      "transcript": "/e0/830e5b2bf6/5/full.jsonl",
-      "content_hash": "/e0/830e5b2bf6/5/content_hash.txt",
-      "prompt": ""
-    },
-    {
-      "metadata": "/e0/830e5b2bf6/6/metadata.json",
-      "transcript": "/e0/830e5b2bf6/6/full.jsonl",
-      "content_hash": "/e0/830e5b2bf6/6/content_hash.txt",
-      "prompt": ""
-    },
-    {
-      "metadata": "/e0/830e5b2bf6/7/metadata.json",
-      "transcript": "/e0/830e5b2bf6/7/full.jsonl",
-      "content_hash": "/e0/830e5b2bf6/7/content_hash.txt",
-      "prompt": ""
-    },
-    {
-      "metadata": "/e0/830e5b2bf6/8/metadata.json",
-      "transcript": "/e0/830e5b2bf6/8/full.jsonl",
-      "content_hash": "/e0/830e5b2bf6/8/content_hash.txt",
-      "prompt": ""
-    },
-    {
-      "metadata": "/e0/830e5b2bf6/9/metadata.json",
-      "transcript": "/e0/830e5b2bf6/9/full.jsonl",
-      "content_hash": "/e0/830e5b2bf6/9/content_hash.txt",
-      "prompt": ""
-    },
-    {
-      "metadata": "/e0/830e5b2bf6/10/metadata.json",
-      "transcript": "/e0/830e5b2bf6/10/full.jsonl",
-      "content_hash": "/e0/830e5b2bf6/10/content_hash.txt",
-      "prompt": ""
-    }
-  ],
+  "agent": "OpenCode",
+  "model": "",
+  "turn_id": "759f040da063",
+  "checkpoint_transcript_start": 1,
+  "transcript_lines_at_start": 1,
   "token_usage": {
     "input_tokens": 0,
     "cache_creation_tokens": 0,
     "cache_read_tokens": 0,
     "output_tokens": 0,
     "api_call_count": 0
+  },
+  "session_metrics": {
+    "turn_count": 2
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-04-23T12:49:31.880997Z",
+    "agent_lines": 2790,
+    "agent_removed": 15469,
+    "human_added": 0,
+    "human_modified": 0,
+    "human_removed": 0,
+    "total_committed": 2790,
+    "total_lines_changed": 18259,
+    "agent_percentage": 100,
+    "metric_version": 2
   }
 }
