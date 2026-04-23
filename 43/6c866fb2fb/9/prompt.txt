@@ -1,0 +1,16 @@
+[CONTEXT]: I'm analyzing Agent Memory systems critically. The AGENTS.md file lists several important systems that may not be fully covered in the existing report: MemBrain 1.0 (Feeling AI), DeepSeek Engram, ICLR STEM, LiCoMemory (CogniGraph), MIRIX, MemoryOS (BUPT+Tencent), Memoria (MatrixOrigin GTC 2026), OmniMem/Omni-SimpleMem (UNC), and CortexMem.
+
+[GOAL]: Deep-dive into these systems' technical architectures to identify what unique contributions they make that could strengthen or challenge the AgentMem proposal in report.md.
+
+[DOWNSTREAM]: I'll use findings to identify gaps in the AgentMem design that competitors address better, and to validate whether AgentMem's claimed innovations are truly unique.
+
+[REQUEST]: For each of these systems, find:
+1. **MemBrain 1.0** (feeling.ai) - "LLM-friendly memory architecture" where sub-agents coordinate and LLM reasons directly in memory space. Find the technical details, benchmark claims (LoCoMo 93.25%), and the "活人感" (human-like) memory concept.
+2. **DeepSeek Engram** - Conditional memory modules in MoE architecture with O(1) deterministic knowledge lookup. Find the paper, the 20-25% sparse parameter budget claim, and the U-shaped scaling law.
+3. **ICLR STEM** - Replacing FFN up-projection with token-indexed embedding lookup for plug-and-play knowledge editing. Find the actual ICLR 2026 paper.
+4. **LiCoMemory/CogniGraph** (HKUST+Huawei+WeBank) - Lightweight hierarchical cognitive graph for long-term conversation. arXiv:2511.01448. Find exact LoCoMo/LongMemEval scores and how it differs from full KG approaches.
+5. **MIRIX** - Multi-intelligent memory with 6 memory types and Active Retrieval. Find the paper and verify the "87% API call reduction" claim.
+6. **MemoryOS** (BUPT+Tencent) - Three-layer memory with heat-driven updates. arXiv:2506.06326. Find the LoCoMo F1 +49.11% improvement details.
+
+Focus on: What architectural decisions do these systems make that AgentMem does NOT account for? What trade-offs do they expose that AgentMem glosses over?
+<!-- OMO_INTERNAL_INITIATOR -->

@@ -1,0 +1,52 @@
+{
+  "cli_version": "v0.5.0-dev-5bc86155",
+  "checkpoint_id": "436c866fb2fb",
+  "session_id": "ses_2463eb20fffeD9F5awKmvyVgw2",
+  "strategy": "manual-commit",
+  "created_at": "2026-04-23T11:04:15.847726Z",
+  "branch": "main",
+  "checkpoints_count": 0,
+  "files_touched": [
+    "AgentOS-Memory/AgentMem/AgentMem.md"
+  ],
+  "agent": "OpenCode",
+  "model": "",
+  "turn_id": "4572fd8d3823",
+  "token_usage": {
+    "input_tokens": 0,
+    "cache_creation_tokens": 0,
+    "cache_read_tokens": 0,
+    "output_tokens": 0,
+    "api_call_count": 0
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-04-23T11:04:15.845714Z",
+    "agent_lines": 0,
+    "agent_removed": 0,
+    "human_added": 320,
+    "human_modified": 11,
+    "human_removed": 0,
+    "total_committed": 320,
+    "total_lines_changed": 331,
+    "agent_percentage": 0,
+    "metric_version": 2
+  },
+  "prompt_attributions": [
+    {
+      "checkpoint_number": 1,
+      "user_lines_added": 1046,
+      "user_lines_removed": 1,
+      "agent_lines_added": 0,
+      "agent_lines_removed": 0,
+      "user_added_per_file": {
+        "AgentOS-Memory/fs-vector-graph/.sisyphus/plans/critical-agent-memory-research.md": 547,
+        "AgentOS-Memory/fs-vector-graph/critical-research/agentmem-risk-matrix.md": 44,
+        "AgentOS-Memory/fs-vector-graph/critical-research/critical-analysis.md": 412,
+        "AgentOS-Memory/fs-vector-graph/evidence-matrix.md": 43
+      },
+      "user_removed_per_file": {
+        "AgentOS-Memory/fs-vector-graph/evidence-matrix.md": 1
+      }
+    }
+  ]
+}
