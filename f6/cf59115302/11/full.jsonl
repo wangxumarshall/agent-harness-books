@@ -1,0 +1,75 @@
+{
+  "info": {
+    "id": "ses_2463edff1ffejaJcBf47IlxqTK",
+    "slug": "quick-orchid",
+    "projectID": "3063918415171cbbf7918369301e10e9bd1b2b78",
+    "directory": "/Users/wangxu/1-project/claude-books/AgentOS-Memory/fs-vector-graph",
+    "parentID": "ses_2463f9ea4ffewiBtsr73bjC27p",
+    "title": "Find missing academic references (@librarian subagent)",
+    "version": "1.4.6",
+    "permission": [
+      {
+        "permission": "task",
+        "action": "deny",
+        "pattern": "*"
+      },
+      {
+        "permission": "call_omo_agent",
+        "action": "deny",
+        "pattern": "*"
+      },
+      {
+        "permission": "question",
+        "action": "deny",
+        "pattern": "*"
+      },
+      {
+        "permission": "write",
+        "action": "deny",
+        "pattern": "*"
+      },
+      {
+        "permission": "edit",
+        "action": "deny",
+        "pattern": "*"
+      }
+    ],
+    "time": {
+      "created": 1776937934862,
+      "updated": 1776937934866
+    }
+  },
+  "messages": [
+    {
+      "info": {
+        "role": "user",
+        "time": {
+          "created": 1776937934864
+        },
+        "tools": {
+          "task": false,
+          "call_omo_agent": false,
+          "question": false,
+          "write": false,
+          "edit": false
+        },
+        "agent": "librarian",
+        "model": {
+          "providerID": "opencode",
+          "modelID": "minimax-m2.7-highspeed"
+        },
+        "id": "msg_db9c12010001BZ5pn3IuRsy9s6",
+        "sessionID": "ses_2463edff1ffejaJcBf47IlxqTK"
+      },
+      "parts": [
+        {
+          "type": "text",
+          "text": "[CONTEXT]: I'm conducting critical research on Agent Memory systems. The existing report.md and critical-analysis.md already cover mem0, OpenViking, Graphiti, Memoria, memsearch, TiMem, MAGMA, FadeMem, Omni-SimpleMem, MINJA, etc.\n\n[GOAL]: Find and verify the MISSING academic references that the current report cites but cannot locate. These are critical gaps undermining the entire report's academic credibility.\n\n[DOWNSTREAM]: If I find these papers, I can fill in missing data; if they don't exist, I need to flag them as invalid citations.\n\n[REQUEST]: Search arXiv, Google Scholar, and ACL/ICLR/NeurIPS proceedings for these specific papers:\n1. **AgentPoison** - The report mentions this as a memory poisoning attack with ASR >80%, but has no paper number. Find the exact arXiv ID, title, authors, and key results.\n2. **eTAMP** - Mentioned as \"environmental instruction injection\" attack. Find the exact paper reference.\n3. **MUSE framework** - The report cites \"arXiv:2601.xxxxx\" (a placeholder!). Find the REAL paper about \"Plan-Execute-Reflect-Memorize\" memory framework. Search for MUSE agent memory, or any paper with this acronym in AI agent context.\n4. **PlugMem** - Mentioned as UIUC/Tsinghua/Microsoft Research work on procedural memory as DAG. Find the actual paper.\n5. **AgentTrace** - Mentioned as \"2026年2月 AAAI 2026 LaMAS Workshop\" with arXiv:2602.10133. Verify if this paper exists and what it actually says.\n6. **LRAT** - \"Learning Retrieval from Agent Trajectories\" - find the paper.\n\nFor each paper found (or confirmed not found), return:\n- Paper title, authors, venue, date\n- arXiv ID or DOI\n- Key quantitative results\n- Whether the report's description matches the actual paper content\n<!-- OMO_INTERNAL_INITIATOR -->",
+          "id": "prt_db9c12010002Eanye29yuMNtpJ",
+          "sessionID": "ses_2463edff1ffejaJcBf47IlxqTK",
+          "messageID": "msg_db9c12010001BZ5pn3IuRsy9s6"
+        }
+      ]
+    }
+  ]
+}
