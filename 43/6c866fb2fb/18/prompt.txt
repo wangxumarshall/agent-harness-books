@@ -1,0 +1,40 @@
+TASK: Evaluate the methodology quality of ≥8 research papers cited in the Agent Memory research report.
+
+EXPECTED OUTCOME: A markdown file with per-paper methodology assessment covering: ablation studies, benchmark fairness, independent replication status, statistical significance.
+
+REQUIRED TOOLS: webfetch (arXiv pages, paper PDFs), Read, Grep, Write.
+
+MUST DO:
+1. For EACH paper below, assess: (a) Had ablation studies? (b) Used standard or自建 benchmarks? (c) Have any independent replications? (d) Reported standard deviations?
+
+Papers to evaluate:
+a) TiMem (arXiv:2601.02845) — 5-level temporal memory tree
+b) MAGMA (arXiv:2601.03236) — multi-graph agent memory
+c) FadeMem (arXiv:2601.18642) — biology-inspired forgetting
+d) OmniMem (arXiv:2604.01007) — AI autonomous research pipeline
+e) MIRIX — multi-intelligent memory with 6 memory types
+f) EverMemOS / HyperMem (arXiv:2601.02163, arXiv:2604.08256)
+g) Aeon (2026年1月) — neural-symbolic memory management
+h) 三层类人记忆架构 (2026年3月) — EPISODES/ENTITIES/COMMUNITIES
+
+2. For each paper, report:
+   - Full title, authors, publication venue (conference/arXiv/date)
+   - Claimed benchmark results on LoCoMo/LongMemEval/etc
+   - Methodology assessment: Ablation [Y/N], Standard Benchmark [Y/N], Independent Replication [Y/N/UNKNOWN], Std Dev Reported [Y/N]
+   - Critical finding: One thing the paper gets right, one concern about methodology
+   - Evidence grade: 强/中/弱/无
+
+3. Also check: Are any of these papers actually published at peer-reviewed venues, or are they ALL arXiv preprints?
+
+4. Save output to: .sisyphus/critical-research/outputs/paper-methodology-assessment.md
+
+MUST NOT DO:
+- Do NOT criticize methodology without basis in the actual paper content
+- Do NOT assume findings — check the arXiv abstracts at minimum
+- Do NOT write "good paper" — be specific about methodology strengths/weaknesses
+
+CONTEXT:
+- This is Task 3 of Wave 1 in the critical research plan
+- Report at: /Users/wangxu/1-project/claude-books/AgentOS-Memory/fs-vector-graph/report.md
+- findings.md lists the papers with context
+<!-- OMO_INTERNAL_INITIATOR -->
