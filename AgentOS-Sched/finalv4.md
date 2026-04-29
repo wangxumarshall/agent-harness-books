@@ -161,9 +161,15 @@ SAL [arXiv:2604.22136] 的实证表明：不经验证的 Agent 操作中 93% 可
 
 #### AgentPool MessageNode 抽象
 
-- **Solved**：将 PydanticAI、Claude Code、Codex、ACP、AG-UI 等异构 Agent 统一为 MessageNode，YAML 配置驱动；支持A2A、ACP、AG-UI、MCP等协议。
+- **Solved**：将 PydanticAI、Claude Code、Codex、ACP、AG-UI 等异构 Agent 统一为 MessageNode，YAML 配置驱动；解决了"如何让不同 Agent 能够在同一系统中被发现、调用、组合和暴露"的问题：
+  - **YAML-first 配置**：用一个配置文件描述完整多 Agent 系统
+  - **MessageNode 统一抽象**：将 PydanticAI、Claude Code、Codex、ACP、AG-UI 等异构 Agent 统一
+  - **多协议 Server 暴露**：同一套能力通过 ACP/MCP/A2A/AG-UI/OpenCode/OpenAI API 暴露
+  - **Team 协作**：支持 parallel 和 sequential 组合
+  - **MCPManager + ToolManagerBridge**：区分 inbound MCP（消费外部工具）和 outbound bridge（暴露内部工具）
 - **Unsolved**：wrapped agents 对 pool-level MCP 可见性不一致；长时任务 durable execution 仍需上升为内核能力
 - **Maturity**：★★★☆☆
+
 
 ### 4.3 状态一致性与版本控制
 
@@ -224,61 +230,14 @@ SAL [arXiv:2604.22136] 的实证表明：不经验证的 Agent 操作中 93% 可
 
 ---
 
-## 第五章 从 AgentPool 到 agentpool 的工程演进启示
+## 第五章 从 AgentPool
 
-### 5.1 AgentPool 已证明的核心价值
 
-AgentPool 解决了"如何让不同 Agent 能够在同一系统中被发现、调用、组合和暴露"的问题：
 
-- **YAML-first 配置**：用一个配置文件描述完整多 Agent 系统
-- **MessageNode 统一抽象**：将 PydanticAI、Claude Code、Codex、ACP、AG-UI 等异构 Agent 统一
-- **多协议 Server 暴露**：同一套能力通过 ACP/MCP/A2A/AG-UI/OpenCode/OpenAI API 暴露
-- **Team 协作**：支持 parallel 和 sequential 组合
-- **MCPManager + ToolManagerBridge**：区分 inbound MCP（消费外部工具）和 outbound bridge（暴露内部工具）
-
-### 5.2 agentpool 的六层架构设想
-
-agentpool 在 AgentPool 基础上提出了面向生产级的六层架构：
-
-```
-┌─────────────────────────────────────────────────────┐
-│ Application Layer (IDE/Web/API/A2A Peer/Apps)        │
-├─────────────────────────────────────────────────────┤
-│ Protocol Gateway (ACP/MCP/A2A/AG-UI/OpenCode/API)    │
-├─────────────────────────────────────────────────────┤
-│ Orchestration Kernel (TaskEnvelope/AgentUnit/Policy)  │
-├─────────────────────────────────────────────────────┤
-│ Swarm Runtime (Teams/DAG/Autonomous Topology)         │
-├─────────────────────────────────────────────────────┤
-│ Memory & Durable State (Event Sourcing/Checkpoint)    │
-├─────────────────────────────────────────────────────┤
-│ Infrastructure & Observability (Tracing/Cost/Model)   │
-└─────────────────────────────────────────────────────┘
-```
-
-### 5.3 关键演进抽象
-
-| AgentPool 抽象 | agentpool 演进 | 核心提升 |
-|:---|:---|:---|
-| MessageNode | **AgentUnit** | 从"可处理消息的节点"→"可治理、可调度、可审计的执行单元" |
-| 原始消息传递 | **TaskEnvelope** | 统一任务载体：goal + constraints + budget + SLA + evidence chain |
-| 名称路由 | **Capability Graph** | 按能力而非名称路由，融合 ACE-ROUTER 历史轨迹感知 |
-| Team parallel/sequential | **L1-L5 复杂度分级** | 同一内核不同控制强度 |
-
-### 5.4 从学术原语到工程实践的桥梁
-
-| 学术原语 | 工程化路径 | AgentOS 定位 |
-|:---|:---|:---|
-| SagaLLM 补偿事务 | 集成 Temporal/DBOS 作为 durable execution 后端 | 事务性执行内核 |
-| AgentGit 状态版本 | 基于 event sourcing 实现轻量级 checkpoint/replay | 状态管理层 |
-| SCF 语义共识 | 在 Policy Engine 中内嵌意图冲突检测规则 | 编排内核 |
-| SAL 主权隔离 | 在 Protocol Gateway 实施零信任意图验证 | 安全内核 |
-| AIOS 调度器 | 在 Swarm Runtime 中实现优先级队列与资源预留 | 调度内核 |
-| CASCADE 惰性推理 | 在调度器中实现按需 LLM 调用策略 | 资源优化层 |
 
 ---
 
-## 第六章 下一代 AgentOS MAS 子系统架构设计
+## 第六章 MAS系统架构设计
 
 ### 6.1 设计原则
 
