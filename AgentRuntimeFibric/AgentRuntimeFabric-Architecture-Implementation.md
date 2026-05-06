@@ -2,7 +2,7 @@
 
 ## 0. 文档定位
 
-本文基于当前目录全部材料整理而成，包括 `insight-v1.md`、`insight-v2.md`、`insight-v3.md`、`insight-v4.md`、`insight-v5.md`、`AgentRuntimeFabric-v2.md` 和 `AgentRuntimeFabric-Solution.md`。当前目录是方案文档集合，尚无实现代码。因此本文的目标不是复述概念，而是把已有方案沉淀为可以继续开源实现、可以分解给 Codex 开发、可以测试验收的系统规格。
+本文基于当前目录全部材料整理而成，包括 `insight-v1.md`、`insight-v2.md`、`insight-v3.md`、`insight-v4.md`、`insight-v5.md`、`AgentRuntimeFabric-v2.md` 和 `AgentRuntimeFabric-Solution.md`。当前目录是方案文档集合，尚无实现代码。因此本文的目标不是复述概念，而是把已有方案沉淀为可以基于开源实现、可以分解给 Codex 开发、可以测试验收的系统规格。
 
 本文采用以下取舍：
 
