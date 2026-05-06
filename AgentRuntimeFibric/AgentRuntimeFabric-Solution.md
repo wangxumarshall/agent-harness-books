@@ -1,12 +1,10 @@
-# AgentRuntimeFabric 智能体执行织网完整方案
-
-> 说明：本目录历史稿件使用了 `AgentRuntimeFibric` 拼写。本文统一采用 `AgentRuntimeFabric`，指同一套智能体执行基础设施方案。
+# AgentRuntimeFabric方案设计
 
 ## 0. 摘要
 
-AgentRuntimeFabric 是面向复杂 Agent 任务的执行基础设施。它不是把 Agent 简单放进一个 sandbox，也不是给模型一个 remote shell，而是把 Agent 执行问题拆成可治理的分布式系统问题：控制面负责规划和决策，执行面负责隔离计算，状态面负责 workspace、snapshot、event 和 artifact 的持久化，策略面负责权限、审批和网络出口，可观测面负责追踪、回放和故障复盘。
+AgentRuntimeFabric 是面向复杂 Multi Agent 任务的执行基础设施。它不是把 Agent 简单放进一个 sandbox，也不是给模型一个 remote shell，而是把 Agent 执行问题拆成可治理的分布式系统问题：控制面负责规划和决策，执行面负责隔离计算，状态面负责 workspace、snapshot、event 和 artifact 的持久化，策略面负责权限、审批和网络出口，可观测面负责追踪、回放和故障复盘。
 
-这一架构的核心判断是：长时 Agent 任务的成功率不只取决于模型能力，还取决于 runtime 是否可恢复、workspace 是否完整、状态是否可分支、安全策略是否可声明、执行过程是否可回放。OpenAI 的 sandbox agent 文档把 harness/control plane 与 sandbox compute plane 明确拆分，Codex 文档把 sandbox 边界与 approval policy 区分开来；Anthropic 的工具文档强调工具由客户端或服务端执行、应用需要控制 agentic loop；E2B、Modal、Firecracker 和 OpenHands 则分别提供了持久化 sandbox、snapshot、microVM 隔离、agent server/runtime 拆分等工程参考。[^openai-sandbox-agents][^openai-codex-sandbox][^anthropic-tool-use][^e2b-persistence][^modal-sandbox-snapshots][^firecracker-snapshot][^openhands-runtime]
+还架构的核心判断是：长时 Multi Agent 任务的成功率不只取决于模型能力，还取决于 runtime 是否可恢复、workspace 是否完整、状态是否可分支、安全策略是否可声明、执行过程是否可回放。OpenAI 的 sandbox agent 把 harness/control plane 与 sandbox compute plane 明确拆分，Codex 把 sandbox 边界与 approval policy 区分开来；Anthropic 强调工具由客户端或服务端执行、应用需要控制 agentic loop；E2B、Modal、Firecracker 和 OpenHands 则分别提供了持久化 sandbox、snapshot、microVM 隔离、agent server/runtime 拆分等工程参考。[^openai-sandbox-agents][^openai-codex-sandbox][^anthropic-tool-use][^e2b-persistence][^modal-sandbox-snapshots][^firecracker-snapshot][^openhands-runtime]
 
 ## 1. 业务场景
 
@@ -47,21 +45,21 @@ AgentRuntimeFabric 是面向复杂 Agent 任务的执行基础设施。它不是
 | 可观测不足 | 只保存最终回答，无法解释失败路径 | every command/event/artifact 都要可追踪、可回放 |
 | 成本与延迟 | 大量全量复制 workspace、重复安装依赖、冷启动慢 | 需要 CoW delta snapshot、缓存分层和 runtime pool |
 
-这些问题的共同点是：Agent 执行不是单模型调用问题，而是一个有生命周期、有状态、有权限、有恢复语义的分布式系统问题。
+这些问题的共同点是：Agent 执行不是单模型调用问题，而是一个有生命周期、有状态、有权限、有恢复语义的系统问题。
 
 ## 3. 现有技术研究
 
 ### 3.1 OpenAI：控制面、沙箱和工具协议分离
 
-OpenAI 的 sandbox agent 文档把系统拆为 harness 和 sandbox 两层：harness 保存状态、编排模型请求、执行工具调用，是控制面；sandbox 是隔离的计算环境，包含文件系统、shell、浏览器、端口和命令执行能力，是执行面。文档还明确指出 sandbox 可以在暂停后保留文件，并可用于复杂编程、数据分析、浏览器测试等任务。[^openai-sandbox-agents]
+OpenAI 的 sandbox agent 把系统拆为 harness 和 sandbox 两层：harness 保存状态、编排模型请求、执行工具调用，是控制面；sandbox 是隔离的计算环境，包含文件系统、shell、浏览器、端口和命令执行能力，是执行面。sandbox 可以在暂停后保留文件，并可用于复杂编程、数据分析、浏览器测试等任务。[^openai-sandbox-agents]
 
-Codex 的 sandboxing 文档进一步把 sandbox boundary 与 approval policy 分开：sandbox 限制文件系统和网络访问，approval policy 决定何时需要人类授权。这个边界对 AgentRuntimeFabric 很关键，因为隔离只能解决 “在哪里运行”，审批和策略解决的是 “是否允许运行”。[^openai-codex-sandbox]
+Codex sandbox进一步把 sandbox boundary 与 approval policy 分开：sandbox 限制文件系统和网络访问，approval policy 决定何时需要人类授权。这个边界对 AgentRuntimeFabric 很关键，因为隔离只能解决 “在哪里运行”，审批和策略解决的是 “是否允许运行”。[^openai-codex-sandbox]
 
 OpenAI 的 MCP/connectors 文档说明工具边界正在标准化：模型通过结构化工具调用连接远端能力，宿主系统负责执行和回传结果。AgentRuntimeFabric 应把 MCP、tool call、ACI 类协议视为 control plane 与 execution/tool plane 之间的标准接口，而不是把所有能力写死在内部 SDK。[^openai-mcp]
 
 ### 3.2 Anthropic：工具执行位置与安全环路
 
-Anthropic 的 Claude tool use 文档明确区分 client tools 与 server tools，并强调 agentic loop 由应用控制：模型发出工具使用请求，客户端或服务端执行，再把结果返回模型。这个模式说明 Agent 基础设施必须把 “模型推理” 和 “工具执行” 作为两个不同安全域处理。[^anthropic-tool-use]
+Anthropic 的 Claude tool use 区分 client tools 与 server tools，并强调 agentic loop 由应用控制：模型发出工具使用请求，客户端或服务端执行，再把结果返回模型。这个模式说明 Agent 基础设施必须把 “模型推理” 和 “工具执行” 作为两个不同安全域处理。[^anthropic-tool-use]
 
 Anthropic 的 Claude Code 安全文档强调 prompt injection 是核心风险，建议使用权限提示、受限工具、容器或 VM 隔离、网络限制和敏感操作确认。AgentRuntimeFabric 的 Semantic Firewall、HITL 审批、egress whitelist 和 secret broker 正是对这些原则的平台化实现。[^anthropic-security]
 
