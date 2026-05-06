@@ -44,3 +44,13 @@
 - 保留六平面 + AgentOps，但把 Durable Workflow Kernel 放在 Control Plane 与 State Plane 之间作为内核；把 Policy Plane 升级为 Governance Fabric。
 - 针对“基于现有开源项目的堆加和重构”，最终设计应采用防腐层：OpenHands/Vercel Open Agents/AutoGen/Temporal/MCP/OPA/Vault/OpenTelemetry 等可以复用能力，但不能把其内部对象泄漏为 AgentRuntimeFabric 核心对象。
 - 每个外部项目接入都应通过 contract tests 和 mapping ADR，稳定输出 Event、RuntimeAdapter、ToolCall、A2AEnvelope、PolicyDecision、SecretGrant 等内部契约。
+
+## 2026-05-06 Re-synthesis Addendum
+
+- Re-read all local source files and confirmed the main consolidated document already covered most requested sections, but needed stronger traceability from source documents to final decisions.
+- Added a source-material distillation table to distinguish adopted concepts, corrected assumptions, and deliberately delayed product capabilities.
+- Added a requirements traceability matrix mapping R1-R14 to owner modules, stable objects/interfaces, required tests, and first delivery phase.
+- Added a reusable requirement decomposition template so future Codex issues have explicit inputs, outputs, state transitions, events, policy checks, errors, idempotency, tests, non-goals, and reusable artifacts.
+- Added module interaction chains for normal execution, runtime recovery, high-risk approval, multi-agent branch collaboration, and Knowledge/Skill use.
+- Added module write-boundary ownership to prevent hidden coupling through shared state.
+- Verified current official/reference docs for the open-source stacking direction at a high level; refined the implementation route by separating directly embeddable open-source components, adapter backends, implementation references, hosted replacements, and industry references.

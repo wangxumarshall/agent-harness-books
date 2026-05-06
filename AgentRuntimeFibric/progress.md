@@ -10,3 +10,6 @@
 - Drafted `AgentRuntimeFabric-Architecture-Implementation.md` as the consolidated architecture, implementation, and verifiable requirements specification.
 - Verified the new document covers phased deliverables, users, solved problems, success standards, non-goals, module boundaries, stable protocols, core objects, state machines, I/O contracts, constraints, error recovery, observability, examples, anti-examples, and Codex development guidance.
 - Extended `AgentRuntimeFabric-Architecture-Implementation.md` with an open-source stacking and refactoring route, including reusable project layers, anti-corruption mappings, Codex task template, spike issues, and anti-patterns.
+- Revisited the user's full-document request and re-read all local files plus the existing consolidated architecture document.
+- Added source-material distillation, requirement traceability, reusable issue template, module interaction chains, module write-boundary ownership, open-source adoption grading, and MVP technology stack guidance to `AgentRuntimeFabric-Architecture-Implementation.md`.
+- Updated `findings.md` with the new re-synthesis notes.
