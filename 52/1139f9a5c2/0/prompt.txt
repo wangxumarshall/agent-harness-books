@@ -1,9 +1,1 @@
-提交 push
-
----
-
-从github检索，哪些开源方案可被用来做基础进行开发arf，包括但不限于：OpenAI Agents SDK + Codex、Google Gemini Enterprise Agent Platform、AWS Bedrock AgentCore、OpenAI Agents SDK + sandbox、E2B、Modal Sandboxes、Daytona、OpenHands Runtime、AutoGen、vercel-labs/open-agents、warp、agentpool等** 共同把 Agent 从“聊天式函数调用”推进到“控制面与执行面分离的持久化工作流”：前者负责规划、编排、审批、观测与记忆，后者负责在隔离的 sandbox / microVM / container / workspace 中执行代码、安装依赖、跑测试、开端口和处理长任务；同时，E2B、Daytona、OpenHands、Open Agents 强化了 workspace、snapshot、resume 和 durable workflow，OpenAI 与 Anthropic 强调 sandbox 边界、tool execution 与 approvals，Google 与 AWS 则把 identity、policy、governance、runtime 平台化，AutoGen 则从事件驱动和 actor/runtime 角度补足了多 Agent 协作与生命周期管理——整体上，它们都在把 Agent 基础设施收敛成“可恢复、可审计、可扩展、可分权”的执行织网。
-
----
-
-AgentRuntimeFabric-Architecture-Implementation.md 更新方案
+提交push
