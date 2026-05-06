@@ -42,3 +42,5 @@
 - 文档应采用“需求可验证 -> 模块边界 -> 对象模型 -> 协议契约 -> 状态机 -> 实现阶段”的顺序，便于后续 Codex 按任务拆解开发。
 - 最终文档应明确“事实源”和“投影”的区别：EventLog / Workspace / Snapshot / Artifact / PolicyDecision 是事实；日志摘要、ContextIndex、Skill 建议是投影。
 - 保留六平面 + AgentOps，但把 Durable Workflow Kernel 放在 Control Plane 与 State Plane 之间作为内核；把 Policy Plane 升级为 Governance Fabric。
+- 针对“基于现有开源项目的堆加和重构”，最终设计应采用防腐层：OpenHands/Vercel Open Agents/AutoGen/Temporal/MCP/OPA/Vault/OpenTelemetry 等可以复用能力，但不能把其内部对象泄漏为 AgentRuntimeFabric 核心对象。
+- 每个外部项目接入都应通过 contract tests 和 mapping ADR，稳定输出 Event、RuntimeAdapter、ToolCall、A2AEnvelope、PolicyDecision、SecretGrant 等内部契约。

@@ -9,3 +9,4 @@
 - Extracted business scenarios, AgentOps, KnowledgeBase, Skill Registry, and MVP details from `AgentRuntimeFabric-Solution.md`.
 - Drafted `AgentRuntimeFabric-Architecture-Implementation.md` as the consolidated architecture, implementation, and verifiable requirements specification.
 - Verified the new document covers phased deliverables, users, solved problems, success standards, non-goals, module boundaries, stable protocols, core objects, state machines, I/O contracts, constraints, error recovery, observability, examples, anti-examples, and Codex development guidance.
+- Extended `AgentRuntimeFabric-Architecture-Implementation.md` with an open-source stacking and refactoring route, including reusable project layers, anti-corruption mappings, Codex task template, spike issues, and anti-patterns.
