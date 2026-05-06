@@ -1,0 +1,27 @@
+{
+  "cli_version": "0.6.0",
+  "checkpoint_id": "6895cfa0f426",
+  "strategy": "manual-commit",
+  "branch": "main",
+  "checkpoints_count": 1,
+  "files_touched": [
+    "AgentRuntimeFibric/AgentRuntimeFabric-Architecture-Implementation.md",
+    "AgentRuntimeFibric/findings.md",
+    "AgentRuntimeFibric/progress.md"
+  ],
+  "sessions": [
+    {
+      "metadata": "/68/95cfa0f426/0/metadata.json",
+      "transcript": "/68/95cfa0f426/0/full.jsonl",
+      "content_hash": "/68/95cfa0f426/0/content_hash.txt",
+      "prompt": "/68/95cfa0f426/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 112610,
+    "cache_creation_tokens": 0,
+    "cache_read_tokens": 1783040,
+    "output_tokens": 14411,
+    "api_call_count": 28
+  }
+}
